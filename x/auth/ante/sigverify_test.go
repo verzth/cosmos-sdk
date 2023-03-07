@@ -7,25 +7,25 @@ import (
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/require"
 
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	kmultisig "github.com/cosmos/cosmos-sdk/crypto/keys/multisig"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256r1"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	"github.com/cosmos/cosmos-sdk/crypto/types/multisig"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/tx/signing"
-	"github.com/cosmos/cosmos-sdk/x/auth/ante"
-	"github.com/cosmos/cosmos-sdk/x/auth/migrations/legacytx"
-	authtx "github.com/cosmos/cosmos-sdk/x/auth/tx"
-	txmodule "github.com/cosmos/cosmos-sdk/x/auth/tx/config"
-	"github.com/cosmos/cosmos-sdk/x/auth/types"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
+	"github.com/verzth/cosmos-sdk/client"
+	"github.com/verzth/cosmos-sdk/codec"
+	"github.com/verzth/cosmos-sdk/crypto/keys/ed25519"
+	kmultisig "github.com/verzth/cosmos-sdk/crypto/keys/multisig"
+	"github.com/verzth/cosmos-sdk/crypto/keys/secp256k1"
+	"github.com/verzth/cosmos-sdk/crypto/keys/secp256r1"
+	cryptotypes "github.com/verzth/cosmos-sdk/crypto/types"
+	"github.com/verzth/cosmos-sdk/crypto/types/multisig"
+	"github.com/verzth/cosmos-sdk/testutil/testdata"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/types/tx/signing"
+	"github.com/verzth/cosmos-sdk/x/auth/ante"
+	"github.com/verzth/cosmos-sdk/x/auth/migrations/legacytx"
+	authtx "github.com/verzth/cosmos-sdk/x/auth/tx"
+	txmodule "github.com/verzth/cosmos-sdk/x/auth/tx/config"
+	"github.com/verzth/cosmos-sdk/x/auth/types"
+	banktypes "github.com/verzth/cosmos-sdk/x/bank/types"
 )
 
 func TestSetPubKey(t *testing.T) {
@@ -230,10 +230,10 @@ func TestSigVerification(t *testing.T) {
 
 // This test is exactly like the one above, but we set the codec explicitly to
 // Amino.
-// Once https://github.com/cosmos/cosmos-sdk/issues/6190 is in, we can remove
+// Once https://github.com/verzth/cosmos-sdk/issues/6190 is in, we can remove
 // this, since it'll be handled by the test matrix.
 // In the meantime, we want to make double-sure amino compatibility works.
-// ref: https://github.com/cosmos/cosmos-sdk/issues/7229
+// ref: https://github.com/verzth/cosmos-sdk/issues/7229
 func TestSigVerification_ExplicitAmino(t *testing.T) {
 	suite := SetupTestSuite(t, true)
 	// Set up TxConfig.

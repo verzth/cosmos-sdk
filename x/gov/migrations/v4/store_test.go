@@ -6,21 +6,21 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	"github.com/cosmos/cosmos-sdk/testutil"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	"github.com/cosmos/cosmos-sdk/x/bank"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
-	"github.com/cosmos/cosmos-sdk/x/gov"
-	v1gov "github.com/cosmos/cosmos-sdk/x/gov/migrations/v1"
-	v4 "github.com/cosmos/cosmos-sdk/x/gov/migrations/v4"
-	"github.com/cosmos/cosmos-sdk/x/gov/types"
-	v1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1"
-	"github.com/cosmos/cosmos-sdk/x/gov/types/v1beta1"
+	"github.com/verzth/cosmos-sdk/testutil"
+	"github.com/verzth/cosmos-sdk/testutil/testdata"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	moduletestutil "github.com/verzth/cosmos-sdk/types/module/testutil"
+	authtypes "github.com/verzth/cosmos-sdk/x/auth/types"
+	"github.com/verzth/cosmos-sdk/x/bank"
+	banktypes "github.com/verzth/cosmos-sdk/x/bank/types"
+	"github.com/verzth/cosmos-sdk/x/gov"
+	v1gov "github.com/verzth/cosmos-sdk/x/gov/migrations/v1"
+	v4 "github.com/verzth/cosmos-sdk/x/gov/migrations/v4"
+	"github.com/verzth/cosmos-sdk/x/gov/types"
+	v1 "github.com/verzth/cosmos-sdk/x/gov/types/v1"
+	"github.com/verzth/cosmos-sdk/x/gov/types/v1beta1"
 )
 
 var (

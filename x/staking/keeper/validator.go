@@ -6,11 +6,11 @@ import (
 
 	gogotypes "github.com/cosmos/gogoproto/types"
 
-	"cosmossdk.io/math"
-	storetypes "cosmossdk.io/store/types"
+	"github.com/verzth/cosmos-sdk/math"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/staking/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/x/staking/types"
 )
 
 // get a single validator

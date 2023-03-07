@@ -3,10 +3,10 @@ package feegrant
 import (
 	"time"
 
-	errorsmod "cosmossdk.io/errors"
+	errorsmod "github.com/verzth/cosmos-sdk/errors"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	sdkerrors "github.com/verzth/cosmos-sdk/types/errors"
 )
 
 var _ FeeAllowanceI = (*PeriodicAllowance)(nil)

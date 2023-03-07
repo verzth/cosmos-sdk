@@ -3,14 +3,14 @@ package mint
 import (
 	"fmt"
 
-	"cosmossdk.io/math"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	grpctypes "github.com/cosmos/cosmos-sdk/types/grpc"
+	"github.com/verzth/cosmos-sdk/math"
+	"github.com/verzth/cosmos-sdk/testutil"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	grpctypes "github.com/verzth/cosmos-sdk/types/grpc"
 
 	"github.com/cosmos/gogoproto/proto"
 
-	minttypes "github.com/cosmos/cosmos-sdk/x/mint/types"
+	minttypes "github.com/verzth/cosmos-sdk/x/mint/types"
 )
 
 func (s *E2ETestSuite) TestQueryGRPC() {

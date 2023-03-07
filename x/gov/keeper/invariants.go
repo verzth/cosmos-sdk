@@ -3,9 +3,9 @@ package keeper
 import (
 	"fmt"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/gov/types"
-	v1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/x/gov/types"
+	v1 "github.com/verzth/cosmos-sdk/x/gov/types/v1"
 )
 
 // RegisterInvariants registers all governance invariants

@@ -5,7 +5,7 @@ import (
 	"compress/zlib"
 	"io"
 
-	"cosmossdk.io/errors"
+	"github.com/verzth/cosmos-sdk/errors"
 	protoio "github.com/cosmos/gogoproto/io"
 	"github.com/cosmos/gogoproto/proto"
 )

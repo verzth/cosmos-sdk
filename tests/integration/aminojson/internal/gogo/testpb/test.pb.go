@@ -6,8 +6,8 @@ package testpb
 import (
 	fmt "fmt"
 	_ "github.com/cosmos/cosmos-proto"
-	github_com_cosmos_cosmos_sdk_types "github.com/cosmos/cosmos-sdk/types"
-	_ "github.com/cosmos/cosmos-sdk/types/tx/amino"
+	github_com_cosmos_cosmos_sdk_types "github.com/verzth/cosmos-sdk/types"
+	_ "github.com/verzth/cosmos-sdk/types/tx/amino"
 	_ "github.com/cosmos/gogoproto/gogoproto"
 	proto "github.com/cosmos/gogoproto/proto"
 	io "io"
@@ -216,7 +216,7 @@ func (m *TestNullableFields) GetNonNullableDontOmitempty() Streng {
 }
 
 type IntAsString struct {
-	IntAsString github_com_cosmos_cosmos_sdk_types.Int `protobuf:"bytes,1,opt,name=int_as_string,json=intAsString,proto3,customtype=github.com/cosmos/cosmos-sdk/types.Int" json:"int_as_string"`
+	IntAsString github_com_cosmos_cosmos_sdk_types.Int `protobuf:"bytes,1,opt,name=int_as_string,json=intAsString,proto3,customtype=github.com/verzth/cosmos-sdk/types.Int" json:"int_as_string"`
 }
 
 func (m *IntAsString) Reset()         { *m = IntAsString{} }
@@ -253,7 +253,7 @@ func (m *IntAsString) XXX_DiscardUnknown() {
 var xxx_messageInfo_IntAsString proto.InternalMessageInfo
 
 type IntAsBytes struct {
-	IntAsBytes github_com_cosmos_cosmos_sdk_types.Int `protobuf:"bytes,1,opt,name=int_as_bytes,json=intAsBytes,proto3,customtype=github.com/cosmos/cosmos-sdk/types.Int" json:"int_as_bytes"`
+	IntAsBytes github_com_cosmos_cosmos_sdk_types.Int `protobuf:"bytes,1,opt,name=int_as_bytes,json=intAsBytes,proto3,customtype=github.com/verzth/cosmos-sdk/types.Int" json:"int_as_bytes"`
 }
 
 func (m *IntAsBytes) Reset()         { *m = IntAsBytes{} }
@@ -290,8 +290,8 @@ func (m *IntAsBytes) XXX_DiscardUnknown() {
 var xxx_messageInfo_IntAsBytes proto.InternalMessageInfo
 
 type IntAsBothStringAndBytes struct {
-	IntAsString github_com_cosmos_cosmos_sdk_types.Int `protobuf:"bytes,1,opt,name=int_as_string,json=intAsString,proto3,customtype=github.com/cosmos/cosmos-sdk/types.Int" json:"int_as_string"`
-	IntAsBytes  github_com_cosmos_cosmos_sdk_types.Int `protobuf:"bytes,2,opt,name=int_as_bytes,json=intAsBytes,proto3,customtype=github.com/cosmos/cosmos-sdk/types.Int" json:"int_as_bytes"`
+	IntAsString github_com_cosmos_cosmos_sdk_types.Int `protobuf:"bytes,1,opt,name=int_as_string,json=intAsString,proto3,customtype=github.com/verzth/cosmos-sdk/types.Int" json:"int_as_string"`
+	IntAsBytes  github_com_cosmos_cosmos_sdk_types.Int `protobuf:"bytes,2,opt,name=int_as_bytes,json=intAsBytes,proto3,customtype=github.com/verzth/cosmos-sdk/types.Int" json:"int_as_bytes"`
 }
 
 func (m *IntAsBothStringAndBytes) Reset()         { *m = IntAsBothStringAndBytes{} }

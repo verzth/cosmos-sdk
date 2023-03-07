@@ -1,10 +1,10 @@
 package group
 
 import (
-	errorsmod "cosmossdk.io/errors"
+	errorsmod "github.com/verzth/cosmos-sdk/errors"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/group/errors"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/x/group/errors"
 )
 
 // MemberRequests defines a repeated slice of MemberRequest objects.

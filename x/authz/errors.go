@@ -1,6 +1,6 @@
 package authz
 
-import "cosmossdk.io/errors"
+import "github.com/verzth/cosmos-sdk/errors"
 
 // x/authz module sentinel errors
 var (

@@ -19,15 +19,15 @@ import (
 	"github.com/spf13/cobra"
 	"gotest.tools/v3/assert"
 
-	"cosmossdk.io/log"
-	"cosmossdk.io/simapp"
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/server"
-	"github.com/cosmos/cosmos-sdk/server/types"
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	"github.com/cosmos/cosmos-sdk/x/genutil"
-	genutiltypes "github.com/cosmos/cosmos-sdk/x/genutil/types"
+	"github.com/verzth/cosmos-sdk/client"
+	"github.com/verzth/cosmos-sdk/client/flags"
+	"github.com/verzth/cosmos-sdk/log"
+	"github.com/verzth/cosmos-sdk/server"
+	"github.com/verzth/cosmos-sdk/server/types"
+	"github.com/verzth/cosmos-sdk/simapp"
+	simtestutil "github.com/verzth/cosmos-sdk/testutil/sims"
+	"github.com/verzth/cosmos-sdk/x/genutil"
+	genutiltypes "github.com/verzth/cosmos-sdk/x/genutil/types"
 )
 
 func TestExportCmd_ConsensusParams(t *testing.T) {

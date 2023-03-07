@@ -3,16 +3,16 @@ package testutil
 import (
 	"testing"
 
-	"cosmossdk.io/log"
 	cmtproto "github.com/cometbft/cometbft/proto/tendermint/types"
 	dbm "github.com/cosmos/cosmos-db"
 	"github.com/stretchr/testify/assert"
+	"github.com/verzth/cosmos-sdk/log"
 
-	"cosmossdk.io/store"
-	"cosmossdk.io/store/metrics"
-	storetypes "cosmossdk.io/store/types"
+	"github.com/verzth/cosmos-sdk/store"
+	"github.com/verzth/cosmos-sdk/store/metrics"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
 )
 
 // DefaultContext creates a sdk.Context with a fresh MemDB that can be used in tests.

@@ -5,16 +5,16 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/codec"
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	"github.com/cosmos/cosmos-sdk/x/gov/keeper"
-	"github.com/cosmos/cosmos-sdk/x/gov/types"
-	v1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1"
-	"github.com/cosmos/cosmos-sdk/x/simulation"
+	"github.com/verzth/cosmos-sdk/baseapp"
+	"github.com/verzth/cosmos-sdk/codec"
+	simtestutil "github.com/verzth/cosmos-sdk/testutil/sims"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	moduletestutil "github.com/verzth/cosmos-sdk/types/module/testutil"
+	simtypes "github.com/verzth/cosmos-sdk/types/simulation"
+	"github.com/verzth/cosmos-sdk/x/gov/keeper"
+	"github.com/verzth/cosmos-sdk/x/gov/types"
+	v1 "github.com/verzth/cosmos-sdk/x/gov/types/v1"
+	"github.com/verzth/cosmos-sdk/x/simulation"
 )
 
 var initialProposalID = uint64(100000000000000)

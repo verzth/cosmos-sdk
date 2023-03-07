@@ -3,9 +3,9 @@ package types
 import (
 	"fmt"
 
-	"cosmossdk.io/math"
+	"github.com/verzth/cosmos-sdk/math"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
 )
 
 // DefaultParams returns default distribution parameters

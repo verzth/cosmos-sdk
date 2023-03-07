@@ -3,11 +3,11 @@ package keeper
 import (
 	"context"
 
-	"cosmossdk.io/errors"
-	"cosmossdk.io/x/upgrade/types"
+	"github.com/verzth/cosmos-sdk/errors"
+	"github.com/verzth/cosmos-sdk/x/upgrade/types"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	gov "github.com/cosmos/cosmos-sdk/x/gov/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	gov "github.com/verzth/cosmos-sdk/x/gov/types"
 )
 
 type msgServer struct {

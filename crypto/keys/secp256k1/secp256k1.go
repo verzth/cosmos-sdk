@@ -8,14 +8,14 @@ import (
 	"io"
 	"math/big"
 
-	errorsmod "cosmossdk.io/errors"
 	"github.com/cometbft/cometbft/crypto"
 	secp256k1 "github.com/decred/dcrd/dcrec/secp256k1/v4"
+	errorsmod "github.com/verzth/cosmos-sdk/errors"
 	"golang.org/x/crypto/ripemd160" //nolint: staticcheck
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	"github.com/cosmos/cosmos-sdk/types/errors"
+	"github.com/verzth/cosmos-sdk/codec"
+	cryptotypes "github.com/verzth/cosmos-sdk/crypto/types"
+	"github.com/verzth/cosmos-sdk/types/errors"
 )
 
 var (

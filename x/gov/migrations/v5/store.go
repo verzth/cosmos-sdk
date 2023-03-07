@@ -1,12 +1,12 @@
 package v5
 
 import (
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	v4 "github.com/cosmos/cosmos-sdk/x/gov/migrations/v4"
-	govv1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1"
+	"github.com/verzth/cosmos-sdk/codec"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	v4 "github.com/verzth/cosmos-sdk/x/gov/migrations/v4"
+	govv1 "github.com/verzth/cosmos-sdk/x/gov/types/v1"
 )
 
 // MigrateStore performs in-place store migrations from v4 (v0.47) to v5 (v0.48). The

@@ -4,9 +4,9 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/cosmos/cosmos-sdk/types/tx/signing"
+	"github.com/verzth/cosmos-sdk/types/tx/signing"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
 )
 
 // SignModeHandlerMap is SignModeHandler that aggregates multiple SignModeHandler's into

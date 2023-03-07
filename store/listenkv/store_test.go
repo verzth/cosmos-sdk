@@ -6,11 +6,11 @@ import (
 	"io"
 	"testing"
 
-	"cosmossdk.io/store/dbadapter"
-	"cosmossdk.io/store/internal/kv"
-	"cosmossdk.io/store/listenkv"
-	"cosmossdk.io/store/prefix"
-	"cosmossdk.io/store/types"
+	"github.com/verzth/cosmos-sdk/store/dbadapter"
+	"github.com/verzth/cosmos-sdk/store/internal/kv"
+	"github.com/verzth/cosmos-sdk/store/listenkv"
+	"github.com/verzth/cosmos-sdk/store/prefix"
+	"github.com/verzth/cosmos-sdk/store/types"
 
 	"github.com/stretchr/testify/require"
 

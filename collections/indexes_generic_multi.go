@@ -3,7 +3,7 @@ package collections
 import (
 	"context"
 
-	"cosmossdk.io/collections/codec"
+	"github.com/verzth/cosmos-sdk/collections/codec"
 )
 
 func NewIndexReference[ReferencingKey, ReferencedKey any](referencing ReferencingKey, referenced ReferencedKey) IndexReference[ReferencingKey, ReferencedKey] {

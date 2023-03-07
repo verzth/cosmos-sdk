@@ -4,15 +4,15 @@ import (
 	"fmt"
 	"time"
 
-	errorsmod "cosmossdk.io/errors"
-	"cosmossdk.io/log"
-	storetypes "cosmossdk.io/store/types"
-	"cosmossdk.io/x/feegrant"
+	errorsmod "github.com/verzth/cosmos-sdk/errors"
+	"github.com/verzth/cosmos-sdk/log"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
+	"github.com/verzth/cosmos-sdk/x/feegrant"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/x/auth/ante"
+	"github.com/verzth/cosmos-sdk/codec"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	sdkerrors "github.com/verzth/cosmos-sdk/types/errors"
+	"github.com/verzth/cosmos-sdk/x/auth/ante"
 )
 
 // Keeper manages state of all fee grants, as well as calculating approval.

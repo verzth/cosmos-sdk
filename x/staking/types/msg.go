@@ -1,14 +1,14 @@
 package types
 
 import (
-	errorsmod "cosmossdk.io/errors"
-	"cosmossdk.io/math"
+	errorsmod "github.com/verzth/cosmos-sdk/errors"
+	"github.com/verzth/cosmos-sdk/math"
 
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/x/auth/migrations/legacytx"
+	codectypes "github.com/verzth/cosmos-sdk/codec/types"
+	cryptotypes "github.com/verzth/cosmos-sdk/crypto/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	sdkerrors "github.com/verzth/cosmos-sdk/types/errors"
+	"github.com/verzth/cosmos-sdk/x/auth/migrations/legacytx"
 )
 
 var (

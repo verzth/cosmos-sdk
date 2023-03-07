@@ -5,23 +5,23 @@ import (
 	"fmt"
 	"time"
 
-	"cosmossdk.io/x/evidence"
-	"cosmossdk.io/x/evidence/exported"
-	"cosmossdk.io/x/evidence/keeper"
-	evidencetestutil "cosmossdk.io/x/evidence/testutil"
-	"cosmossdk.io/x/evidence/types"
 	cmtproto "github.com/cometbft/cometbft/proto/tendermint/types"
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/suite"
+	"github.com/verzth/cosmos-sdk/x/evidence"
+	"github.com/verzth/cosmos-sdk/x/evidence/exported"
+	"github.com/verzth/cosmos-sdk/x/evidence/keeper"
+	evidencetestutil "github.com/verzth/cosmos-sdk/x/evidence/testutil"
+	"github.com/verzth/cosmos-sdk/x/evidence/types"
 
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
+	"github.com/verzth/cosmos-sdk/baseapp"
+	"github.com/verzth/cosmos-sdk/crypto/keys/ed25519"
+	cryptotypes "github.com/verzth/cosmos-sdk/crypto/types"
+	"github.com/verzth/cosmos-sdk/testutil"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	moduletestutil "github.com/verzth/cosmos-sdk/types/module/testutil"
 )
 
 var (

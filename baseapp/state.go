@@ -1,9 +1,9 @@
 package baseapp
 
 import (
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
 )
 
 type state struct {

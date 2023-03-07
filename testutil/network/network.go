@@ -15,47 +15,47 @@ import (
 	"testing"
 	"time"
 
-	"cosmossdk.io/depinject"
-	"cosmossdk.io/log"
-	sdkmath "cosmossdk.io/math"
-	"cosmossdk.io/math/unsafe"
-	pruningtypes "cosmossdk.io/store/pruning/types"
 	"github.com/cometbft/cometbft/node"
 	cmtclient "github.com/cometbft/cometbft/rpc/client"
 	dbm "github.com/cosmos/cosmos-db"
 	"github.com/spf13/cobra"
+	"github.com/verzth/cosmos-sdk/depinject"
+	"github.com/verzth/cosmos-sdk/log"
+	sdkmath "github.com/verzth/cosmos-sdk/math"
+	"github.com/verzth/cosmos-sdk/math/unsafe"
+	pruningtypes "github.com/verzth/cosmos-sdk/store/pruning/types"
 	"golang.org/x/sync/errgroup"
 	"google.golang.org/grpc"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/grpc/cmtservice"
-	"github.com/cosmos/cosmos-sdk/client/tx"
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/crypto/hd"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	"github.com/cosmos/cosmos-sdk/runtime"
-	"github.com/cosmos/cosmos-sdk/server"
-	"github.com/cosmos/cosmos-sdk/server/api"
-	srvconfig "github.com/cosmos/cosmos-sdk/server/config"
-	servertypes "github.com/cosmos/cosmos-sdk/server/types"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	"github.com/cosmos/cosmos-sdk/testutil/configurator"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	_ "github.com/cosmos/cosmos-sdk/x/auth"           // import auth as a blank
-	_ "github.com/cosmos/cosmos-sdk/x/auth/tx/config" // import auth tx config as a blank
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	_ "github.com/cosmos/cosmos-sdk/x/bank" // import bank as a blank
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
-	_ "github.com/cosmos/cosmos-sdk/x/consensus" // import consensus as a blank
-	"github.com/cosmos/cosmos-sdk/x/genutil"
-	_ "github.com/cosmos/cosmos-sdk/x/params"  // import params as a blank
-	_ "github.com/cosmos/cosmos-sdk/x/staking" // import staking as a blank
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/verzth/cosmos-sdk/baseapp"
+	"github.com/verzth/cosmos-sdk/client"
+	"github.com/verzth/cosmos-sdk/client/grpc/cmtservice"
+	"github.com/verzth/cosmos-sdk/client/tx"
+	"github.com/verzth/cosmos-sdk/codec"
+	codectypes "github.com/verzth/cosmos-sdk/codec/types"
+	"github.com/verzth/cosmos-sdk/crypto/hd"
+	"github.com/verzth/cosmos-sdk/crypto/keyring"
+	cryptotypes "github.com/verzth/cosmos-sdk/crypto/types"
+	"github.com/verzth/cosmos-sdk/runtime"
+	"github.com/verzth/cosmos-sdk/server"
+	"github.com/verzth/cosmos-sdk/server/api"
+	srvconfig "github.com/verzth/cosmos-sdk/server/config"
+	servertypes "github.com/verzth/cosmos-sdk/server/types"
+	"github.com/verzth/cosmos-sdk/testutil"
+	"github.com/verzth/cosmos-sdk/testutil/configurator"
+	"github.com/verzth/cosmos-sdk/testutil/testdata"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	moduletestutil "github.com/verzth/cosmos-sdk/types/module/testutil"
+	_ "github.com/verzth/cosmos-sdk/x/auth"           // import auth as a blank
+	_ "github.com/verzth/cosmos-sdk/x/auth/tx/config" // import auth tx config as a blank
+	authtypes "github.com/verzth/cosmos-sdk/x/auth/types"
+	_ "github.com/verzth/cosmos-sdk/x/bank" // import bank as a blank
+	banktypes "github.com/verzth/cosmos-sdk/x/bank/types"
+	_ "github.com/verzth/cosmos-sdk/x/consensus" // import consensus as a blank
+	"github.com/verzth/cosmos-sdk/x/genutil"
+	_ "github.com/verzth/cosmos-sdk/x/params"  // import params as a blank
+	_ "github.com/verzth/cosmos-sdk/x/staking" // import staking as a blank
+	stakingtypes "github.com/verzth/cosmos-sdk/x/staking/types"
 )
 
 // package-wide network lock to only allow one test network at a time

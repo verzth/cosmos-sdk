@@ -4,17 +4,17 @@ import (
 	"fmt"
 	"math/rand"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	"github.com/cosmos/cosmos-sdk/x/auth/tx"
-	"github.com/cosmos/cosmos-sdk/x/distribution/keeper"
-	"github.com/cosmos/cosmos-sdk/x/distribution/types"
-	"github.com/cosmos/cosmos-sdk/x/simulation"
+	"github.com/verzth/cosmos-sdk/baseapp"
+	"github.com/verzth/cosmos-sdk/client"
+	"github.com/verzth/cosmos-sdk/codec"
+	codectypes "github.com/verzth/cosmos-sdk/codec/types"
+	"github.com/verzth/cosmos-sdk/testutil"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	simtypes "github.com/verzth/cosmos-sdk/types/simulation"
+	"github.com/verzth/cosmos-sdk/x/auth/tx"
+	"github.com/verzth/cosmos-sdk/x/distribution/keeper"
+	"github.com/verzth/cosmos-sdk/x/distribution/types"
+	"github.com/verzth/cosmos-sdk/x/simulation"
 )
 
 // Simulation operation weights constants

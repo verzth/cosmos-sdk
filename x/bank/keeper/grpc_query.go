@@ -3,16 +3,16 @@ package keeper
 import (
 	"context"
 
-	"cosmossdk.io/math"
 	gogotypes "github.com/cosmos/gogoproto/types"
+	"github.com/verzth/cosmos-sdk/math"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	"cosmossdk.io/store/prefix"
+	"github.com/verzth/cosmos-sdk/store/prefix"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/query"
-	"github.com/cosmos/cosmos-sdk/x/bank/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/types/query"
+	"github.com/verzth/cosmos-sdk/x/bank/types"
 )
 
 var _ types.QueryServer = BaseKeeper{}

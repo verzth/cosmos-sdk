@@ -3,11 +3,11 @@ package v2
 import (
 	"testing"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/address"
-	bank "github.com/cosmos/cosmos-sdk/x/bank/types"
 	"github.com/stretchr/testify/require"
+	"github.com/verzth/cosmos-sdk/crypto/keys/ed25519"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/types/address"
+	bank "github.com/verzth/cosmos-sdk/x/bank/types"
 )
 
 var (

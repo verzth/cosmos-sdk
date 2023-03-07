@@ -10,11 +10,11 @@ import (
 
 	dbm "github.com/cosmos/cosmos-db"
 
-	"cosmossdk.io/store/dbadapter"
-	"cosmossdk.io/store/internal/kv"
-	"cosmossdk.io/store/prefix"
-	"cosmossdk.io/store/tracekv"
-	"cosmossdk.io/store/types"
+	"github.com/verzth/cosmos-sdk/store/dbadapter"
+	"github.com/verzth/cosmos-sdk/store/internal/kv"
+	"github.com/verzth/cosmos-sdk/store/prefix"
+	"github.com/verzth/cosmos-sdk/store/tracekv"
+	"github.com/verzth/cosmos-sdk/store/types"
 )
 
 func bz(s string) []byte { return []byte(s) }

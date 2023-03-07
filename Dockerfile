@@ -15,7 +15,7 @@
 FROM --platform=$BUILDPLATFORM golang:1.20-bullseye AS build-env
 
 # Set working directory for the build
-WORKDIR /go/src/github.com/cosmos/cosmos-sdk
+WORKDIR /go/src/github.com/verzth/cosmos-sdk
 
 # optimization: if go.sum didn't change, docker will use cached image
 COPY go.mod go.sum ./
@@ -46,4 +46,4 @@ STOPSIGNAL SIGTERM
 WORKDIR /root
 
 # Copy over binaries from the build-env
-COPY --from=build-env /go/src/github.com/cosmos/cosmos-sdk/build/simd /usr/bin/simd
+COPY --from=build-env /go/src/github.com/verzth/cosmos-sdk/build/simd /usr/bin/simd

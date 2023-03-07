@@ -1,6 +1,6 @@
 package testdata
 
-import "cosmossdk.io/errors"
+import "github.com/verzth/cosmos-sdk/errors"
 
 var ErrTest = errors.Register("table_testdata", 2, "test")
 

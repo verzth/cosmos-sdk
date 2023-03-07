@@ -9,12 +9,12 @@ import (
 	cmttypes "github.com/cometbft/cometbft/types"
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	"github.com/cosmos/cosmos-sdk/x/gov"
-	"github.com/cosmos/cosmos-sdk/x/gov/client/utils"
-	v1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1"
+	"github.com/verzth/cosmos-sdk/client"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	moduletestutil "github.com/verzth/cosmos-sdk/types/module/testutil"
+	"github.com/verzth/cosmos-sdk/x/gov"
+	"github.com/verzth/cosmos-sdk/x/gov/client/utils"
+	v1 "github.com/verzth/cosmos-sdk/x/gov/types/v1"
 )
 
 type TxSearchMock struct {

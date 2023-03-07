@@ -7,20 +7,20 @@ import (
 	gwruntime "github.com/grpc-ecosystem/grpc-gateway/runtime"
 	"github.com/spf13/cobra"
 
-	"cosmossdk.io/depinject"
+	"github.com/verzth/cosmos-sdk/depinject"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/module"
+	"github.com/verzth/cosmos-sdk/client"
+	"github.com/verzth/cosmos-sdk/codec"
+	codectypes "github.com/verzth/cosmos-sdk/codec/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/types/module"
 
-	modulev1 "cosmossdk.io/api/cosmos/vesting/module/v1"
-	"cosmossdk.io/core/appmodule"
+	modulev1 "github.com/verzth/cosmos-sdk/api/cosmos/vesting/module/v1"
+	"github.com/verzth/cosmos-sdk/core/appmodule"
 
-	"github.com/cosmos/cosmos-sdk/x/auth/keeper"
-	"github.com/cosmos/cosmos-sdk/x/auth/vesting/client/cli"
-	"github.com/cosmos/cosmos-sdk/x/auth/vesting/types"
+	"github.com/verzth/cosmos-sdk/x/auth/keeper"
+	"github.com/verzth/cosmos-sdk/x/auth/vesting/client/cli"
+	"github.com/verzth/cosmos-sdk/x/auth/vesting/types"
 )
 
 var (

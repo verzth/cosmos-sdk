@@ -9,14 +9,14 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	errorsmod "cosmossdk.io/errors"
+	errorsmod "github.com/verzth/cosmos-sdk/errors"
 
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	"github.com/cosmos/cosmos-sdk/telemetry"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
-	"github.com/cosmos/cosmos-sdk/x/staking/types"
+	cryptotypes "github.com/verzth/cosmos-sdk/crypto/types"
+	"github.com/verzth/cosmos-sdk/telemetry"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	sdkerrors "github.com/verzth/cosmos-sdk/types/errors"
+	govtypes "github.com/verzth/cosmos-sdk/x/gov/types"
+	"github.com/verzth/cosmos-sdk/x/staking/types"
 )
 
 type msgServer struct {

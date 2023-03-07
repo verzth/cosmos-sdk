@@ -7,12 +7,12 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	"cosmossdk.io/store/prefix"
-	storetypes "cosmossdk.io/store/types"
+	"github.com/verzth/cosmos-sdk/store/prefix"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/query"
-	"github.com/cosmos/cosmos-sdk/x/staking/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/types/query"
+	"github.com/verzth/cosmos-sdk/x/staking/types"
 )
 
 // Querier is used as Keeper will have duplicate methods if used directly, and gRPC names take precedence over keeper

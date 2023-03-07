@@ -4,22 +4,22 @@ import (
 	"encoding/base64"
 	"fmt"
 
-	"github.com/cosmos/cosmos-sdk/testutil"
+	"github.com/verzth/cosmos-sdk/testutil"
 
 	"github.com/cosmos/gogoproto/proto"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
-	"github.com/cosmos/cosmos-sdk/testutil/network"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
-	"github.com/cosmos/cosmos-sdk/x/gov/client/cli"
-	govclitestutil "github.com/cosmos/cosmos-sdk/x/gov/client/testutil"
-	"github.com/cosmos/cosmos-sdk/x/gov/types"
-	v1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1"
-	"github.com/cosmos/cosmos-sdk/x/gov/types/v1beta1"
+	"github.com/verzth/cosmos-sdk/client/flags"
+	clitestutil "github.com/verzth/cosmos-sdk/testutil/cli"
+	"github.com/verzth/cosmos-sdk/testutil/network"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	authtypes "github.com/verzth/cosmos-sdk/x/auth/types"
+	banktypes "github.com/verzth/cosmos-sdk/x/bank/types"
+	"github.com/verzth/cosmos-sdk/x/gov/client/cli"
+	govclitestutil "github.com/verzth/cosmos-sdk/x/gov/client/testutil"
+	"github.com/verzth/cosmos-sdk/x/gov/types"
+	v1 "github.com/verzth/cosmos-sdk/x/gov/types/v1"
+	"github.com/verzth/cosmos-sdk/x/gov/types/v1beta1"
 )
 
 type E2ETestSuite struct {

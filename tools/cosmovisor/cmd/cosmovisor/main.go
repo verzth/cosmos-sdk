@@ -4,8 +4,8 @@ import (
 	"context"
 	"os"
 
-	"cosmossdk.io/log"
-	cverrors "cosmossdk.io/tools/cosmovisor/errors"
+	"github.com/verzth/cosmos-sdk/log"
+	cverrors "github.com/verzth/cosmos-sdk/tools/cosmovisor/errors"
 )
 
 func main() {

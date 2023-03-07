@@ -12,14 +12,14 @@ import (
 
 	"github.com/cosmos/gogoproto/jsonpb"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/tx"
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/types/tx/signing"
-	"github.com/cosmos/cosmos-sdk/x/auth/migrations/legacytx"
+	"github.com/verzth/cosmos-sdk/client"
+	"github.com/verzth/cosmos-sdk/client/tx"
+	"github.com/verzth/cosmos-sdk/codec"
+	"github.com/verzth/cosmos-sdk/crypto/keyring"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/types/errors"
+	"github.com/verzth/cosmos-sdk/types/tx/signing"
+	"github.com/verzth/cosmos-sdk/x/auth/migrations/legacytx"
 )
 
 // GasEstimateResponse defines a response definition for tx gas estimation.

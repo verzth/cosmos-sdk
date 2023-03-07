@@ -1,14 +1,14 @@
 package v1beta1
 
 import (
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/codec/legacy"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/msgservice"
-	authzcodec "github.com/cosmos/cosmos-sdk/x/authz/codec"
-	govcodec "github.com/cosmos/cosmos-sdk/x/gov/codec"
-	groupcodec "github.com/cosmos/cosmos-sdk/x/group/codec"
+	"github.com/verzth/cosmos-sdk/codec"
+	"github.com/verzth/cosmos-sdk/codec/legacy"
+	codectypes "github.com/verzth/cosmos-sdk/codec/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/types/msgservice"
+	authzcodec "github.com/verzth/cosmos-sdk/x/authz/codec"
+	govcodec "github.com/verzth/cosmos-sdk/x/gov/codec"
+	groupcodec "github.com/verzth/cosmos-sdk/x/group/codec"
 )
 
 // RegisterLegacyAminoCodec registers all the necessary types and interfaces for the

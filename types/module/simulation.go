@@ -6,9 +6,9 @@ import (
 	"sort"
 	"time"
 
-	sdkmath "cosmossdk.io/math"
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/types/simulation"
+	"github.com/verzth/cosmos-sdk/codec"
+	sdkmath "github.com/verzth/cosmos-sdk/math"
+	"github.com/verzth/cosmos-sdk/types/simulation"
 )
 
 // AppModuleSimulation defines the standard functions that every module should expose

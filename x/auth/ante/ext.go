@@ -1,9 +1,9 @@
 package ante
 
 import (
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	codectypes "github.com/verzth/cosmos-sdk/codec/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	sdkerrors "github.com/verzth/cosmos-sdk/types/errors"
 )
 
 type HasExtensionOptionsTx interface {

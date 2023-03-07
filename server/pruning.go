@@ -6,9 +6,9 @@ import (
 
 	"github.com/spf13/cast"
 
-	pruningtypes "cosmossdk.io/store/pruning/types"
+	pruningtypes "github.com/verzth/cosmos-sdk/store/pruning/types"
 
-	"github.com/cosmos/cosmos-sdk/server/types"
+	"github.com/verzth/cosmos-sdk/server/types"
 )
 
 // GetPruningOptionsFromFlags parses command flags and returns the correct

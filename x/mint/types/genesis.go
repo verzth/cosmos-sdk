@@ -1,8 +1,8 @@
 package types
 
 import (
-	"cosmossdk.io/math"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/math"
+	sdk "github.com/verzth/cosmos-sdk/types"
 )
 
 // InflationCalculationFn defines the function required to calculate inflation rate during

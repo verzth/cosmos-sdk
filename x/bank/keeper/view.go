@@ -3,17 +3,17 @@ package keeper
 import (
 	"fmt"
 
-	"cosmossdk.io/log"
-	"cosmossdk.io/math"
+	"github.com/verzth/cosmos-sdk/log"
+	"github.com/verzth/cosmos-sdk/math"
 
-	errorsmod "cosmossdk.io/errors"
-	"cosmossdk.io/store/prefix"
-	storetypes "cosmossdk.io/store/types"
+	errorsmod "github.com/verzth/cosmos-sdk/errors"
+	"github.com/verzth/cosmos-sdk/store/prefix"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/x/bank/types"
+	"github.com/verzth/cosmos-sdk/codec"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	sdkerrors "github.com/verzth/cosmos-sdk/types/errors"
+	"github.com/verzth/cosmos-sdk/x/bank/types"
 )
 
 var _ ViewKeeper = (*BaseViewKeeper)(nil)
@@ -148,7 +148,7 @@ func (k BaseViewKeeper) IterateAllBalances(ctx sdk.Context, cb func(sdk.AccAddre
 		if err != nil {
 			k.Logger(ctx).With("key", iterator.Key(), "err", err).Error("failed to get address from balances store")
 			// TODO: revisit, for now, panic here to keep same behavior as in 0.42
-			// ref: https://github.com/cosmos/cosmos-sdk/issues/7409
+			// ref: https://github.com/verzth/cosmos-sdk/issues/7409
 			panic(err)
 		}
 

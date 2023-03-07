@@ -7,21 +7,21 @@ import (
 	cmtproto "github.com/cometbft/cometbft/proto/tendermint/types"
 	"gotest.tools/v3/assert"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/slashing/testutil"
-	"github.com/cosmos/cosmos-sdk/x/staking"
+	"github.com/verzth/cosmos-sdk/baseapp"
+	simtestutil "github.com/verzth/cosmos-sdk/testutil/sims"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/x/slashing/testutil"
+	"github.com/verzth/cosmos-sdk/x/staking"
 
-	authkeeper "github.com/cosmos/cosmos-sdk/x/auth/keeper"
-	bankkeeper "github.com/cosmos/cosmos-sdk/x/bank/keeper"
-	slashingkeeper "github.com/cosmos/cosmos-sdk/x/slashing/keeper"
-	stakingkeeper "github.com/cosmos/cosmos-sdk/x/staking/keeper"
-	stakingtestutil "github.com/cosmos/cosmos-sdk/x/staking/testutil"
+	authkeeper "github.com/verzth/cosmos-sdk/x/auth/keeper"
+	bankkeeper "github.com/verzth/cosmos-sdk/x/bank/keeper"
+	slashingkeeper "github.com/verzth/cosmos-sdk/x/slashing/keeper"
+	stakingkeeper "github.com/verzth/cosmos-sdk/x/staking/keeper"
+	stakingtestutil "github.com/verzth/cosmos-sdk/x/staking/testutil"
 
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	slashingtypes "github.com/cosmos/cosmos-sdk/x/slashing/types"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	codectypes "github.com/verzth/cosmos-sdk/codec/types"
+	slashingtypes "github.com/verzth/cosmos-sdk/x/slashing/types"
+	stakingtypes "github.com/verzth/cosmos-sdk/x/staking/types"
 )
 
 // The default power validators are initialized to have within tests

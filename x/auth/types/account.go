@@ -9,10 +9,10 @@ import (
 
 	"github.com/cometbft/cometbft/crypto"
 
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/address"
+	codectypes "github.com/verzth/cosmos-sdk/codec/types"
+	cryptotypes "github.com/verzth/cosmos-sdk/crypto/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/types/address"
 )
 
 var (

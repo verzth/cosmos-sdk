@@ -4,7 +4,7 @@ package cosmos.tx.signing.v1beta1;
 import "cosmos/crypto/multisig/v1beta1/multisig.proto";
 import "google/protobuf/any.proto";
 
-option go_package = "github.com/cosmos/cosmos-sdk/types/tx/signing";
+option go_package = "github.com/verzth/cosmos-sdk/types/tx/signing";
 
 // SignMode represents a signing mode with its own security guarantees.
 //
@@ -27,7 +27,7 @@ enum SignMode {
   // human-readable textual representation on top of the binary representation
   // from SIGN_MODE_DIRECT. It is currently experimental, and should be used
   // for testing purposes only, until Textual is fully released. Please follow
-  // the tracking issue https://github.com/cosmos/cosmos-sdk/issues/11970.
+  // the tracking issue https://github.com/verzth/cosmos-sdk/issues/11970.
   SIGN_MODE_TEXTUAL = 2;
 
   // SIGN_MODE_DIRECT_AUX specifies a signing mode which uses

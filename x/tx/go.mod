@@ -1,11 +1,11 @@
-module cosmossdk.io/x/tx
+module github.com/verzth/cosmos-sdk/x/tx
 
 go 1.20
 
 require (
-	cosmossdk.io/api v0.3.1
-	cosmossdk.io/core v0.6.0
-	cosmossdk.io/math v1.0.0-beta.6
+	github.com/verzth/cosmos-sdk/api v0.3.1
+	github.com/verzth/cosmos-sdk/core v0.6.0
+	github.com/verzth/cosmos-sdk/math v1.0.0-beta.6
 	github.com/cosmos/cosmos-proto v1.0.0-beta.2
 	github.com/google/go-cmp v0.5.9
 	github.com/iancoleman/strcase v0.2.0

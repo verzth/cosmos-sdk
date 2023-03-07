@@ -3,22 +3,22 @@ package runtime
 import (
 	"fmt"
 
-	"cosmossdk.io/core/store"
+	"github.com/verzth/cosmos-sdk/core/store"
 
 	abci "github.com/cometbft/cometbft/abci/types"
 
-	runtimev1alpha1 "cosmossdk.io/api/cosmos/app/runtime/v1alpha1"
-	appv1alpha1 "cosmossdk.io/api/cosmos/app/v1alpha1"
-	"cosmossdk.io/core/appmodule"
-	"cosmossdk.io/depinject"
+	runtimev1alpha1 "github.com/verzth/cosmos-sdk/api/cosmos/app/runtime/v1alpha1"
+	appv1alpha1 "github.com/verzth/cosmos-sdk/api/cosmos/app/v1alpha1"
+	"github.com/verzth/cosmos-sdk/core/appmodule"
+	"github.com/verzth/cosmos-sdk/depinject"
 
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/std"
-	"github.com/cosmos/cosmos-sdk/types/module"
+	"github.com/verzth/cosmos-sdk/baseapp"
+	"github.com/verzth/cosmos-sdk/codec"
+	codectypes "github.com/verzth/cosmos-sdk/codec/types"
+	"github.com/verzth/cosmos-sdk/std"
+	"github.com/verzth/cosmos-sdk/types/module"
 )
 
 type appModule struct {

@@ -5,9 +5,9 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	v4 "github.com/cosmos/cosmos-sdk/x/bank/migrations/v4"
-	"github.com/cosmos/cosmos-sdk/x/bank/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	v4 "github.com/verzth/cosmos-sdk/x/bank/migrations/v4"
+	"github.com/verzth/cosmos-sdk/x/bank/types"
 )
 
 func TestMigrateGenState(t *testing.T) {

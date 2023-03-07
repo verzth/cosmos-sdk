@@ -8,10 +8,10 @@ import (
 	abci "github.com/cometbft/cometbft/abci/types"
 	gogotypes "github.com/cosmos/gogoproto/types"
 
-	"cosmossdk.io/math"
+	"github.com/verzth/cosmos-sdk/math"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/staking/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/x/staking/types"
 )
 
 // BlockValidatorUpdates calculates the ValidatorUpdates for the current block

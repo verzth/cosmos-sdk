@@ -9,23 +9,23 @@ import (
 	gwruntime "github.com/grpc-ecosystem/grpc-gateway/runtime"
 	"github.com/spf13/cobra"
 
-	modulev1 "cosmossdk.io/api/cosmos/group/module/v1"
-	"cosmossdk.io/core/appmodule"
-	"cosmossdk.io/depinject"
+	modulev1 "github.com/verzth/cosmos-sdk/api/cosmos/group/module/v1"
+	"github.com/verzth/cosmos-sdk/core/appmodule"
+	"github.com/verzth/cosmos-sdk/depinject"
 
-	store "cosmossdk.io/store/types"
+	store "github.com/verzth/cosmos-sdk/store/types"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	sdkclient "github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	cdctypes "github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	"github.com/cosmos/cosmos-sdk/x/group"
-	"github.com/cosmos/cosmos-sdk/x/group/client/cli"
-	"github.com/cosmos/cosmos-sdk/x/group/keeper"
-	"github.com/cosmos/cosmos-sdk/x/group/simulation"
+	"github.com/verzth/cosmos-sdk/baseapp"
+	sdkclient "github.com/verzth/cosmos-sdk/client"
+	"github.com/verzth/cosmos-sdk/codec"
+	cdctypes "github.com/verzth/cosmos-sdk/codec/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/types/module"
+	simtypes "github.com/verzth/cosmos-sdk/types/simulation"
+	"github.com/verzth/cosmos-sdk/x/group"
+	"github.com/verzth/cosmos-sdk/x/group/client/cli"
+	"github.com/verzth/cosmos-sdk/x/group/keeper"
+	"github.com/verzth/cosmos-sdk/x/group/simulation"
 )
 
 // ConsensusVersion defines the current x/group module consensus version.

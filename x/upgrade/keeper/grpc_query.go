@@ -3,11 +3,11 @@ package keeper
 import (
 	"context"
 
-	errorsmod "cosmossdk.io/errors"
-	"cosmossdk.io/x/upgrade/types"
+	errorsmod "github.com/verzth/cosmos-sdk/errors"
+	"github.com/verzth/cosmos-sdk/x/upgrade/types"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/errors"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/types/errors"
 )
 
 var _ types.QueryServer = Keeper{}

@@ -11,14 +11,14 @@ import (
 	"github.com/spf13/cobra"
 	"sigs.k8s.io/yaml"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	rpc "github.com/cosmos/cosmos-sdk/client/rpc"
-	cryptocodec "github.com/cosmos/cosmos-sdk/crypto/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/query"
-	"github.com/cosmos/cosmos-sdk/version"
-	auth "github.com/cosmos/cosmos-sdk/x/auth/client/cli"
+	"github.com/verzth/cosmos-sdk/client"
+	"github.com/verzth/cosmos-sdk/client/flags"
+	rpc "github.com/verzth/cosmos-sdk/client/rpc"
+	cryptocodec "github.com/verzth/cosmos-sdk/crypto/codec"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/types/query"
+	"github.com/verzth/cosmos-sdk/version"
+	auth "github.com/verzth/cosmos-sdk/x/auth/client/cli"
 )
 
 // ShowNodeIDCmd - ported from CometBFT, dump node ID to stdout

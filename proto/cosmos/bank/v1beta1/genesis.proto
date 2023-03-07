@@ -7,7 +7,7 @@ import "cosmos/bank/v1beta1/bank.proto";
 import "cosmos_proto/cosmos.proto";
 import "amino/amino.proto";
 
-option go_package = "github.com/cosmos/cosmos-sdk/x/bank/types";
+option go_package = "github.com/verzth/cosmos-sdk/x/bank/types";
 
 // GenesisState defines the bank module's genesis state.
 message GenesisState {
@@ -21,7 +21,7 @@ message GenesisState {
   // balances. Otherwise, it will be used to validate that the sum of the balances equals this amount.
   repeated cosmos.base.v1beta1.Coin supply = 3 [
     (amino.encoding)         = "legacy_coins",
-    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins",
+    (gogoproto.castrepeated) = "github.com/verzth/cosmos-sdk/types.Coins",
     (gogoproto.nullable)     = false,
     (amino.dont_omitempty)   = true
   ];
@@ -47,7 +47,7 @@ message Balance {
   // coins defines the different coins this balance holds.
   repeated cosmos.base.v1beta1.Coin coins = 2 [
     (amino.encoding)         = "legacy_coins",
-    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins",
+    (gogoproto.castrepeated) = "github.com/verzth/cosmos-sdk/types.Coins",
     (gogoproto.nullable)     = false,
     (amino.dont_omitempty)   = true
   ];

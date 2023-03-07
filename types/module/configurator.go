@@ -3,24 +3,24 @@ package module
 import (
 	"fmt"
 
-	cosmosmsg "cosmossdk.io/api/cosmos/msg/v1"
-	errorsmod "cosmossdk.io/errors"
 	"github.com/cosmos/gogoproto/grpc"
 	"github.com/cosmos/gogoproto/proto"
+	cosmosmsg "github.com/verzth/cosmos-sdk/api/cosmos/msg/v1"
+	errorsmod "github.com/verzth/cosmos-sdk/errors"
 	googlegrpc "google.golang.org/grpc"
 	protobuf "google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/reflect/protoreflect"
 	"google.golang.org/protobuf/reflect/protoregistry"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	"github.com/verzth/cosmos-sdk/codec"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	sdkerrors "github.com/verzth/cosmos-sdk/types/errors"
 )
 
 // Configurator provides the hooks to allow modules to configure and register
 // their services in the RegisterServices method. It is designed to eventually
 // support module object capabilities isolation as described in
-// https://github.com/cosmos/cosmos-sdk/issues/7093
+// https://github.com/verzth/cosmos-sdk/issues/7093
 type Configurator interface {
 	grpc.Server
 

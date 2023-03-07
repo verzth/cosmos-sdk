@@ -3,10 +3,10 @@ package types
 import (
 	"testing"
 
-	"cosmossdk.io/math"
 	"github.com/stretchr/testify/require"
+	"github.com/verzth/cosmos-sdk/math"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
 )
 
 func Test_validateAuxFuncs(t *testing.T) {

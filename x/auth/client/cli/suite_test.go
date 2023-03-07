@@ -8,33 +8,33 @@ import (
 	"strings"
 	"testing"
 
-	"cosmossdk.io/math"
 	abci "github.com/cometbft/cometbft/abci/types"
 	rpcclientmock "github.com/cometbft/cometbft/rpc/client/mock"
 	"github.com/stretchr/testify/suite"
+	"github.com/verzth/cosmos-sdk/math"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/crypto/hd"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	kmultisig "github.com/cosmos/cosmos-sdk/crypto/keys/multisig"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	testutilmod "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	"github.com/cosmos/cosmos-sdk/types/tx"
-	"github.com/cosmos/cosmos-sdk/x/auth"
-	authcli "github.com/cosmos/cosmos-sdk/x/auth/client/cli"
-	authtestutil "github.com/cosmos/cosmos-sdk/x/auth/client/testutil"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	"github.com/cosmos/cosmos-sdk/x/bank"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
-	"github.com/cosmos/cosmos-sdk/x/genutil/client/cli"
-	"github.com/cosmos/cosmos-sdk/x/gov"
-	govtestutil "github.com/cosmos/cosmos-sdk/x/gov/client/testutil"
-	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types/v1beta1"
+	"github.com/verzth/cosmos-sdk/client"
+	"github.com/verzth/cosmos-sdk/client/flags"
+	"github.com/verzth/cosmos-sdk/crypto/hd"
+	"github.com/verzth/cosmos-sdk/crypto/keyring"
+	kmultisig "github.com/verzth/cosmos-sdk/crypto/keys/multisig"
+	cryptotypes "github.com/verzth/cosmos-sdk/crypto/types"
+	"github.com/verzth/cosmos-sdk/testutil"
+	clitestutil "github.com/verzth/cosmos-sdk/testutil/cli"
+	"github.com/verzth/cosmos-sdk/testutil/testdata"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	testutilmod "github.com/verzth/cosmos-sdk/types/module/testutil"
+	"github.com/verzth/cosmos-sdk/types/tx"
+	"github.com/verzth/cosmos-sdk/x/auth"
+	authcli "github.com/verzth/cosmos-sdk/x/auth/client/cli"
+	authtestutil "github.com/verzth/cosmos-sdk/x/auth/client/testutil"
+	authtypes "github.com/verzth/cosmos-sdk/x/auth/types"
+	"github.com/verzth/cosmos-sdk/x/bank"
+	banktypes "github.com/verzth/cosmos-sdk/x/bank/types"
+	"github.com/verzth/cosmos-sdk/x/genutil/client/cli"
+	"github.com/verzth/cosmos-sdk/x/gov"
+	govtestutil "github.com/verzth/cosmos-sdk/x/gov/client/testutil"
+	govtypes "github.com/verzth/cosmos-sdk/x/gov/types/v1beta1"
 )
 
 type CLITestSuite struct {
@@ -845,7 +845,7 @@ func (s *CLITestSuite) TestQueryParamsCmd() {
 
 // TestTxWithoutPublicKey makes sure sending a proto tx message without the
 // public key doesn't cause any error in the RPC layer (broadcast).
-// See https://github.com/cosmos/cosmos-sdk/issues/7585 for more details.
+// See https://github.com/verzth/cosmos-sdk/issues/7585 for more details.
 func (s *CLITestSuite) TestTxWithoutPublicKey() {
 	txCfg := s.clientCtx.TxConfig
 

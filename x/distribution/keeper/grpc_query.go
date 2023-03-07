@@ -6,14 +6,14 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	"cosmossdk.io/store/prefix"
+	"github.com/verzth/cosmos-sdk/store/prefix"
 
-	"cosmossdk.io/errors"
+	"github.com/verzth/cosmos-sdk/errors"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/query"
-	"github.com/cosmos/cosmos-sdk/x/distribution/types"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/types/query"
+	"github.com/verzth/cosmos-sdk/x/distribution/types"
+	stakingtypes "github.com/verzth/cosmos-sdk/x/staking/types"
 )
 
 var _ types.QueryServer = Querier{}

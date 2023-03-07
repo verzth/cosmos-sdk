@@ -6,11 +6,11 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/cosmos/cosmos-sdk/client"
+	"github.com/verzth/cosmos-sdk/client"
 
 	cmt "github.com/cometbft/cometbft/proto/tendermint/types"
 	coretypes "github.com/cometbft/cometbft/rpc/core/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
 )
 
 // GetChainHeight returns the current blockchain height.

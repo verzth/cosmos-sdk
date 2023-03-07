@@ -7,19 +7,19 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"cosmossdk.io/depinject"
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	cryptocodec "github.com/cosmos/cosmos-sdk/crypto/codec"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authclient "github.com/cosmos/cosmos-sdk/x/auth/client"
-	"github.com/cosmos/cosmos-sdk/x/auth/migrations/legacytx"
-	authtestutil "github.com/cosmos/cosmos-sdk/x/auth/testutil"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
+	"github.com/verzth/cosmos-sdk/client"
+	"github.com/verzth/cosmos-sdk/codec"
+	codectypes "github.com/verzth/cosmos-sdk/codec/types"
+	cryptocodec "github.com/verzth/cosmos-sdk/crypto/codec"
+	"github.com/verzth/cosmos-sdk/crypto/keys/ed25519"
+	"github.com/verzth/cosmos-sdk/depinject"
+	"github.com/verzth/cosmos-sdk/testutil"
+	"github.com/verzth/cosmos-sdk/testutil/testdata"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	authclient "github.com/verzth/cosmos-sdk/x/auth/client"
+	"github.com/verzth/cosmos-sdk/x/auth/migrations/legacytx"
+	authtestutil "github.com/verzth/cosmos-sdk/x/auth/testutil"
+	authtypes "github.com/verzth/cosmos-sdk/x/auth/types"
 )
 
 var (

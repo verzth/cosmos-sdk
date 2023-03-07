@@ -11,12 +11,12 @@ import (
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/suite"
 
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	"github.com/cosmos/cosmos-sdk/testutil/mock"
-	"github.com/cosmos/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/crypto/keys/secp256k1"
+	"github.com/verzth/cosmos-sdk/testutil"
+	"github.com/verzth/cosmos-sdk/testutil/mock"
+	"github.com/verzth/cosmos-sdk/types"
 )
 
 type contextTestSuite struct {

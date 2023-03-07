@@ -8,14 +8,14 @@ import (
 	"github.com/cometbft/cometbft/libs/cli"
 	"github.com/spf13/viper"
 
-	"cosmossdk.io/log"
+	"github.com/verzth/cosmos-sdk/log"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/server"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	genutilcli "github.com/cosmos/cosmos-sdk/x/genutil/client/cli"
+	"github.com/verzth/cosmos-sdk/client"
+	"github.com/verzth/cosmos-sdk/codec"
+	"github.com/verzth/cosmos-sdk/server"
+	"github.com/verzth/cosmos-sdk/testutil"
+	"github.com/verzth/cosmos-sdk/types/module"
+	genutilcli "github.com/verzth/cosmos-sdk/x/genutil/client/cli"
 )
 
 func ExecInitCmd(testMbm module.BasicManager, home string, cdc codec.Codec) error {

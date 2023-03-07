@@ -3,13 +3,13 @@ package evidence
 import (
 	"fmt"
 
-	"cosmossdk.io/x/evidence/exported"
-	"cosmossdk.io/x/evidence/keeper"
-	"cosmossdk.io/x/evidence/types"
 	"github.com/cosmos/gogoproto/proto"
+	"github.com/verzth/cosmos-sdk/x/evidence/exported"
+	"github.com/verzth/cosmos-sdk/x/evidence/keeper"
+	"github.com/verzth/cosmos-sdk/x/evidence/types"
 
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	codectypes "github.com/verzth/cosmos-sdk/codec/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
 )
 
 // InitGenesis initializes the evidence module's state from a provided genesis

@@ -1,7 +1,7 @@
 package server
 
 import (
-	"cosmossdk.io/log"
+	"github.com/verzth/cosmos-sdk/log"
 	cmtlog "github.com/cometbft/cometbft/libs/log"
 )
 

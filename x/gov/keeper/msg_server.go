@@ -5,14 +5,14 @@ import (
 	"fmt"
 	"strconv"
 
-	"cosmossdk.io/errors"
 	"github.com/armon/go-metrics"
+	"github.com/verzth/cosmos-sdk/errors"
 
-	"github.com/cosmos/cosmos-sdk/telemetry"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
-	v1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1"
-	"github.com/cosmos/cosmos-sdk/x/gov/types/v1beta1"
+	"github.com/verzth/cosmos-sdk/telemetry"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	govtypes "github.com/verzth/cosmos-sdk/x/gov/types"
+	v1 "github.com/verzth/cosmos-sdk/x/gov/types/v1"
+	"github.com/verzth/cosmos-sdk/x/gov/types/v1beta1"
 )
 
 type msgServer struct {
@@ -57,7 +57,7 @@ func (k msgServer) SubmitProposal(goCtx context.Context, msg *v1.MsgSubmitPropos
 		return nil, err
 	}
 
-	// ref: https://github.com/cosmos/cosmos-sdk/issues/9683
+	// ref: https://github.com/verzth/cosmos-sdk/issues/9683
 	ctx.GasMeter().ConsumeGas(
 		3*ctx.KVGasConfig().WriteCostPerByte*uint64(len(bytes)),
 		"submit proposal",

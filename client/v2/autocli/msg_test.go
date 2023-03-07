@@ -8,11 +8,11 @@ import (
 
 	"gotest.tools/v3/golden"
 
-	autocliv1 "cosmossdk.io/api/cosmos/autocli/v1"
 	"github.com/spf13/cobra"
+	autocliv1 "github.com/verzth/cosmos-sdk/api/cosmos/autocli/v1"
 	"gotest.tools/v3/assert"
 
-	"cosmossdk.io/client/v2/internal/testpb"
+	"github.com/verzth/cosmos-sdk/client/v2/internal/testpb"
 )
 
 var buildModuleMsgCommand = func(moduleName string, b *Builder) (*cobra.Command, error) {

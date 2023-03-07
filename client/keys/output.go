@@ -1,11 +1,11 @@
 package keys
 
 import (
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/codec"
+	codectypes "github.com/verzth/cosmos-sdk/codec/types"
+	"github.com/verzth/cosmos-sdk/crypto/keyring"
+	cryptotypes "github.com/verzth/cosmos-sdk/crypto/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
 )
 
 // Use protobuf interface marshaler rather then generic JSON

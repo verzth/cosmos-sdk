@@ -6,18 +6,18 @@ import (
 	"testing"
 	"time"
 
-	"cosmossdk.io/log"
 	abci "github.com/cometbft/cometbft/abci/types"
 	dbm "github.com/cosmos/cosmos-db"
 	"github.com/stretchr/testify/require"
+	"github.com/verzth/cosmos-sdk/log"
 
-	"cosmossdk.io/store/cachemulti"
-	"cosmossdk.io/store/iavl"
-	sdkmaps "cosmossdk.io/store/internal/maps"
-	"cosmossdk.io/store/listenkv"
-	"cosmossdk.io/store/metrics"
-	pruningtypes "cosmossdk.io/store/pruning/types"
-	"cosmossdk.io/store/types"
+	"github.com/verzth/cosmos-sdk/store/cachemulti"
+	"github.com/verzth/cosmos-sdk/store/iavl"
+	sdkmaps "github.com/verzth/cosmos-sdk/store/internal/maps"
+	"github.com/verzth/cosmos-sdk/store/listenkv"
+	"github.com/verzth/cosmos-sdk/store/metrics"
+	pruningtypes "github.com/verzth/cosmos-sdk/store/pruning/types"
+	"github.com/verzth/cosmos-sdk/store/types"
 )
 
 func TestStoreType(t *testing.T) {

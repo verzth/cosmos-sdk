@@ -8,18 +8,18 @@ import (
 	"github.com/cosmos/gogoproto/proto"
 	"github.com/stretchr/testify/suite"
 
-	"cosmossdk.io/math"
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/testutil"
+	"github.com/verzth/cosmos-sdk/client"
+	"github.com/verzth/cosmos-sdk/math"
+	"github.com/verzth/cosmos-sdk/testutil"
 
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
-	"github.com/cosmos/cosmos-sdk/testutil/network"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/types/query"
-	"github.com/cosmos/cosmos-sdk/x/bank/client/cli"
-	"github.com/cosmos/cosmos-sdk/x/bank/types"
+	"github.com/verzth/cosmos-sdk/client/flags"
+	clitestutil "github.com/verzth/cosmos-sdk/testutil/cli"
+	"github.com/verzth/cosmos-sdk/testutil/network"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	sdkerrors "github.com/verzth/cosmos-sdk/types/errors"
+	"github.com/verzth/cosmos-sdk/types/query"
+	"github.com/verzth/cosmos-sdk/x/bank/client/cli"
+	"github.com/verzth/cosmos-sdk/x/bank/types"
 )
 
 type E2ETestSuite struct {

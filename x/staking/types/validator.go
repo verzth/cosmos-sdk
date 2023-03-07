@@ -7,17 +7,17 @@ import (
 	"strings"
 	"time"
 
-	"cosmossdk.io/errors"
-	"cosmossdk.io/math"
 	abci "github.com/cometbft/cometbft/abci/types"
 	cmtprotocrypto "github.com/cometbft/cometbft/proto/tendermint/crypto"
+	"github.com/verzth/cosmos-sdk/errors"
+	"github.com/verzth/cosmos-sdk/math"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	cryptocodec "github.com/cosmos/cosmos-sdk/crypto/codec"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	"github.com/verzth/cosmos-sdk/codec"
+	codectypes "github.com/verzth/cosmos-sdk/codec/types"
+	cryptocodec "github.com/verzth/cosmos-sdk/crypto/codec"
+	cryptotypes "github.com/verzth/cosmos-sdk/crypto/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	sdkerrors "github.com/verzth/cosmos-sdk/types/errors"
 )
 
 const (

@@ -11,14 +11,14 @@ import (
 	db "github.com/cosmos/cosmos-db"
 	"google.golang.org/grpc"
 
-	"cosmossdk.io/log"
-	storetypes "cosmossdk.io/store/types"
+	"github.com/verzth/cosmos-sdk/log"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	bam "github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	genutiltypes "github.com/cosmos/cosmos-sdk/x/genutil/types"
+	bam "github.com/verzth/cosmos-sdk/baseapp"
+	"github.com/verzth/cosmos-sdk/codec"
+	codectypes "github.com/verzth/cosmos-sdk/codec/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	genutiltypes "github.com/verzth/cosmos-sdk/x/genutil/types"
 )
 
 // NewApp creates a simple mock kvstore app for testing. It should work

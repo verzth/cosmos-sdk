@@ -1,10 +1,10 @@
 package keeper_test
 
 import (
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	"github.com/cosmos/cosmos-sdk/x/distribution/types"
+	simtestutil "github.com/verzth/cosmos-sdk/testutil/sims"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	authtypes "github.com/verzth/cosmos-sdk/x/auth/types"
+	"github.com/verzth/cosmos-sdk/x/distribution/types"
 )
 
 var (

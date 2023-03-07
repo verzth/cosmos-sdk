@@ -3,10 +3,10 @@ package keeper
 import (
 	"encoding/binary"
 
-	errorsmod "cosmossdk.io/errors"
+	errorsmod "github.com/verzth/cosmos-sdk/errors"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/staking/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/x/staking/types"
 )
 
 // IncrementUnbondingID increments and returns a unique ID for an unbonding operation

@@ -3,18 +3,18 @@ package keeper
 import (
 	"fmt"
 
-	"cosmossdk.io/log"
 	gogotypes "github.com/cosmos/gogoproto/types"
+	"github.com/verzth/cosmos-sdk/log"
 
-	errorsmod "cosmossdk.io/errors"
-	storetypes "cosmossdk.io/store/types"
+	errorsmod "github.com/verzth/cosmos-sdk/errors"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/address"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/x/auth/types"
+	"github.com/verzth/cosmos-sdk/codec"
+	cryptotypes "github.com/verzth/cosmos-sdk/crypto/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/types/address"
+	sdkerrors "github.com/verzth/cosmos-sdk/types/errors"
+	"github.com/verzth/cosmos-sdk/x/auth/types"
 )
 
 // AccountKeeperI is the interface contract that x/auth's keeper implements.

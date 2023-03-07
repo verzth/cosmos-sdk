@@ -6,12 +6,12 @@ import (
 
 	abci "github.com/cometbft/cometbft/abci/types"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	bankexported "github.com/cosmos/cosmos-sdk/x/bank/exported"
-	"github.com/cosmos/cosmos-sdk/x/genutil/types"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/verzth/cosmos-sdk/client"
+	"github.com/verzth/cosmos-sdk/codec"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	bankexported "github.com/verzth/cosmos-sdk/x/bank/exported"
+	"github.com/verzth/cosmos-sdk/x/genutil/types"
+	stakingtypes "github.com/verzth/cosmos-sdk/x/staking/types"
 )
 
 // SetGenTxsInAppGenesisState - sets the genesis transactions in the app genesis state

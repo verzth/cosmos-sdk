@@ -9,21 +9,21 @@ import (
 	"os"
 	"path/filepath"
 
-	"cosmossdk.io/errors"
 	"github.com/spf13/cobra"
+	"github.com/verzth/cosmos-sdk/errors"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/client/tx"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	"github.com/cosmos/cosmos-sdk/server"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	"github.com/cosmos/cosmos-sdk/version"
-	authclient "github.com/cosmos/cosmos-sdk/x/auth/client"
-	"github.com/cosmos/cosmos-sdk/x/genutil"
-	"github.com/cosmos/cosmos-sdk/x/genutil/types"
-	"github.com/cosmos/cosmos-sdk/x/staking/client/cli"
+	"github.com/verzth/cosmos-sdk/client"
+	"github.com/verzth/cosmos-sdk/client/flags"
+	"github.com/verzth/cosmos-sdk/client/tx"
+	"github.com/verzth/cosmos-sdk/crypto/keyring"
+	"github.com/verzth/cosmos-sdk/server"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/types/module"
+	"github.com/verzth/cosmos-sdk/version"
+	authclient "github.com/verzth/cosmos-sdk/x/auth/client"
+	"github.com/verzth/cosmos-sdk/x/genutil"
+	"github.com/verzth/cosmos-sdk/x/genutil/types"
+	"github.com/verzth/cosmos-sdk/x/staking/client/cli"
 )
 
 // GenTxCmd builds the application's gentx command.
@@ -142,13 +142,13 @@ $ %s gentx my-key-name 1000000stake --home=/path/to/home/dir --keyring-backend=o
 			// and `create-validator` commands:
 			// - `gentx` expects amount as an arg,
 			// - `create-validator` expects amount as a required flag.
-			// ref: https://github.com/cosmos/cosmos-sdk/issues/8251
+			// ref: https://github.com/verzth/cosmos-sdk/issues/8251
 			// Since gentx doesn't set the amount flag (which `create-validator`
 			// reads from), we copy the amount arg into the valCfg directly.
 			//
 			// Ideally, the `create-validator` command should take a validator
 			// config file instead of so many flags.
-			// ref: https://github.com/cosmos/cosmos-sdk/issues/8177
+			// ref: https://github.com/verzth/cosmos-sdk/issues/8177
 			createValCfg.Amount = amount
 
 			// create a 'create-validator' message

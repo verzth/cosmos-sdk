@@ -4,10 +4,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/codec/legacy"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
 	"github.com/stretchr/testify/require"
+	"github.com/verzth/cosmos-sdk/codec"
+	"github.com/verzth/cosmos-sdk/codec/legacy"
+	"github.com/verzth/cosmos-sdk/testutil/testdata"
 )
 
 func TestRegisterAminoMsg(t *testing.T) {

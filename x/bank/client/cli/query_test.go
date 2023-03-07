@@ -9,14 +9,14 @@ import (
 	abci "github.com/cometbft/cometbft/abci/types"
 	"github.com/cosmos/gogoproto/proto"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	svrcmd "github.com/cosmos/cosmos-sdk/server/cmd"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/bank/client/cli"
-	"github.com/cosmos/cosmos-sdk/x/bank/types"
+	"github.com/verzth/cosmos-sdk/client"
+	"github.com/verzth/cosmos-sdk/client/flags"
+	svrcmd "github.com/verzth/cosmos-sdk/server/cmd"
+	"github.com/verzth/cosmos-sdk/testutil"
+	clitestutil "github.com/verzth/cosmos-sdk/testutil/cli"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/x/bank/client/cli"
+	"github.com/verzth/cosmos-sdk/x/bank/types"
 )
 
 func (s *CLITestSuite) TestGetBalancesCmd() {

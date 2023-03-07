@@ -7,14 +7,14 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"cosmossdk.io/math"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	"github.com/cosmos/cosmos-sdk/x/mint"
-	"github.com/cosmos/cosmos-sdk/x/mint/simulation"
-	"github.com/cosmos/cosmos-sdk/x/mint/types"
+	"github.com/verzth/cosmos-sdk/math"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/types/module"
+	moduletestutil "github.com/verzth/cosmos-sdk/types/module/testutil"
+	simtypes "github.com/verzth/cosmos-sdk/types/simulation"
+	"github.com/verzth/cosmos-sdk/x/mint"
+	"github.com/verzth/cosmos-sdk/x/mint/simulation"
+	"github.com/verzth/cosmos-sdk/x/mint/types"
 )
 
 // TestRandomizedGenState tests the normal scenario of applying RandomizedGenState.

@@ -3,10 +3,10 @@ package baseapp
 import (
 	cmtproto "github.com/cometbft/cometbft/proto/tendermint/types"
 
-	errorsmod "cosmossdk.io/errors"
+	errorsmod "github.com/verzth/cosmos-sdk/errors"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	sdkerrors "github.com/verzth/cosmos-sdk/types/errors"
 )
 
 // SimCheck defines a CheckTx helper function that used in tests and simulations.

@@ -4,17 +4,17 @@ import (
 	"errors"
 	"math/rand"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	"github.com/cosmos/cosmos-sdk/x/auth/tx"
-	"github.com/cosmos/cosmos-sdk/x/simulation"
-	"github.com/cosmos/cosmos-sdk/x/slashing/keeper"
-	"github.com/cosmos/cosmos-sdk/x/slashing/types"
+	"github.com/verzth/cosmos-sdk/baseapp"
+	"github.com/verzth/cosmos-sdk/codec"
+	codectypes "github.com/verzth/cosmos-sdk/codec/types"
+	"github.com/verzth/cosmos-sdk/testutil"
+	simtestutil "github.com/verzth/cosmos-sdk/testutil/sims"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	simtypes "github.com/verzth/cosmos-sdk/types/simulation"
+	"github.com/verzth/cosmos-sdk/x/auth/tx"
+	"github.com/verzth/cosmos-sdk/x/simulation"
+	"github.com/verzth/cosmos-sdk/x/slashing/keeper"
+	"github.com/verzth/cosmos-sdk/x/slashing/types"
 )
 
 // Simulation operation weights constants

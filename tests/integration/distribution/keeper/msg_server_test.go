@@ -3,14 +3,14 @@ package keeper_test
 import (
 	"testing"
 
-	"cosmossdk.io/math"
+	"github.com/verzth/cosmos-sdk/math"
 	"gotest.tools/v3/assert"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/distribution/types"
-	minttypes "github.com/cosmos/cosmos-sdk/x/mint/types"
-	stakingtestutil "github.com/cosmos/cosmos-sdk/x/staking/testutil"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/x/distribution/types"
+	minttypes "github.com/verzth/cosmos-sdk/x/mint/types"
+	stakingtestutil "github.com/verzth/cosmos-sdk/x/staking/testutil"
+	stakingtypes "github.com/verzth/cosmos-sdk/x/staking/types"
 )
 
 func TestMsgUpdateParams(t *testing.T) {

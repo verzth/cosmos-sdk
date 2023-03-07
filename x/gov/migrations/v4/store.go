@@ -4,15 +4,15 @@ import (
 	"fmt"
 	"sort"
 
-	"cosmossdk.io/store/prefix"
-	storetypes "cosmossdk.io/store/types"
+	"github.com/verzth/cosmos-sdk/store/prefix"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/gov/exported"
-	v1 "github.com/cosmos/cosmos-sdk/x/gov/migrations/v1"
-	"github.com/cosmos/cosmos-sdk/x/gov/types"
-	govv1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1"
+	"github.com/verzth/cosmos-sdk/codec"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/x/gov/exported"
+	v1 "github.com/verzth/cosmos-sdk/x/gov/migrations/v1"
+	"github.com/verzth/cosmos-sdk/x/gov/types"
+	govv1 "github.com/verzth/cosmos-sdk/x/gov/types/v1"
 )
 
 func migrateParams(ctx sdk.Context, storeKey storetypes.StoreKey, legacySubspace exported.ParamSubspace, cdc codec.BinaryCodec) error {

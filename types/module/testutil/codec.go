@@ -1,12 +1,12 @@
 package testutil
 
 import (
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/std"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	"github.com/cosmos/cosmos-sdk/x/auth/tx"
+	"github.com/verzth/cosmos-sdk/client"
+	"github.com/verzth/cosmos-sdk/codec"
+	"github.com/verzth/cosmos-sdk/codec/types"
+	"github.com/verzth/cosmos-sdk/std"
+	"github.com/verzth/cosmos-sdk/types/module"
+	"github.com/verzth/cosmos-sdk/x/auth/tx"
 )
 
 // TestEncodingConfig defines an encoding configuration that is used for testing

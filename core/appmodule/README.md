@@ -26,7 +26,7 @@ import "cosmos/app/v1alpha1/module.proto";
 
 message Module {
   option (cosmos.app.v1alpha1.module) = {
-    go_import: "github.com/cosmos/cosmos-sdk/x/auth"
+    go_import: "github.com/verzth/cosmos-sdk/x/auth"
   };
   string bech32_prefix = 1;
   repeated ModuleAccountPermission module_account_permissions = 2;
@@ -35,7 +35,7 @@ message Module {
 
 ## 2. Register module depinject providers and invokers
 
-Once we have a module config object, we need to register depinject providers and invokers for the module using the `cosmossdk.io/core/appmodule` package.
+Once we have a module config object, we need to register depinject providers and invokers for the module using the `github.com/verzth/cosmos-sdk/core/appmodule` package.
 
 At the most basic level, we must define an `init` function in the package listed as the `go_import` in the module descriptor. This `init` function must call `appmodule.Register` with an empty instance of the config object and some options for initializing the module, ex:
 
@@ -201,7 +201,7 @@ satisfy this dependency graph which allows staking and slashing to depend on eac
 In order to test and debug the module configuration, we need to build an app config, generally defined in a YAML file.
 This configuration should be passed first to `appconfig.LoadYAML` to get an `depinject.Config` instance.Then the
 `depinject.Config` can be passed to `depinject.Inject` and we can try to resolve dependencies in the app config.
-Alternatively, the `depinject.Config` can be created via [pure Go code](https://github.com/cosmos/cosmos-sdk/blob/v0.47.0-rc1/simapp/app_config.go).
+Alternatively, the `depinject.Config` can be created via [pure Go code](https://github.com/verzth/cosmos-sdk/blob/v0.47.0-rc1/simapp/app_config.go).
 
 Ex:
 

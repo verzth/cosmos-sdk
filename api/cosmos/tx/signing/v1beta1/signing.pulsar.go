@@ -2,7 +2,7 @@
 package signingv1beta1
 
 import (
-	v1beta1 "cosmossdk.io/api/cosmos/crypto/multisig/v1beta1"
+	v1beta1 "github.com/verzth/cosmos-sdk/api/cosmos/crypto/multisig/v1beta1"
 	fmt "fmt"
 	runtime "github.com/cosmos/cosmos-proto/runtime"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
@@ -2725,7 +2725,7 @@ const (
 	// human-readable textual representation on top of the binary representation
 	// from SIGN_MODE_DIRECT. It is currently experimental, and should be used
 	// for testing purposes only, until Textual is fully released. Please follow
-	// the tracking issue https://github.com/cosmos/cosmos-sdk/issues/11970.
+	// the tracking issue https://github.com/verzth/cosmos-sdk/issues/11970.
 	SignMode_SIGN_MODE_TEXTUAL SignMode = 2
 	// SIGN_MODE_DIRECT_AUX specifies a signing mode which uses
 	// SignDocDirectAux. As opposed to SIGN_MODE_DIRECT, this sign mode does not

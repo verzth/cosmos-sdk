@@ -3,15 +3,15 @@ package legacytx
 import (
 	"fmt"
 
-	errorsmod "cosmossdk.io/errors"
+	errorsmod "github.com/verzth/cosmos-sdk/errors"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/types/tx"
-	"github.com/cosmos/cosmos-sdk/types/tx/signing"
-	authsigning "github.com/cosmos/cosmos-sdk/x/auth/signing"
+	"github.com/verzth/cosmos-sdk/client"
+	"github.com/verzth/cosmos-sdk/codec"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	sdkerrors "github.com/verzth/cosmos-sdk/types/errors"
+	"github.com/verzth/cosmos-sdk/types/tx"
+	"github.com/verzth/cosmos-sdk/types/tx/signing"
+	authsigning "github.com/verzth/cosmos-sdk/x/auth/signing"
 )
 
 // StdTxBuilder wraps StdTx to implement to the context.TxBuilder interface.

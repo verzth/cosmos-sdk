@@ -8,24 +8,24 @@ import (
 	gwruntime "github.com/grpc-ecosystem/grpc-gateway/runtime"
 	"github.com/spf13/cobra"
 
-	"cosmossdk.io/core/appmodule"
-	"cosmossdk.io/depinject"
-	"cosmossdk.io/errors"
-	store "cosmossdk.io/store/types"
+	"github.com/verzth/cosmos-sdk/core/appmodule"
+	"github.com/verzth/cosmos-sdk/depinject"
+	"github.com/verzth/cosmos-sdk/errors"
+	store "github.com/verzth/cosmos-sdk/store/types"
 
-	sdkclient "github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	cdctypes "github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
+	sdkclient "github.com/verzth/cosmos-sdk/client"
+	"github.com/verzth/cosmos-sdk/codec"
+	cdctypes "github.com/verzth/cosmos-sdk/codec/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/types/module"
+	simtypes "github.com/verzth/cosmos-sdk/types/simulation"
 
-	modulev1 "cosmossdk.io/api/cosmos/nft/module/v1"
+	modulev1 "github.com/verzth/cosmos-sdk/api/cosmos/nft/module/v1"
 
-	"cosmossdk.io/x/nft"
-	"cosmossdk.io/x/nft/client/cli"
-	"cosmossdk.io/x/nft/keeper"
-	"cosmossdk.io/x/nft/simulation"
+	"github.com/verzth/cosmos-sdk/x/nft"
+	"github.com/verzth/cosmos-sdk/x/nft/client/cli"
+	"github.com/verzth/cosmos-sdk/x/nft/keeper"
+	"github.com/verzth/cosmos-sdk/x/nft/simulation"
 )
 
 var (

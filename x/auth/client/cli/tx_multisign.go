@@ -9,20 +9,20 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 
-	errorsmod "cosmossdk.io/errors"
+	errorsmod "github.com/verzth/cosmos-sdk/errors"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/client/tx"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	kmultisig "github.com/cosmos/cosmos-sdk/crypto/keys/multisig"
-	"github.com/cosmos/cosmos-sdk/crypto/types/multisig"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	signingtypes "github.com/cosmos/cosmos-sdk/types/tx/signing"
-	"github.com/cosmos/cosmos-sdk/version"
-	authclient "github.com/cosmos/cosmos-sdk/x/auth/client"
-	"github.com/cosmos/cosmos-sdk/x/auth/migrations/legacytx"
-	"github.com/cosmos/cosmos-sdk/x/auth/signing"
+	"github.com/verzth/cosmos-sdk/client"
+	"github.com/verzth/cosmos-sdk/client/flags"
+	"github.com/verzth/cosmos-sdk/client/tx"
+	"github.com/verzth/cosmos-sdk/crypto/keyring"
+	kmultisig "github.com/verzth/cosmos-sdk/crypto/keys/multisig"
+	"github.com/verzth/cosmos-sdk/crypto/types/multisig"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	signingtypes "github.com/verzth/cosmos-sdk/types/tx/signing"
+	"github.com/verzth/cosmos-sdk/version"
+	authclient "github.com/verzth/cosmos-sdk/x/auth/client"
+	"github.com/verzth/cosmos-sdk/x/auth/migrations/legacytx"
+	"github.com/verzth/cosmos-sdk/x/auth/signing"
 )
 
 // BroadcastReq defines a tx broadcasting request.

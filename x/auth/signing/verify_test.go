@@ -5,22 +5,22 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	storetypes "cosmossdk.io/store/types"
 	cmtproto "github.com/cometbft/cometbft/proto/tendermint/types"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	kmultisig "github.com/cosmos/cosmos-sdk/crypto/keys/multisig"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	"github.com/cosmos/cosmos-sdk/crypto/types/multisig"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	"github.com/cosmos/cosmos-sdk/x/auth"
-	"github.com/cosmos/cosmos-sdk/x/auth/ante"
-	"github.com/cosmos/cosmos-sdk/x/auth/keeper"
-	"github.com/cosmos/cosmos-sdk/x/auth/migrations/legacytx"
-	"github.com/cosmos/cosmos-sdk/x/auth/signing"
-	"github.com/cosmos/cosmos-sdk/x/auth/types"
+	kmultisig "github.com/verzth/cosmos-sdk/crypto/keys/multisig"
+	cryptotypes "github.com/verzth/cosmos-sdk/crypto/types"
+	"github.com/verzth/cosmos-sdk/crypto/types/multisig"
+	"github.com/verzth/cosmos-sdk/testutil"
+	"github.com/verzth/cosmos-sdk/testutil/testdata"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	moduletestutil "github.com/verzth/cosmos-sdk/types/module/testutil"
+	"github.com/verzth/cosmos-sdk/x/auth"
+	"github.com/verzth/cosmos-sdk/x/auth/ante"
+	"github.com/verzth/cosmos-sdk/x/auth/keeper"
+	"github.com/verzth/cosmos-sdk/x/auth/migrations/legacytx"
+	"github.com/verzth/cosmos-sdk/x/auth/signing"
+	"github.com/verzth/cosmos-sdk/x/auth/types"
 )
 
 func TestVerifySignature(t *testing.T) {

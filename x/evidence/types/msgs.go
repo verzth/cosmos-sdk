@@ -3,14 +3,14 @@ package types
 import (
 	"fmt"
 
-	errorsmod "cosmossdk.io/errors"
-	"cosmossdk.io/x/evidence/exported"
 	"github.com/cosmos/gogoproto/proto"
+	errorsmod "github.com/verzth/cosmos-sdk/errors"
+	"github.com/verzth/cosmos-sdk/x/evidence/exported"
 
-	"github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/x/auth/migrations/legacytx"
+	"github.com/verzth/cosmos-sdk/codec/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	sdkerrors "github.com/verzth/cosmos-sdk/types/errors"
+	"github.com/verzth/cosmos-sdk/x/auth/migrations/legacytx"
 )
 
 var (

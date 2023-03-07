@@ -3,13 +3,13 @@ package keeper
 import (
 	"fmt"
 
-	"cosmossdk.io/errors"
-	storetypes "cosmossdk.io/store/types"
+	"github.com/verzth/cosmos-sdk/errors"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	disttypes "github.com/cosmos/cosmos-sdk/x/distribution/types"
-	"github.com/cosmos/cosmos-sdk/x/gov/types"
-	v1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	disttypes "github.com/verzth/cosmos-sdk/x/distribution/types"
+	"github.com/verzth/cosmos-sdk/x/gov/types"
+	v1 "github.com/verzth/cosmos-sdk/x/gov/types/v1"
 )
 
 // GetDeposit gets the deposit of a specific depositor on a specific proposal

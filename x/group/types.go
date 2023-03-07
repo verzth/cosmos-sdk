@@ -6,14 +6,14 @@ import (
 
 	proto "github.com/cosmos/gogoproto/proto"
 
-	errorsmod "cosmossdk.io/errors"
+	errorsmod "github.com/verzth/cosmos-sdk/errors"
 
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/x/group/errors"
-	"github.com/cosmos/cosmos-sdk/x/group/internal/math"
-	"github.com/cosmos/cosmos-sdk/x/group/internal/orm"
+	codectypes "github.com/verzth/cosmos-sdk/codec/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	sdkerrors "github.com/verzth/cosmos-sdk/types/errors"
+	"github.com/verzth/cosmos-sdk/x/group/errors"
+	"github.com/verzth/cosmos-sdk/x/group/internal/math"
+	"github.com/verzth/cosmos-sdk/x/group/internal/orm"
 )
 
 // DecisionPolicyResult is the result of whether a proposal passes or not a

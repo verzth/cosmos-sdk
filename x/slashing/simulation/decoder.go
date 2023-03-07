@@ -6,10 +6,10 @@ import (
 
 	gogotypes "github.com/cosmos/gogoproto/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	"github.com/cosmos/cosmos-sdk/types/kv"
-	"github.com/cosmos/cosmos-sdk/x/slashing/types"
+	"github.com/verzth/cosmos-sdk/codec"
+	cryptotypes "github.com/verzth/cosmos-sdk/crypto/types"
+	"github.com/verzth/cosmos-sdk/types/kv"
+	"github.com/verzth/cosmos-sdk/x/slashing/types"
 )
 
 // NewDecodeStore returns a decoder function closure that unmarshals the KVPair's

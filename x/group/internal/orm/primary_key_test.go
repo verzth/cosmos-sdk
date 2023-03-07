@@ -3,17 +3,17 @@ package orm
 import (
 	"testing"
 
-	errorsmod "cosmossdk.io/errors"
-	storetypes "cosmossdk.io/store/types"
+	errorsmod "github.com/verzth/cosmos-sdk/errors"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/x/group/errors"
+	"github.com/verzth/cosmos-sdk/codec"
+	"github.com/verzth/cosmos-sdk/codec/types"
+	"github.com/verzth/cosmos-sdk/x/group/errors"
 
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
+	"github.com/verzth/cosmos-sdk/testutil/testdata"
 )
 
 func TestPrimaryKeyTablePrefixScan(t *testing.T) {

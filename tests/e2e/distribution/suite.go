@@ -6,19 +6,19 @@ import (
 	"strings"
 	"time"
 
-	"cosmossdk.io/math"
-	"cosmossdk.io/simapp"
 	"github.com/cosmos/gogoproto/proto"
 	"github.com/stretchr/testify/suite"
+	"github.com/verzth/cosmos-sdk/math"
+	"github.com/verzth/cosmos-sdk/simapp"
 
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
-	"github.com/cosmos/cosmos-sdk/testutil/network"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/distribution/client/cli"
-	distrclitestutil "github.com/cosmos/cosmos-sdk/x/distribution/client/testutil"
-	distrtypes "github.com/cosmos/cosmos-sdk/x/distribution/types"
-	minttypes "github.com/cosmos/cosmos-sdk/x/mint/types"
+	"github.com/verzth/cosmos-sdk/client/flags"
+	clitestutil "github.com/verzth/cosmos-sdk/testutil/cli"
+	"github.com/verzth/cosmos-sdk/testutil/network"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/x/distribution/client/cli"
+	distrclitestutil "github.com/verzth/cosmos-sdk/x/distribution/client/testutil"
+	distrtypes "github.com/verzth/cosmos-sdk/x/distribution/types"
+	minttypes "github.com/verzth/cosmos-sdk/x/mint/types"
 )
 
 type E2ETestSuite struct {

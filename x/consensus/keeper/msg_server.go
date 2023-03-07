@@ -5,11 +5,11 @@ import (
 
 	cmttypes "github.com/cometbft/cometbft/types"
 
-	"cosmossdk.io/errors"
+	"github.com/verzth/cosmos-sdk/errors"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/consensus/types"
-	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/x/consensus/types"
+	govtypes "github.com/verzth/cosmos-sdk/x/gov/types"
 )
 
 type msgServer struct {

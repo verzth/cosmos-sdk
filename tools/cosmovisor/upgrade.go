@@ -8,8 +8,8 @@ import (
 
 	"github.com/rs/zerolog"
 
-	"cosmossdk.io/x/upgrade/plan"
-	upgradetypes "cosmossdk.io/x/upgrade/types"
+	"github.com/verzth/cosmos-sdk/x/upgrade/plan"
+	upgradetypes "github.com/verzth/cosmos-sdk/x/upgrade/types"
 )
 
 // UpgradeBinary will be called after the log message has been parsed and the process has terminated.

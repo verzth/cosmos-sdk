@@ -3,17 +3,17 @@ package testutil
 import (
 	"fmt"
 
-	"cosmossdk.io/math"
 	"github.com/cosmos/gogoproto/proto"
+	"github.com/verzth/cosmos-sdk/math"
 
-	"github.com/cosmos/cosmos-sdk/crypto/hd"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	grpctypes "github.com/cosmos/cosmos-sdk/types/grpc"
-	"github.com/cosmos/cosmos-sdk/types/query"
-	"github.com/cosmos/cosmos-sdk/x/staking/client/cli"
-	"github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/verzth/cosmos-sdk/crypto/hd"
+	"github.com/verzth/cosmos-sdk/crypto/keyring"
+	"github.com/verzth/cosmos-sdk/testutil"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	grpctypes "github.com/verzth/cosmos-sdk/types/grpc"
+	"github.com/verzth/cosmos-sdk/types/query"
+	"github.com/verzth/cosmos-sdk/x/staking/client/cli"
+	"github.com/verzth/cosmos-sdk/x/staking/types"
 )
 
 func (s *E2ETestSuite) TestGRPCQueryValidatorsHandler() {

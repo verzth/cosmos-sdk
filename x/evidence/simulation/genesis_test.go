@@ -5,15 +5,15 @@ import (
 	"math/rand"
 	"testing"
 
-	sdkmath "cosmossdk.io/math"
-	"cosmossdk.io/x/evidence/simulation"
-	"cosmossdk.io/x/evidence/types"
 	"github.com/stretchr/testify/require"
+	sdkmath "github.com/verzth/cosmos-sdk/math"
+	"github.com/verzth/cosmos-sdk/x/evidence/simulation"
+	"github.com/verzth/cosmos-sdk/x/evidence/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
+	"github.com/verzth/cosmos-sdk/codec"
+	codectypes "github.com/verzth/cosmos-sdk/codec/types"
+	"github.com/verzth/cosmos-sdk/types/module"
+	simtypes "github.com/verzth/cosmos-sdk/types/simulation"
 )
 
 // TestRandomizedGenState tests the normal scenario of applying RandomizedGenState.

@@ -3,10 +3,10 @@ package keeper
 import (
 	"fmt"
 
-	"cosmossdk.io/x/evidence/types"
+	"github.com/verzth/cosmos-sdk/x/evidence/types"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	stakingtypes "github.com/verzth/cosmos-sdk/x/staking/types"
 )
 
 // HandleEquivocationEvidence implements an equivocation evidence handler. Assuming the

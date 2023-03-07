@@ -6,16 +6,16 @@ import (
 	cmtproto "github.com/cometbft/cometbft/proto/tendermint/types"
 	"github.com/stretchr/testify/suite"
 
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	consensusparamkeeper "github.com/cosmos/cosmos-sdk/x/consensus/keeper"
-	consensusparamtypes "github.com/cosmos/cosmos-sdk/x/consensus/types"
-	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
+	"github.com/verzth/cosmos-sdk/baseapp"
+	"github.com/verzth/cosmos-sdk/testutil"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	moduletestutil "github.com/verzth/cosmos-sdk/types/module/testutil"
+	authtypes "github.com/verzth/cosmos-sdk/x/auth/types"
+	consensusparamkeeper "github.com/verzth/cosmos-sdk/x/consensus/keeper"
+	consensusparamtypes "github.com/verzth/cosmos-sdk/x/consensus/types"
+	govtypes "github.com/verzth/cosmos-sdk/x/gov/types"
 )
 
 type KeeperTestSuite struct {

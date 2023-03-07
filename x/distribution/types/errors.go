@@ -1,6 +1,6 @@
 package types
 
-import "cosmossdk.io/errors"
+import "github.com/verzth/cosmos-sdk/errors"
 
 // x/distribution module sentinel errors
 var (

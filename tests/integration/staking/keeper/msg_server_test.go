@@ -7,14 +7,14 @@ import (
 	cmtproto "github.com/cometbft/cometbft/proto/tendermint/types"
 	"gotest.tools/v3/assert"
 
-	"github.com/cosmos/cosmos-sdk/testutil/configurator"
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authkeeper "github.com/cosmos/cosmos-sdk/x/auth/keeper"
-	bankkeeper "github.com/cosmos/cosmos-sdk/x/bank/keeper"
-	"github.com/cosmos/cosmos-sdk/x/bank/testutil"
-	"github.com/cosmos/cosmos-sdk/x/staking/keeper"
-	"github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/verzth/cosmos-sdk/testutil/configurator"
+	simtestutil "github.com/verzth/cosmos-sdk/testutil/sims"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	authkeeper "github.com/verzth/cosmos-sdk/x/auth/keeper"
+	bankkeeper "github.com/verzth/cosmos-sdk/x/bank/keeper"
+	"github.com/verzth/cosmos-sdk/x/bank/testutil"
+	"github.com/verzth/cosmos-sdk/x/staking/keeper"
+	"github.com/verzth/cosmos-sdk/x/staking/types"
 )
 
 func TestCancelUnbondingDelegation(t *testing.T) {

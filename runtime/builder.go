@@ -4,12 +4,12 @@ import (
 	"encoding/json"
 	"io"
 
-	"cosmossdk.io/log"
 	dbm "github.com/cosmos/cosmos-db"
+	"github.com/verzth/cosmos-sdk/log"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	"github.com/cosmos/cosmos-sdk/version"
+	"github.com/verzth/cosmos-sdk/baseapp"
+	"github.com/verzth/cosmos-sdk/types/module"
+	"github.com/verzth/cosmos-sdk/version"
 )
 
 // AppBuilder is a type that is injected into a container by the runtime module

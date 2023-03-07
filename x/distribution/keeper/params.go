@@ -1,10 +1,10 @@
 package keeper
 
 import (
-	"cosmossdk.io/math"
+	"github.com/verzth/cosmos-sdk/math"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/distribution/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/x/distribution/types"
 )
 
 // GetParams returns the total set of distribution parameters.

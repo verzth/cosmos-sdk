@@ -4,7 +4,7 @@ import (
 	cmtproto "github.com/cometbft/cometbft/proto/tendermint/types"
 	cmttypes "github.com/cometbft/cometbft/types"
 
-	"github.com/cosmos/cosmos-sdk/x/consensus/types"
+	"github.com/verzth/cosmos-sdk/x/consensus/types"
 )
 
 func (s *KeeperTestSuite) TestGRPCQueryConsensusParams() {

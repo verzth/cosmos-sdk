@@ -3,15 +3,15 @@ package keeper
 import (
 	"fmt"
 
-	"cosmossdk.io/log"
+	"github.com/verzth/cosmos-sdk/log"
 
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/slashing/types"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/verzth/cosmos-sdk/codec"
+	cryptotypes "github.com/verzth/cosmos-sdk/crypto/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/x/slashing/types"
+	stakingtypes "github.com/verzth/cosmos-sdk/x/staking/types"
 )
 
 // Keeper of the slashing store

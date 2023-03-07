@@ -3,12 +3,12 @@ package keeper
 import (
 	"context"
 
-	"cosmossdk.io/store/prefix"
-	"cosmossdk.io/x/nft"
+	"github.com/verzth/cosmos-sdk/store/prefix"
+	"github.com/verzth/cosmos-sdk/x/nft"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/types/query"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	sdkerrors "github.com/verzth/cosmos-sdk/types/errors"
+	"github.com/verzth/cosmos-sdk/types/query"
 )
 
 var _ nft.QueryServer = Keeper{}

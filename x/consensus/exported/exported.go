@@ -3,7 +3,7 @@ package exported
 import (
 	cmtproto "github.com/cometbft/cometbft/proto/tendermint/types"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
 )
 
 type (

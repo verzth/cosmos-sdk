@@ -4,16 +4,16 @@ import (
 	"testing"
 	"time"
 
-	"cosmossdk.io/depinject"
-	storetypes "cosmossdk.io/store/types"
-	"cosmossdk.io/x/feegrant"
-	v2 "cosmossdk.io/x/feegrant/migrations/v2"
-	feegranttestutil "cosmossdk.io/x/feegrant/testutil"
+	"github.com/verzth/cosmos-sdk/depinject"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
+	"github.com/verzth/cosmos-sdk/x/feegrant"
+	v2 "github.com/verzth/cosmos-sdk/x/feegrant/migrations/v2"
+	feegranttestutil "github.com/verzth/cosmos-sdk/x/feegrant/testutil"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/codec"
+	"github.com/verzth/cosmos-sdk/crypto/keys/ed25519"
+	"github.com/verzth/cosmos-sdk/testutil"
+	sdk "github.com/verzth/cosmos-sdk/types"
 
 	"github.com/stretchr/testify/require"
 )

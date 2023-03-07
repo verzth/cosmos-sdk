@@ -4,13 +4,13 @@ import (
 	"context"
 	"time"
 
-	"cosmossdk.io/log"
 	abci "github.com/cometbft/cometbft/abci/types"
 	cmtproto "github.com/cometbft/cometbft/proto/tendermint/types"
 	"github.com/cosmos/gogoproto/proto"
+	"github.com/verzth/cosmos-sdk/log"
 
-	"cosmossdk.io/store/gaskv"
-	storetypes "cosmossdk.io/store/types"
+	"github.com/verzth/cosmos-sdk/store/gaskv"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 )
 
 /*

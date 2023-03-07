@@ -5,9 +5,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/crypto/types"
+	"github.com/verzth/cosmos-sdk/crypto/types"
 
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
+	"github.com/verzth/cosmos-sdk/testutil/testdata"
 )
 
 func TestDecodeMultisignatures(t *testing.T) {

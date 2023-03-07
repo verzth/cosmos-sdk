@@ -1,12 +1,12 @@
 package testutil
 
 import (
-	"cosmossdk.io/math"
 	cmtcrypto "github.com/cometbft/cometbft/crypto"
 	cmttypes "github.com/cometbft/cometbft/types"
+	"github.com/verzth/cosmos-sdk/math"
 
-	cryptocodec "github.com/cosmos/cosmos-sdk/crypto/codec"
-	"github.com/cosmos/cosmos-sdk/x/staking/types"
+	cryptocodec "github.com/verzth/cosmos-sdk/crypto/codec"
+	"github.com/verzth/cosmos-sdk/x/staking/types"
 )
 
 // GetCmtConsPubKey gets the validator's public key as a cmtcrypto.PubKey.

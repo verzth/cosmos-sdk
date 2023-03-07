@@ -5,16 +5,16 @@ import (
 	"fmt"
 	"testing"
 
-	"cosmossdk.io/log"
 	abci "github.com/cometbft/cometbft/abci/types"
 	dbm "github.com/cosmos/cosmos-db"
 	"github.com/cosmos/iavl"
 	"github.com/stretchr/testify/require"
+	"github.com/verzth/cosmos-sdk/log"
 
-	"cosmossdk.io/store/cachekv"
-	"cosmossdk.io/store/internal/kv"
-	"cosmossdk.io/store/metrics"
-	"cosmossdk.io/store/types"
+	"github.com/verzth/cosmos-sdk/store/cachekv"
+	"github.com/verzth/cosmos-sdk/store/internal/kv"
+	"github.com/verzth/cosmos-sdk/store/metrics"
+	"github.com/verzth/cosmos-sdk/store/types"
 )
 
 var (

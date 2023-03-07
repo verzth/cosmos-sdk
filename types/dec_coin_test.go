@@ -4,10 +4,10 @@ import (
 	"strings"
 	"testing"
 
-	"cosmossdk.io/math"
 	"github.com/stretchr/testify/suite"
+	"github.com/verzth/cosmos-sdk/math"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
 )
 
 type decCoinTestSuite struct {

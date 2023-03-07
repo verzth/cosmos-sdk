@@ -9,13 +9,13 @@ import (
 	"github.com/cometbft/cometbft/crypto"
 	"golang.org/x/crypto/openpgp/armor" //nolint:staticcheck
 
-	errorsmod "cosmossdk.io/errors"
+	errorsmod "github.com/verzth/cosmos-sdk/errors"
 
-	"github.com/cosmos/cosmos-sdk/codec/legacy"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/bcrypt"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	"github.com/cosmos/cosmos-sdk/crypto/xsalsa20symmetric"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	"github.com/verzth/cosmos-sdk/codec/legacy"
+	"github.com/verzth/cosmos-sdk/crypto/keys/bcrypt"
+	cryptotypes "github.com/verzth/cosmos-sdk/crypto/types"
+	"github.com/verzth/cosmos-sdk/crypto/xsalsa20symmetric"
+	sdkerrors "github.com/verzth/cosmos-sdk/types/errors"
 )
 
 const (

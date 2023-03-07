@@ -3,11 +3,11 @@ package ante
 import (
 	"math"
 
-	errorsmod "cosmossdk.io/errors"
-	sdkmath "cosmossdk.io/math"
+	errorsmod "github.com/verzth/cosmos-sdk/errors"
+	sdkmath "github.com/verzth/cosmos-sdk/math"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	sdkerrors "github.com/verzth/cosmos-sdk/types/errors"
 )
 
 // checkTxFeeWithValidatorMinGasPrices implements the default fee logic, where the minimum price per

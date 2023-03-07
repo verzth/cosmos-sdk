@@ -3,11 +3,11 @@ package runtime
 import (
 	"context"
 
-	"cosmossdk.io/core/store"
+	"github.com/verzth/cosmos-sdk/core/store"
 
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
 )
 
 type kvStoreService struct {
@@ -35,7 +35,7 @@ func (t transientStoreService) OpenTransientStore(ctx context.Context) store.KVS
 }
 
 // CoreKVStore is a wrapper of Core/Store kvstore interface
-// Remove after https://github.com/cosmos/cosmos-sdk/issues/14714 is closed
+// Remove after https://github.com/verzth/cosmos-sdk/issues/14714 is closed
 type coreKVStore struct {
 	kvStore storetypes.KVStore
 }

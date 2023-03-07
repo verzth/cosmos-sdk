@@ -9,26 +9,26 @@ import (
 	gwruntime "github.com/grpc-ecosystem/grpc-gateway/runtime"
 	"github.com/spf13/cobra"
 
-	"cosmossdk.io/depinject"
+	"github.com/verzth/cosmos-sdk/depinject"
 
-	"cosmossdk.io/core/appmodule"
+	"github.com/verzth/cosmos-sdk/core/appmodule"
 
-	modulev1 "cosmossdk.io/api/cosmos/auth/module/v1"
+	modulev1 "github.com/verzth/cosmos-sdk/api/cosmos/auth/module/v1"
 
-	store "cosmossdk.io/store/types"
+	store "github.com/verzth/cosmos-sdk/store/types"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	"github.com/cosmos/cosmos-sdk/x/auth/client/cli"
-	"github.com/cosmos/cosmos-sdk/x/auth/exported"
-	"github.com/cosmos/cosmos-sdk/x/auth/keeper"
-	"github.com/cosmos/cosmos-sdk/x/auth/simulation"
-	"github.com/cosmos/cosmos-sdk/x/auth/types"
-	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
+	"github.com/verzth/cosmos-sdk/client"
+	"github.com/verzth/cosmos-sdk/codec"
+	codectypes "github.com/verzth/cosmos-sdk/codec/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/types/module"
+	simtypes "github.com/verzth/cosmos-sdk/types/simulation"
+	"github.com/verzth/cosmos-sdk/x/auth/client/cli"
+	"github.com/verzth/cosmos-sdk/x/auth/exported"
+	"github.com/verzth/cosmos-sdk/x/auth/keeper"
+	"github.com/verzth/cosmos-sdk/x/auth/simulation"
+	"github.com/verzth/cosmos-sdk/x/auth/types"
+	govtypes "github.com/verzth/cosmos-sdk/x/gov/types"
 )
 
 // ConsensusVersion defines the current x/auth module consensus version.

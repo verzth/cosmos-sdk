@@ -9,8 +9,8 @@ import (
 	cmtproto "github.com/cometbft/cometbft/proto/tendermint/types"
 	"github.com/stretchr/testify/suite"
 
-	"cosmossdk.io/simapp"
-	"github.com/cosmos/cosmos-sdk/testutil/network"
+	"github.com/verzth/cosmos-sdk/simapp"
+	"github.com/verzth/cosmos-sdk/testutil/network"
 )
 
 func TestE2ETestSuite(t *testing.T) {

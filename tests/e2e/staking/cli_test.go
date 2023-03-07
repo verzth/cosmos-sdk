@@ -6,9 +6,9 @@ package testutil
 import (
 	"testing"
 
-	"cosmossdk.io/simapp"
-	"github.com/cosmos/cosmos-sdk/testutil/network"
 	"github.com/stretchr/testify/suite"
+	"github.com/verzth/cosmos-sdk/simapp"
+	"github.com/verzth/cosmos-sdk/testutil/network"
 )
 
 func TestE2ETestSuite(t *testing.T) {

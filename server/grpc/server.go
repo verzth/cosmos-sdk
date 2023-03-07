@@ -5,17 +5,17 @@ import (
 	"fmt"
 	"net"
 
-	"cosmossdk.io/log"
+	"github.com/verzth/cosmos-sdk/log"
 	"google.golang.org/grpc"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/server/config"
-	"github.com/cosmos/cosmos-sdk/server/grpc/gogoreflection"
-	reflection "github.com/cosmos/cosmos-sdk/server/grpc/reflection/v2alpha1"
-	"github.com/cosmos/cosmos-sdk/server/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	_ "github.com/cosmos/cosmos-sdk/types/tx/amino" // Import amino.proto file for reflection
+	"github.com/verzth/cosmos-sdk/client"
+	"github.com/verzth/cosmos-sdk/codec"
+	"github.com/verzth/cosmos-sdk/server/config"
+	"github.com/verzth/cosmos-sdk/server/grpc/gogoreflection"
+	reflection "github.com/verzth/cosmos-sdk/server/grpc/reflection/v2alpha1"
+	"github.com/verzth/cosmos-sdk/server/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	_ "github.com/verzth/cosmos-sdk/types/tx/amino" // Import amino.proto file for reflection
 )
 
 // NewGRPCServer returns a correctly configured and initialized gRPC server.

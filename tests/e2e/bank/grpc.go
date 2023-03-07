@@ -5,13 +5,13 @@ import (
 
 	"github.com/cosmos/gogoproto/proto"
 
-	"cosmossdk.io/math"
+	"github.com/verzth/cosmos-sdk/math"
 
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	grpctypes "github.com/cosmos/cosmos-sdk/types/grpc"
-	"github.com/cosmos/cosmos-sdk/types/query"
-	"github.com/cosmos/cosmos-sdk/x/bank/types"
+	"github.com/verzth/cosmos-sdk/testutil"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	grpctypes "github.com/verzth/cosmos-sdk/types/grpc"
+	"github.com/verzth/cosmos-sdk/types/query"
+	"github.com/verzth/cosmos-sdk/x/bank/types"
 )
 
 func (s *E2ETestSuite) TestTotalSupplyGRPCHandler() {

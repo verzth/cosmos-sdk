@@ -4,11 +4,11 @@ import (
 	"errors"
 	"time"
 
-	"cosmossdk.io/math"
+	"github.com/verzth/cosmos-sdk/math"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	vestexported "github.com/cosmos/cosmos-sdk/x/auth/vesting/exported"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	authtypes "github.com/verzth/cosmos-sdk/x/auth/types"
+	vestexported "github.com/verzth/cosmos-sdk/x/auth/vesting/exported"
 )
 
 // Compile-time type assertions

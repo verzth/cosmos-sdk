@@ -1,6 +1,6 @@
 package feegrant
 
-import "cosmossdk.io/errors"
+import "github.com/verzth/cosmos-sdk/errors"
 
 // Codes for governance errors
 const (

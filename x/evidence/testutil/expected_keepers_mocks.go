@@ -8,9 +8,9 @@ import (
 	reflect "reflect"
 	time "time"
 
-	types "github.com/cosmos/cosmos-sdk/crypto/types"
-	types0 "github.com/cosmos/cosmos-sdk/types"
-	types1 "github.com/cosmos/cosmos-sdk/x/staking/types"
+	types "github.com/verzth/cosmos-sdk/crypto/types"
+	types0 "github.com/verzth/cosmos-sdk/types"
+	types1 "github.com/verzth/cosmos-sdk/x/staking/types"
 	gomock "github.com/golang/mock/gomock"
 )
 

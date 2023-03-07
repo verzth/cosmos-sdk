@@ -1,15 +1,15 @@
 package capability_test
 
 import (
-	storetypes "cosmossdk.io/store/types"
 	cmtproto "github.com/cometbft/cometbft/proto/tendermint/types"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
-	"github.com/cosmos/cosmos-sdk/x/capability"
-	"github.com/cosmos/cosmos-sdk/x/capability/keeper"
-	"github.com/cosmos/cosmos-sdk/x/capability/testutil"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	simtestutil "github.com/verzth/cosmos-sdk/testutil/sims"
+	banktypes "github.com/verzth/cosmos-sdk/x/bank/types"
+	"github.com/verzth/cosmos-sdk/x/capability"
+	"github.com/verzth/cosmos-sdk/x/capability/keeper"
+	"github.com/verzth/cosmos-sdk/x/capability/testutil"
+	stakingtypes "github.com/verzth/cosmos-sdk/x/staking/types"
 )
 
 func (suite *CapabilityTestSuite) TestGenesis() {

@@ -3,11 +3,11 @@ package keeper_test
 import (
 	"time"
 
-	"cosmossdk.io/x/feegrant"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/types"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 	"github.com/golang/mock/gomock"
+	codectypes "github.com/verzth/cosmos-sdk/codec/types"
+	"github.com/verzth/cosmos-sdk/types"
+	authtypes "github.com/verzth/cosmos-sdk/x/auth/types"
+	"github.com/verzth/cosmos-sdk/x/feegrant"
 )
 
 func (suite *KeeperTestSuite) TestGrantAllowance() {

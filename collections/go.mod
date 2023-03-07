@@ -1,17 +1,17 @@
-module cosmossdk.io/collections
+module github.com/verzth/cosmos-sdk/collections
 
 go 1.20
 
 require (
-	cosmossdk.io/core v0.6.0
+	github.com/verzth/cosmos-sdk/core v0.6.0
 	github.com/cosmos/cosmos-db v1.0.0-rc.1
 	github.com/stretchr/testify v1.8.2
 	pgregory.net/rapid v0.5.5
 )
 
 require (
-	cosmossdk.io/api v0.3.1 // indirect
-	cosmossdk.io/depinject v1.0.0-alpha.3 // indirect
+	github.com/verzth/cosmos-sdk/api v0.3.1 // indirect
+	github.com/verzth/cosmos-sdk/depinject v1.0.0-alpha.3 // indirect
 	github.com/DataDog/zstd v1.5.2 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/cespare/xxhash/v2 v2.2.0 // indirect

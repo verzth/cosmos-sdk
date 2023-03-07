@@ -5,9 +5,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
+	"github.com/verzth/cosmos-sdk/crypto/keys/ed25519"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	authtypes "github.com/verzth/cosmos-sdk/x/auth/types"
 )
 
 var (

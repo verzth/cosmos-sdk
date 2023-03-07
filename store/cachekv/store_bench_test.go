@@ -5,8 +5,8 @@ import (
 
 	dbm "github.com/cosmos/cosmos-db"
 
-	"cosmossdk.io/store/cachekv"
-	"cosmossdk.io/store/dbadapter"
+	"github.com/verzth/cosmos-sdk/store/cachekv"
+	"github.com/verzth/cosmos-sdk/store/dbadapter"
 )
 
 var sink interface{}

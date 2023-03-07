@@ -3,17 +3,17 @@ package v1
 import (
 	"fmt"
 
-	errorsmod "cosmossdk.io/errors"
-	"cosmossdk.io/math"
+	errorsmod "github.com/verzth/cosmos-sdk/errors"
+	"github.com/verzth/cosmos-sdk/math"
 
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	sdktx "github.com/cosmos/cosmos-sdk/types/tx"
-	"github.com/cosmos/cosmos-sdk/x/auth/migrations/legacytx"
-	"github.com/cosmos/cosmos-sdk/x/gov/codec"
-	"github.com/cosmos/cosmos-sdk/x/gov/types"
-	"github.com/cosmos/cosmos-sdk/x/gov/types/v1beta1"
+	codectypes "github.com/verzth/cosmos-sdk/codec/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	sdkerrors "github.com/verzth/cosmos-sdk/types/errors"
+	sdktx "github.com/verzth/cosmos-sdk/types/tx"
+	"github.com/verzth/cosmos-sdk/x/auth/migrations/legacytx"
+	"github.com/verzth/cosmos-sdk/x/gov/codec"
+	"github.com/verzth/cosmos-sdk/x/gov/types"
+	"github.com/verzth/cosmos-sdk/x/gov/types/v1beta1"
 )
 
 var (

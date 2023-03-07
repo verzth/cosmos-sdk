@@ -3,14 +3,14 @@ package staking_test
 import (
 	"testing"
 
-	"cosmossdk.io/math"
 	"github.com/stretchr/testify/assert"
+	"github.com/verzth/cosmos-sdk/math"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/staking"
-	"github.com/cosmos/cosmos-sdk/x/staking/testutil"
-	"github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/verzth/cosmos-sdk/crypto/keys/ed25519"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/x/staking"
+	"github.com/verzth/cosmos-sdk/x/staking/testutil"
+	"github.com/verzth/cosmos-sdk/x/staking/types"
 )
 
 func TestValidateGenesis(t *testing.T) {

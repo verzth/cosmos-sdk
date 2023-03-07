@@ -7,11 +7,11 @@ import (
 
 	"github.com/spf13/viper"
 
-	pruningtypes "cosmossdk.io/store/pruning/types"
+	pruningtypes "github.com/verzth/cosmos-sdk/store/pruning/types"
 
-	"github.com/cosmos/cosmos-sdk/telemetry"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	"github.com/verzth/cosmos-sdk/telemetry"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	sdkerrors "github.com/verzth/cosmos-sdk/types/errors"
 )
 
 const (
@@ -124,7 +124,7 @@ type APIConfig struct {
 
 	// TODO: TLS/Proxy configuration.
 	//
-	// Ref: https://github.com/cosmos/cosmos-sdk/issues/6420
+	// Ref: https://github.com/verzth/cosmos-sdk/issues/6420
 }
 
 // GRPCConfig defines configuration for the gRPC server.

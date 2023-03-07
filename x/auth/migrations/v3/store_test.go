@@ -8,20 +8,20 @@ import (
 	cmtproto "github.com/cometbft/cometbft/proto/tendermint/types"
 	"github.com/stretchr/testify/require"
 
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	"github.com/cosmos/cosmos-sdk/x/auth"
-	authexported "github.com/cosmos/cosmos-sdk/x/auth/exported"
-	"github.com/cosmos/cosmos-sdk/x/auth/keeper"
-	v1 "github.com/cosmos/cosmos-sdk/x/auth/migrations/v1"
-	v4 "github.com/cosmos/cosmos-sdk/x/auth/migrations/v4"
-	authtestutil "github.com/cosmos/cosmos-sdk/x/auth/testutil"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
+	"github.com/verzth/cosmos-sdk/crypto/keys/secp256k1"
+	"github.com/verzth/cosmos-sdk/testutil"
+	simtestutil "github.com/verzth/cosmos-sdk/testutil/sims"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	moduletestutil "github.com/verzth/cosmos-sdk/types/module/testutil"
+	"github.com/verzth/cosmos-sdk/x/auth"
+	authexported "github.com/verzth/cosmos-sdk/x/auth/exported"
+	"github.com/verzth/cosmos-sdk/x/auth/keeper"
+	v1 "github.com/verzth/cosmos-sdk/x/auth/migrations/v1"
+	v4 "github.com/verzth/cosmos-sdk/x/auth/migrations/v4"
+	authtestutil "github.com/verzth/cosmos-sdk/x/auth/testutil"
+	authtypes "github.com/verzth/cosmos-sdk/x/auth/types"
 )
 
 type mockSubspace struct {

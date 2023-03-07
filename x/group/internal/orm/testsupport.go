@@ -3,13 +3,13 @@ package orm
 import (
 	"fmt"
 
-	"cosmossdk.io/log"
 	dbm "github.com/cosmos/cosmos-db"
+	"github.com/verzth/cosmos-sdk/log"
 
-	"cosmossdk.io/store"
-	"cosmossdk.io/store/gaskv"
-	"cosmossdk.io/store/metrics"
-	storetypes "cosmossdk.io/store/types"
+	"github.com/verzth/cosmos-sdk/store"
+	"github.com/verzth/cosmos-sdk/store/gaskv"
+	"github.com/verzth/cosmos-sdk/store/metrics"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 )
 
 type MockContext struct {

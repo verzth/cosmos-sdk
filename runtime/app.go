@@ -7,23 +7,23 @@ import (
 	abci "github.com/cometbft/cometbft/abci/types"
 	"golang.org/x/exp/slices"
 
-	runtimev1alpha1 "cosmossdk.io/api/cosmos/app/runtime/v1alpha1"
-	appv1alpha1 "cosmossdk.io/api/cosmos/app/v1alpha1"
+	runtimev1alpha1 "github.com/verzth/cosmos-sdk/api/cosmos/app/runtime/v1alpha1"
+	appv1alpha1 "github.com/verzth/cosmos-sdk/api/cosmos/app/v1alpha1"
 
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/grpc/cmtservice"
-	nodeservice "github.com/cosmos/cosmos-sdk/client/grpc/node"
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/server/api"
-	"github.com/cosmos/cosmos-sdk/server/config"
-	servertypes "github.com/cosmos/cosmos-sdk/server/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	authtx "github.com/cosmos/cosmos-sdk/x/auth/tx"
+	"github.com/verzth/cosmos-sdk/baseapp"
+	"github.com/verzth/cosmos-sdk/client"
+	"github.com/verzth/cosmos-sdk/client/grpc/cmtservice"
+	nodeservice "github.com/verzth/cosmos-sdk/client/grpc/node"
+	"github.com/verzth/cosmos-sdk/codec"
+	codectypes "github.com/verzth/cosmos-sdk/codec/types"
+	"github.com/verzth/cosmos-sdk/server/api"
+	"github.com/verzth/cosmos-sdk/server/config"
+	servertypes "github.com/verzth/cosmos-sdk/server/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/types/module"
+	authtx "github.com/verzth/cosmos-sdk/x/auth/tx"
 )
 
 // App is a wrapper around BaseApp and ModuleManager that can be used in hybrid

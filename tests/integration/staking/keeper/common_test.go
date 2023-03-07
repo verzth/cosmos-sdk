@@ -4,19 +4,19 @@ import (
 	"math/big"
 	"testing"
 
-	"cosmossdk.io/simapp"
 	cmtproto "github.com/cometbft/cometbft/proto/tendermint/types"
+	"github.com/verzth/cosmos-sdk/simapp"
 	"gotest.tools/v3/assert"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
-	"github.com/cosmos/cosmos-sdk/x/staking/keeper"
-	"github.com/cosmos/cosmos-sdk/x/staking/testutil"
-	"github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/verzth/cosmos-sdk/codec"
+	simtestutil "github.com/verzth/cosmos-sdk/testutil/sims"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	moduletestutil "github.com/verzth/cosmos-sdk/types/module/testutil"
+	authtypes "github.com/verzth/cosmos-sdk/x/auth/types"
+	govtypes "github.com/verzth/cosmos-sdk/x/gov/types"
+	"github.com/verzth/cosmos-sdk/x/staking/keeper"
+	"github.com/verzth/cosmos-sdk/x/staking/testutil"
+	"github.com/verzth/cosmos-sdk/x/staking/types"
 )
 
 var PKs = simtestutil.CreateTestPubKeys(500)

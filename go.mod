@@ -1,17 +1,17 @@
 go 1.20
 
-module github.com/cosmos/cosmos-sdk
+module github.com/verzth/cosmos-sdk
 
 require (
-	cosmossdk.io/api v0.3.1
-	cosmossdk.io/collections v0.0.0-20230214153846-b6c6e4e99177
-	cosmossdk.io/core v0.6.0
-	cosmossdk.io/depinject v1.0.0-alpha.3
-	cosmossdk.io/errors v1.0.0-beta.7
-	cosmossdk.io/log v0.0.0-20230306220716-5e55f56d39d5
-	cosmossdk.io/math v1.0.0-beta.6.0.20230216172121-959ce49135e4
-	cosmossdk.io/store v0.0.0-20230227103508-bbe7f8a11b44
-	cosmossdk.io/x/tx v0.2.2
+	github.com/verzth/cosmos-sdk/api v0.3.1
+	github.com/verzth/cosmos-sdk/collections v0.0.0-20230214153846-b6c6e4e99177
+	github.com/verzth/cosmos-sdk/core v0.6.0
+	github.com/verzth/cosmos-sdk/depinject v1.0.0-alpha.3
+	github.com/verzth/cosmos-sdk/errors v1.0.0-beta.7
+	github.com/verzth/cosmos-sdk/log v0.0.0-20230306220716-5e55f56d39d5
+	github.com/verzth/cosmos-sdk/math v1.0.0-beta.6.0.20230216172121-959ce49135e4
+	github.com/verzth/cosmos-sdk/store v0.0.0-20230227103508-bbe7f8a11b44
+	github.com/verzth/cosmos-sdk/x/tx v0.2.2
 	github.com/99designs/keyring v1.2.1
 	github.com/armon/go-metrics v0.4.1
 	github.com/bgentry/speakeasy v0.1.1-0.20220910012023-760eaf8b6816
@@ -22,7 +22,7 @@ require (
 	github.com/cosmos/btcutil v1.0.5
 	github.com/cosmos/cosmos-db v1.0.0-rc.1
 	github.com/cosmos/cosmos-proto v1.0.0-beta.2
-	github.com/cosmos/cosmos-sdk/db v1.0.0-beta.1.0.20220726092710-f848e4300a8a
+	github.com/verzth/cosmos-sdk/db v1.0.0-beta.1.0.20220726092710-f848e4300a8a
 	github.com/cosmos/go-bip39 v1.0.0
 	github.com/cosmos/gogogateway v1.2.0
 	github.com/cosmos/gogoproto v1.4.6
@@ -159,10 +159,10 @@ replace (
 	// use cosmos fork of keyring
 	github.com/99designs/keyring => github.com/cosmos/keyring v1.2.0
 	// dgrijalva/jwt-go is deprecated and doesn't receive security updates.
-	// TODO: remove it: https://github.com/cosmos/cosmos-sdk/issues/13134
+	// TODO: remove it: https://github.com/verzth/cosmos-sdk/issues/13134
 	github.com/dgrijalva/jwt-go => github.com/golang-jwt/jwt/v4 v4.4.2
 	// Fix upstream GHSA-h395-qcrw-5vmq vulnerability.
-	// TODO Remove it: https://github.com/cosmos/cosmos-sdk/issues/10409
+	// TODO Remove it: https://github.com/verzth/cosmos-sdk/issues/10409
 	github.com/gin-gonic/gin => github.com/gin-gonic/gin v1.8.1
 	// Downgraded to avoid bugs in following commits which caused simulations to fail.
 	github.com/syndtr/goleveldb => github.com/syndtr/goleveldb v1.0.1-0.20210819022825-2ae1ddf74ef7

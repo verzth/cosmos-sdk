@@ -8,7 +8,7 @@ import "cosmos/vesting/v1beta1/vesting.proto";
 import "cosmos/msg/v1/msg.proto";
 import "amino/amino.proto";
 
-option go_package = "github.com/cosmos/cosmos-sdk/x/auth/vesting/types";
+option go_package = "github.com/verzth/cosmos-sdk/x/auth/vesting/types";
 
 // Msg defines the bank Msg service.
 service Msg {
@@ -43,7 +43,7 @@ message MsgCreateVestingAccount {
     (gogoproto.nullable)     = false,
     (amino.dont_omitempty)   = true,
     (amino.encoding)         = "legacy_coins",
-    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"
+    (gogoproto.castrepeated) = "github.com/verzth/cosmos-sdk/types.Coins"
   ];
 
   // end of vesting as unix time
@@ -69,7 +69,7 @@ message MsgCreatePermanentLockedAccount {
     (gogoproto.nullable)     = false,
     (amino.dont_omitempty)   = true,
     (amino.encoding)         = "legacy_coins",
-    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"
+    (gogoproto.castrepeated) = "github.com/verzth/cosmos-sdk/types.Coins"
   ];
 }
 

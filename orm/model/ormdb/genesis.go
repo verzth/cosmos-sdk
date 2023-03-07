@@ -5,13 +5,13 @@ import (
 	"fmt"
 	"sort"
 
-	"cosmossdk.io/core/appmodule"
+	"github.com/verzth/cosmos-sdk/core/appmodule"
 	"golang.org/x/exp/maps"
 	"google.golang.org/protobuf/reflect/protoreflect"
 
-	"cosmossdk.io/errors"
+	"github.com/verzth/cosmos-sdk/errors"
 
-	"github.com/cosmos/cosmos-sdk/orm/types/ormerrors"
+	"github.com/verzth/cosmos-sdk/orm/types/ormerrors"
 )
 
 type appModuleGenesisWrapper struct {

@@ -7,18 +7,18 @@ import (
 	cmtproto "github.com/cometbft/cometbft/proto/tendermint/types"
 	"github.com/stretchr/testify/suite"
 
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/runtime"
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
-	"github.com/cosmos/cosmos-sdk/x/capability"
-	"github.com/cosmos/cosmos-sdk/x/capability/keeper"
-	"github.com/cosmos/cosmos-sdk/x/capability/testutil"
-	"github.com/cosmos/cosmos-sdk/x/capability/types"
+	"github.com/verzth/cosmos-sdk/baseapp"
+	"github.com/verzth/cosmos-sdk/codec"
+	"github.com/verzth/cosmos-sdk/runtime"
+	simtestutil "github.com/verzth/cosmos-sdk/testutil/sims"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	banktypes "github.com/verzth/cosmos-sdk/x/bank/types"
+	"github.com/verzth/cosmos-sdk/x/capability"
+	"github.com/verzth/cosmos-sdk/x/capability/keeper"
+	"github.com/verzth/cosmos-sdk/x/capability/testutil"
+	"github.com/verzth/cosmos-sdk/x/capability/types"
 )
 
 type CapabilityTestSuite struct {
@@ -50,7 +50,7 @@ func (suite *CapabilityTestSuite) SetupTest() {
 	suite.ctx = app.BaseApp.NewContext(false, cmtproto.Header{Height: 1})
 }
 
-// The following test case mocks a specific bug discovered in https://github.com/cosmos/cosmos-sdk/issues/9800
+// The following test case mocks a specific bug discovered in https://github.com/verzth/cosmos-sdk/issues/9800
 // and ensures that the current code successfully fixes the issue.
 func (suite *CapabilityTestSuite) TestInitializeMemStore() {
 	sk1 := suite.keeper.ScopeToModule(banktypes.ModuleName)

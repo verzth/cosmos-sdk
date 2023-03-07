@@ -8,20 +8,20 @@ import (
 	cmtproto "github.com/cometbft/cometbft/proto/tendermint/types"
 	"github.com/stretchr/testify/suite"
 
-	"cosmossdk.io/log"
-	storetypes "cosmossdk.io/store/types"
-	"cosmossdk.io/x/upgrade"
-	"cosmossdk.io/x/upgrade/keeper"
-	"cosmossdk.io/x/upgrade/types"
+	"github.com/verzth/cosmos-sdk/log"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
+	"github.com/verzth/cosmos-sdk/x/upgrade"
+	"github.com/verzth/cosmos-sdk/x/upgrade/keeper"
+	"github.com/verzth/cosmos-sdk/x/upgrade/types"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
+	"github.com/verzth/cosmos-sdk/baseapp"
+	"github.com/verzth/cosmos-sdk/testutil"
+	simtestutil "github.com/verzth/cosmos-sdk/testutil/sims"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/types/module"
+	moduletestutil "github.com/verzth/cosmos-sdk/types/module/testutil"
+	authtypes "github.com/verzth/cosmos-sdk/x/auth/types"
+	govtypes "github.com/verzth/cosmos-sdk/x/gov/types"
 )
 
 type KeeperTestSuite struct {

@@ -5,13 +5,13 @@ import (
 
 	"github.com/golang/mock/gomock"
 
-	"cosmossdk.io/math"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/math"
+	sdk "github.com/verzth/cosmos-sdk/types"
 
 	abci "github.com/cometbft/cometbft/abci/types"
-	stakingkeeper "github.com/cosmos/cosmos-sdk/x/staking/keeper"
-	"github.com/cosmos/cosmos-sdk/x/staking/testutil"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	stakingkeeper "github.com/verzth/cosmos-sdk/x/staking/keeper"
+	"github.com/verzth/cosmos-sdk/x/staking/testutil"
+	stakingtypes "github.com/verzth/cosmos-sdk/x/staking/types"
 )
 
 func (s *KeeperTestSuite) applyValidatorSetUpdates(ctx sdk.Context, keeper *stakingkeeper.Keeper, expectedUpdatesLen int) []abci.ValidatorUpdate {

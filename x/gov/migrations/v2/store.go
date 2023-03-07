@@ -3,14 +3,14 @@ package v2
 import (
 	"fmt"
 
-	"cosmossdk.io/store/prefix"
-	storetypes "cosmossdk.io/store/types"
+	"github.com/verzth/cosmos-sdk/store/prefix"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/address"
-	"github.com/cosmos/cosmos-sdk/x/gov/types"
-	"github.com/cosmos/cosmos-sdk/x/gov/types/v1beta1"
+	"github.com/verzth/cosmos-sdk/codec"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/types/address"
+	"github.com/verzth/cosmos-sdk/x/gov/types"
+	"github.com/verzth/cosmos-sdk/x/gov/types/v1beta1"
 )
 
 const proposalIDLen = 8

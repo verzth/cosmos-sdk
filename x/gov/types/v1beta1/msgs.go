@@ -3,17 +3,17 @@ package v1beta1
 import (
 	"fmt"
 
-	"cosmossdk.io/math"
 	"github.com/cosmos/gogoproto/proto"
+	"github.com/verzth/cosmos-sdk/math"
 
-	errorsmod "cosmossdk.io/errors"
+	errorsmod "github.com/verzth/cosmos-sdk/errors"
 
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/x/auth/migrations/legacytx"
-	"github.com/cosmos/cosmos-sdk/x/gov/codec"
-	"github.com/cosmos/cosmos-sdk/x/gov/types"
+	codectypes "github.com/verzth/cosmos-sdk/codec/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	sdkerrors "github.com/verzth/cosmos-sdk/types/errors"
+	"github.com/verzth/cosmos-sdk/x/auth/migrations/legacytx"
+	"github.com/verzth/cosmos-sdk/x/gov/codec"
+	"github.com/verzth/cosmos-sdk/x/gov/types"
 )
 
 // Governance message types and routes

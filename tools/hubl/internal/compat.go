@@ -6,8 +6,8 @@ import (
 	"io"
 	"strings"
 
-	autocliv1 "cosmossdk.io/api/cosmos/autocli/v1"
-	reflectionv1beta1 "cosmossdk.io/api/cosmos/base/reflection/v1beta1"
+	autocliv1 "github.com/verzth/cosmos-sdk/api/cosmos/autocli/v1"
+	reflectionv1beta1 "github.com/verzth/cosmos-sdk/api/cosmos/base/reflection/v1beta1"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection/grpc_reflection_v1alpha"
 	"google.golang.org/protobuf/proto"

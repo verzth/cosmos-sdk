@@ -3,7 +3,7 @@ package strcase_test
 import (
 	"testing"
 
-	"cosmossdk.io/client/v2/internal/strcase"
+	"github.com/verzth/cosmos-sdk/client/v2/internal/strcase"
 	"gotest.tools/v3/assert"
 )
 

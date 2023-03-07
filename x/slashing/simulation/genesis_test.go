@@ -8,16 +8,16 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"cosmossdk.io/depinject"
-	sdkmath "cosmossdk.io/math"
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	"github.com/cosmos/cosmos-sdk/x/slashing/simulation"
-	"github.com/cosmos/cosmos-sdk/x/slashing/testutil"
-	"github.com/cosmos/cosmos-sdk/x/slashing/types"
+	"github.com/verzth/cosmos-sdk/codec"
+	codectypes "github.com/verzth/cosmos-sdk/codec/types"
+	"github.com/verzth/cosmos-sdk/depinject"
+	sdkmath "github.com/verzth/cosmos-sdk/math"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/types/module"
+	simtypes "github.com/verzth/cosmos-sdk/types/simulation"
+	"github.com/verzth/cosmos-sdk/x/slashing/simulation"
+	"github.com/verzth/cosmos-sdk/x/slashing/testutil"
+	"github.com/verzth/cosmos-sdk/x/slashing/types"
 )
 
 // TestRandomizedGenState tests the normal scenario of applying RandomizedGenState.

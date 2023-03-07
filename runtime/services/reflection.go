@@ -3,8 +3,8 @@ package services
 import (
 	"context"
 
-	reflectionv1 "cosmossdk.io/api/cosmos/reflection/v1"
 	"github.com/cosmos/gogoproto/proto"
+	reflectionv1 "github.com/verzth/cosmos-sdk/api/cosmos/reflection/v1"
 	"google.golang.org/protobuf/types/descriptorpb"
 )
 

@@ -4,10 +4,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
 	"github.com/stretchr/testify/require"
+	"github.com/verzth/cosmos-sdk/crypto/keys/secp256k1"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	banktypes "github.com/verzth/cosmos-sdk/x/bank/types"
 )
 
 var (

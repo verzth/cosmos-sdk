@@ -3,19 +3,19 @@ package tx
 import (
 	"fmt"
 
-	txconfigv1 "cosmossdk.io/api/cosmos/tx/config/v1"
-	"cosmossdk.io/core/appmodule"
-	"cosmossdk.io/depinject"
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/runtime"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/auth/ante"
-	"github.com/cosmos/cosmos-sdk/x/auth/posthandler"
-	"github.com/cosmos/cosmos-sdk/x/auth/signing"
-	"github.com/cosmos/cosmos-sdk/x/auth/tx"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
+	txconfigv1 "github.com/verzth/cosmos-sdk/api/cosmos/tx/config/v1"
+	"github.com/verzth/cosmos-sdk/baseapp"
+	"github.com/verzth/cosmos-sdk/client"
+	"github.com/verzth/cosmos-sdk/codec"
+	"github.com/verzth/cosmos-sdk/core/appmodule"
+	"github.com/verzth/cosmos-sdk/depinject"
+	"github.com/verzth/cosmos-sdk/runtime"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/x/auth/ante"
+	"github.com/verzth/cosmos-sdk/x/auth/posthandler"
+	"github.com/verzth/cosmos-sdk/x/auth/signing"
+	"github.com/verzth/cosmos-sdk/x/auth/tx"
+	authtypes "github.com/verzth/cosmos-sdk/x/auth/types"
 )
 
 func init() {

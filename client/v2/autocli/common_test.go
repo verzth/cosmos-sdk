@@ -2,9 +2,9 @@ package autocli
 
 import (
 	"bytes"
-	"cosmossdk.io/client/v2/internal/testpb"
-	"github.com/cosmos/cosmos-sdk/client/flags"
 	"github.com/spf13/cobra"
+	"github.com/verzth/cosmos-sdk/client/flags"
+	"github.com/verzth/cosmos-sdk/client/v2/internal/testpb"
 	"google.golang.org/grpc"
 	"gotest.tools/v3/assert"
 

@@ -9,31 +9,31 @@ import (
 
 	"github.com/stretchr/testify/suite"
 
-	errorsmod "cosmossdk.io/errors"
+	errorsmod "github.com/verzth/cosmos-sdk/errors"
 
-	"cosmossdk.io/simapp"
+	"github.com/verzth/cosmos-sdk/simapp"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	clienttx "github.com/cosmos/cosmos-sdk/client/tx"
-	"github.com/cosmos/cosmos-sdk/crypto/hd"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	kmultisig "github.com/cosmos/cosmos-sdk/crypto/keys/multisig"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	"github.com/cosmos/cosmos-sdk/testutil/cli"
-	"github.com/cosmos/cosmos-sdk/testutil/network"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/types/query"
-	"github.com/cosmos/cosmos-sdk/types/tx"
-	"github.com/cosmos/cosmos-sdk/types/tx/signing"
-	authclient "github.com/cosmos/cosmos-sdk/x/auth/client"
-	authtest "github.com/cosmos/cosmos-sdk/x/auth/client/testutil"
-	"github.com/cosmos/cosmos-sdk/x/auth/migrations/legacytx"
-	authtx "github.com/cosmos/cosmos-sdk/x/auth/tx"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
+	"github.com/verzth/cosmos-sdk/client"
+	"github.com/verzth/cosmos-sdk/client/flags"
+	clienttx "github.com/verzth/cosmos-sdk/client/tx"
+	"github.com/verzth/cosmos-sdk/crypto/hd"
+	"github.com/verzth/cosmos-sdk/crypto/keyring"
+	kmultisig "github.com/verzth/cosmos-sdk/crypto/keys/multisig"
+	cryptotypes "github.com/verzth/cosmos-sdk/crypto/types"
+	"github.com/verzth/cosmos-sdk/testutil"
+	"github.com/verzth/cosmos-sdk/testutil/cli"
+	"github.com/verzth/cosmos-sdk/testutil/network"
+	"github.com/verzth/cosmos-sdk/testutil/testdata"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	sdkerrors "github.com/verzth/cosmos-sdk/types/errors"
+	"github.com/verzth/cosmos-sdk/types/query"
+	"github.com/verzth/cosmos-sdk/types/tx"
+	"github.com/verzth/cosmos-sdk/types/tx/signing"
+	authclient "github.com/verzth/cosmos-sdk/x/auth/client"
+	authtest "github.com/verzth/cosmos-sdk/x/auth/client/testutil"
+	"github.com/verzth/cosmos-sdk/x/auth/migrations/legacytx"
+	authtx "github.com/verzth/cosmos-sdk/x/auth/tx"
+	banktypes "github.com/verzth/cosmos-sdk/x/bank/types"
 )
 
 var bankMsgSendEventAction = fmt.Sprintf("message.action='%s'", sdk.MsgTypeURL(&banktypes.MsgSend{}))
@@ -319,8 +319,8 @@ func (s *E2ETestSuite) TestGetTxEvents_GRPC() {
 				s.Require().Equal(len(grpcRes.Txs), tc.expLen)
 
 				// Make sure fields are populated.
-				// ref: https://github.com/cosmos/cosmos-sdk/issues/8680
-				// ref: https://github.com/cosmos/cosmos-sdk/issues/8681
+				// ref: https://github.com/verzth/cosmos-sdk/issues/8680
+				// ref: https://github.com/verzth/cosmos-sdk/issues/8681
 				s.Require().NotEmpty(grpcRes.TxResponses[0].Timestamp)
 				s.Require().NotEmpty(grpcRes.TxResponses[0].RawLog)
 			}
@@ -470,8 +470,8 @@ func (s *E2ETestSuite) TestGetTx_GRPCGateway() {
 				s.Require().NotZero(result.TxResponse.Height)
 
 				// Make sure fields are populated.
-				// ref: https://github.com/cosmos/cosmos-sdk/issues/8680
-				// ref: https://github.com/cosmos/cosmos-sdk/issues/8681
+				// ref: https://github.com/verzth/cosmos-sdk/issues/8680
+				// ref: https://github.com/verzth/cosmos-sdk/issues/8681
 				s.Require().NotEmpty(result.TxResponse.Timestamp)
 				s.Require().NotEmpty(result.TxResponse.RawLog)
 			}

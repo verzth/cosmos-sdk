@@ -14,8 +14,8 @@ import (
 	cmtproto "github.com/cometbft/cometbft/proto/tendermint/types"
 	"github.com/stretchr/testify/require"
 
-	"cosmossdk.io/log"
-	"cosmossdk.io/store/types"
+	"github.com/verzth/cosmos-sdk/log"
+	"github.com/verzth/cosmos-sdk/store/types"
 )
 
 var (

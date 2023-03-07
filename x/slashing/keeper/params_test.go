@@ -3,8 +3,8 @@ package keeper_test
 import (
 	"time"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/slashing/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/x/slashing/types"
 )
 
 func (s *KeeperTestSuite) TestParams() {

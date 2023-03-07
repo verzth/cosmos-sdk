@@ -1,9 +1,9 @@
 package types
 
 import (
-	"cosmossdk.io/collections"
-	collcodec "cosmossdk.io/collections/codec"
-	"cosmossdk.io/math"
+	"github.com/verzth/cosmos-sdk/collections"
+	collcodec "github.com/verzth/cosmos-sdk/collections/codec"
+	"github.com/verzth/cosmos-sdk/math"
 )
 
 var (

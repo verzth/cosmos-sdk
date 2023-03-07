@@ -5,13 +5,13 @@ import (
 
 	"github.com/cosmos/gogoproto/proto"
 
-	"cosmossdk.io/store/prefix"
-	"cosmossdk.io/store/types"
+	"github.com/verzth/cosmos-sdk/store/prefix"
+	"github.com/verzth/cosmos-sdk/store/types"
 
-	errorsmod "cosmossdk.io/errors"
+	errorsmod "github.com/verzth/cosmos-sdk/errors"
 
-	"github.com/cosmos/cosmos-sdk/types/query"
-	"github.com/cosmos/cosmos-sdk/x/group/errors"
+	"github.com/verzth/cosmos-sdk/types/query"
+	"github.com/verzth/cosmos-sdk/x/group/errors"
 )
 
 // indexer creates and modifies the second MultiKeyIndex based on the operations and changes on the primary object.

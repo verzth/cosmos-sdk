@@ -7,9 +7,9 @@ import (
 	"time"
 	"unsafe"
 
-	sdkmath "cosmossdk.io/math"
+	sdkmath "github.com/verzth/cosmos-sdk/math"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
 )
 
 const (

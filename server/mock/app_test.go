@@ -9,10 +9,10 @@ import (
 	cmtproto "github.com/cometbft/cometbft/proto/tendermint/types"
 	"github.com/stretchr/testify/require"
 
-	"cosmossdk.io/log"
+	"github.com/verzth/cosmos-sdk/log"
 
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	genutiltypes "github.com/cosmos/cosmos-sdk/x/genutil/types"
+	simtypes "github.com/verzth/cosmos-sdk/types/simulation"
+	genutiltypes "github.com/verzth/cosmos-sdk/x/genutil/types"
 )
 
 // SetupApp initializes a new application,

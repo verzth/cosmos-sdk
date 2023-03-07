@@ -1,10 +1,10 @@
 package types
 
 import (
-	"cosmossdk.io/errors"
+	"github.com/verzth/cosmos-sdk/errors"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/auth/migrations/legacytx"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/x/auth/migrations/legacytx"
 )
 
 var (

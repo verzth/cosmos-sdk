@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	sdkmath "cosmossdk.io/math"
+	sdkmath "github.com/verzth/cosmos-sdk/math"
 )
 
 func FuzzTypesDecSetString(f *testing.F) {

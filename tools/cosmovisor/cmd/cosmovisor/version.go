@@ -6,9 +6,9 @@ import (
 	"runtime/debug"
 	"strings"
 
-	"cosmossdk.io/log"
 	"github.com/rs/zerolog"
 	"github.com/spf13/cobra"
+	"github.com/verzth/cosmos-sdk/log"
 )
 
 func init() {

@@ -5,11 +5,11 @@ import (
 
 	dbm "github.com/cosmos/cosmos-db"
 
-	"cosmossdk.io/store/cachekv"
-	"cosmossdk.io/store/dbadapter"
-	pruningtypes "cosmossdk.io/store/pruning/types"
-	"cosmossdk.io/store/tracekv"
-	"cosmossdk.io/store/types"
+	"github.com/verzth/cosmos-sdk/store/cachekv"
+	"github.com/verzth/cosmos-sdk/store/dbadapter"
+	pruningtypes "github.com/verzth/cosmos-sdk/store/pruning/types"
+	"github.com/verzth/cosmos-sdk/store/tracekv"
+	"github.com/verzth/cosmos-sdk/store/types"
 )
 
 var (

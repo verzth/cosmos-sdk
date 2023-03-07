@@ -7,9 +7,9 @@ package testutil
 import (
 	reflect "reflect"
 
-	math "cosmossdk.io/math"
-	types "github.com/cosmos/cosmos-sdk/types"
-	types0 "github.com/cosmos/cosmos-sdk/x/staking/types"
+	math "github.com/verzth/cosmos-sdk/math"
+	types "github.com/verzth/cosmos-sdk/types"
+	types0 "github.com/verzth/cosmos-sdk/x/staking/types"
 	gomock "github.com/golang/mock/gomock"
 )
 

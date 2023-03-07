@@ -9,7 +9,7 @@ import "google/protobuf/any.proto";
 import "cosmos/msg/v1/msg.proto";
 import "amino/amino.proto";
 
-option go_package = "github.com/cosmos/cosmos-sdk/x/gov/types/v1beta1";
+option go_package = "github.com/verzth/cosmos-sdk/x/gov/types/v1beta1";
 
 // Msg defines the bank Msg service.
 service Msg {
@@ -47,7 +47,7 @@ message MsgSubmitProposal {
     (gogoproto.nullable)     = false,
     (amino.dont_omitempty)   = true,
     (amino.encoding)         = "legacy_coins",
-    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"
+    (gogoproto.castrepeated) = "github.com/verzth/cosmos-sdk/types.Coins"
   ];
 
   // proposer is the account address of the proposer.
@@ -126,7 +126,7 @@ message MsgDeposit {
     (gogoproto.nullable)     = false,
     (amino.dont_omitempty)   = true,
     (amino.encoding)         = "legacy_coins",
-    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"
+    (gogoproto.castrepeated) = "github.com/verzth/cosmos-sdk/types.Coins"
   ];
 }
 

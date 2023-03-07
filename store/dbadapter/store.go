@@ -5,9 +5,9 @@ import (
 
 	dbm "github.com/cosmos/cosmos-db"
 
-	"cosmossdk.io/store/cachekv"
-	"cosmossdk.io/store/tracekv"
-	"cosmossdk.io/store/types"
+	"github.com/verzth/cosmos-sdk/store/cachekv"
+	"github.com/verzth/cosmos-sdk/store/tracekv"
+	"github.com/verzth/cosmos-sdk/store/types"
 )
 
 // Wrapper type for dbm.Db with implementation of KVStore

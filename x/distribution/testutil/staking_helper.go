@@ -3,11 +3,11 @@ package testutil
 import (
 	"fmt"
 
-	"cosmossdk.io/math"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/distribution/keeper"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	cryptotypes "github.com/verzth/cosmos-sdk/crypto/types"
+	"github.com/verzth/cosmos-sdk/math"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/x/distribution/keeper"
+	stakingtypes "github.com/verzth/cosmos-sdk/x/staking/types"
 )
 
 func CreateValidator(pk cryptotypes.PubKey, stake math.Int) (stakingtypes.Validator, error) {

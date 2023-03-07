@@ -3,9 +3,9 @@ package types_test
 import (
 	"testing"
 
-	"cosmossdk.io/store/types"
+	"github.com/verzth/cosmos-sdk/store/types"
 
-	"github.com/cosmos/cosmos-sdk/testutil"
+	"github.com/verzth/cosmos-sdk/testutil"
 )
 
 func BenchmarkContext_KVStore(b *testing.B) {

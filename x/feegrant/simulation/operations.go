@@ -3,15 +3,15 @@ package simulation
 import (
 	"math/rand"
 
-	"cosmossdk.io/x/feegrant"
-	"cosmossdk.io/x/feegrant/keeper"
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	"github.com/cosmos/cosmos-sdk/x/auth/tx"
-	"github.com/cosmos/cosmos-sdk/x/simulation"
+	"github.com/verzth/cosmos-sdk/baseapp"
+	"github.com/verzth/cosmos-sdk/codec"
+	codectypes "github.com/verzth/cosmos-sdk/codec/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	simtypes "github.com/verzth/cosmos-sdk/types/simulation"
+	"github.com/verzth/cosmos-sdk/x/auth/tx"
+	"github.com/verzth/cosmos-sdk/x/feegrant"
+	"github.com/verzth/cosmos-sdk/x/feegrant/keeper"
+	"github.com/verzth/cosmos-sdk/x/simulation"
 )
 
 // Simulation operation weights constants

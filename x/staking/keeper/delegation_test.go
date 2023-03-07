@@ -3,14 +3,14 @@ package keeper_test
 import (
 	"time"
 
-	"cosmossdk.io/math"
 	"github.com/golang/mock/gomock"
+	"github.com/verzth/cosmos-sdk/math"
 
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	stakingkeeper "github.com/cosmos/cosmos-sdk/x/staking/keeper"
-	"github.com/cosmos/cosmos-sdk/x/staking/testutil"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	simtestutil "github.com/verzth/cosmos-sdk/testutil/sims"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	stakingkeeper "github.com/verzth/cosmos-sdk/x/staking/keeper"
+	"github.com/verzth/cosmos-sdk/x/staking/testutil"
+	stakingtypes "github.com/verzth/cosmos-sdk/x/staking/types"
 )
 
 func createValAddrs(count int) ([]sdk.AccAddress, []sdk.ValAddress) {

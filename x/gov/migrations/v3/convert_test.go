@@ -4,15 +4,15 @@ import (
 	"testing"
 	"time"
 
-	"cosmossdk.io/math"
 	"github.com/stretchr/testify/require"
+	"github.com/verzth/cosmos-sdk/math"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/types/tx"
-	v3 "github.com/cosmos/cosmos-sdk/x/gov/migrations/v3"
-	v1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1"
-	"github.com/cosmos/cosmos-sdk/x/gov/types/v1beta1"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	sdkerrors "github.com/verzth/cosmos-sdk/types/errors"
+	"github.com/verzth/cosmos-sdk/types/tx"
+	v3 "github.com/verzth/cosmos-sdk/x/gov/migrations/v3"
+	v1 "github.com/verzth/cosmos-sdk/x/gov/types/v1"
+	"github.com/verzth/cosmos-sdk/x/gov/types/v1beta1"
 )
 
 func TestConvertToLegacyProposal(t *testing.T) {

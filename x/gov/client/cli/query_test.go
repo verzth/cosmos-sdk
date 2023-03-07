@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"strings"
 
-	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
+	clitestutil "github.com/verzth/cosmos-sdk/testutil/cli"
 
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	"github.com/cosmos/cosmos-sdk/x/gov/client/cli"
+	"github.com/verzth/cosmos-sdk/client/flags"
+	"github.com/verzth/cosmos-sdk/testutil"
+	"github.com/verzth/cosmos-sdk/x/gov/client/cli"
 )
 
 func (s *CLITestSuite) TestCmdParams() {

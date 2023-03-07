@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"cosmossdk.io/log"
+	"github.com/verzth/cosmos-sdk/log"
 )
 
 // MultiError is an error combining multiple other errors.

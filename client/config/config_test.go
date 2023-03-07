@@ -5,14 +5,14 @@ import (
 	"os"
 	"testing"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/config"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
 	"github.com/spf13/cobra"
 	"github.com/stretchr/testify/require"
+	"github.com/verzth/cosmos-sdk/client"
+	"github.com/verzth/cosmos-sdk/client/config"
+	"github.com/verzth/cosmos-sdk/client/flags"
+	"github.com/verzth/cosmos-sdk/codec"
+	codectypes "github.com/verzth/cosmos-sdk/codec/types"
+	clitestutil "github.com/verzth/cosmos-sdk/testutil/cli"
 )
 
 const (

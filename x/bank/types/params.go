@@ -4,7 +4,7 @@ import (
 	"errors"
 	"fmt"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
 )
 
 // DefaultDefaultSendEnabled is the value that DefaultSendEnabled will have from DefaultParams().

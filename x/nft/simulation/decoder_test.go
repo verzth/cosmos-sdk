@@ -6,14 +6,14 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"cosmossdk.io/x/nft"
-	"cosmossdk.io/x/nft/keeper"
-	"cosmossdk.io/x/nft/module"
-	"cosmossdk.io/x/nft/simulation"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/kv"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
+	"github.com/verzth/cosmos-sdk/crypto/keys/ed25519"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/types/kv"
+	moduletestutil "github.com/verzth/cosmos-sdk/types/module/testutil"
+	"github.com/verzth/cosmos-sdk/x/nft"
+	"github.com/verzth/cosmos-sdk/x/nft/keeper"
+	"github.com/verzth/cosmos-sdk/x/nft/module"
+	"github.com/verzth/cosmos-sdk/x/nft/simulation"
 )
 
 var (

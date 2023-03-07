@@ -6,11 +6,11 @@ import (
 	cmtproto "github.com/cometbft/cometbft/proto/tendermint/types"
 	"github.com/stretchr/testify/require"
 
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	authkeeper "github.com/cosmos/cosmos-sdk/x/auth/keeper"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	"github.com/cosmos/cosmos-sdk/x/mint/testutil"
-	"github.com/cosmos/cosmos-sdk/x/mint/types"
+	simtestutil "github.com/verzth/cosmos-sdk/testutil/sims"
+	authkeeper "github.com/verzth/cosmos-sdk/x/auth/keeper"
+	authtypes "github.com/verzth/cosmos-sdk/x/auth/types"
+	"github.com/verzth/cosmos-sdk/x/mint/testutil"
+	"github.com/verzth/cosmos-sdk/x/mint/types"
 )
 
 func TestItCreatesModuleAccountOnInitBlock(t *testing.T) {

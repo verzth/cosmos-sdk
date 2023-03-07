@@ -9,11 +9,11 @@ Welcome to the Cosmos SDK's team roadmap.
 
 ### Storage
  
-* [Produce a spec for the new store design](https://github.com/cosmos/cosmos-sdk/issues/12986)
+* [Produce a spec for the new store design](https://github.com/verzth/cosmos-sdk/issues/12986)
     * Research a new design for store. This could entail writing some POC's in order to identify design patterns
 * [x] Store as its own go module 
     * Store module should be its own go.mod without a dependency on the Cosmos SDK
-* [Begin implementation of store v2](https://github.com/cosmos/cosmos-sdk/pull/15028)
+* [Begin implementation of store v2](https://github.com/verzth/cosmos-sdk/pull/15028)
     * Identify the migration path from store v1 -> store v2
 * Parallel execution of state
     * RFC/ADR is merged into the main on the sdk
@@ -33,49 +33,49 @@ Welcome to the Cosmos SDK's team roadmap.
 * [x] Auto-cli tx support 
     * Tx support for auto-cli/hubl
         * This would fully remove the need for application developers to write cli commands for their modules
-* [Consensus Key Rotation](https://github.com/cosmos/cosmos-sdk/issues/5231)
+* [Consensus Key Rotation](https://github.com/verzth/cosmos-sdk/issues/5231)
 
 
 ### Dev UX
 
-* [Release collections v1](https://github.com/cosmos/cosmos-sdk/issues/14300) 
+* [Release collections v1](https://github.com/verzth/cosmos-sdk/issues/14300) 
     * Collections is a new abstraction layer similar to the ORM. In the ADR phase it received support from many in the ecosystem. 
     * V1 release should allow modules to be migrated to collections.  
     * Migrate 3 modules to use collections api
         *  Migrating 3 modules to use collections would help in show users how to migrate users
-* [Release ORM v1](https://github.com/cosmos/cosmos-sdk/issues/11088)
-* [Sign mode textual](https://github.com/cosmos/cosmos-sdk/issues/11970) 
+* [Release ORM v1](https://github.com/verzth/cosmos-sdk/issues/11088)
+* [Sign mode textual](https://github.com/verzth/cosmos-sdk/issues/11970) 
     * Sign mode textual has been under construction for 2 quarters now, this quarter the goal is to move towards v1 and potentially line up a audit before final release.
 * Core API
-    * [x] [Merge ADR for Core API](https://github.com/cosmos/cosmos-sdk/blob/main/docs/architecture/adr-063-core-module-api.md) 
+    * [x] [Merge ADR for Core API](https://github.com/verzth/cosmos-sdk/blob/main/docs/architecture/adr-063-core-module-api.md) 
     * Migrate three modules to use core api
 * Module Dependency 
     * [x] Give three modules their own go.mods 
     * Cleanup dependency graph (dependent on integration testing framework)
-* [Metamask signing directly into the sdk](https://github.com/cosmos/cosmos-sdk/discussions/13892) 
-* [ADR-033 (internal message routing)](https://github.com/cosmos/cosmos-sdk/blob/main/docs/architecture/adr-033-protobuf-inter-module-comm.md)
+* [Metamask signing directly into the sdk](https://github.com/verzth/cosmos-sdk/discussions/13892) 
+* [ADR-033 (internal message routing)](https://github.com/verzth/cosmos-sdk/blob/main/docs/architecture/adr-033-protobuf-inter-module-comm.md)
     * Merge internal message router
     * Add docs on how to use the router
-* [ADR-54 (dependency management)](https://github.com/cosmos/cosmos-sdk/pull/11802)
+* [ADR-54 (dependency management)](https://github.com/verzth/cosmos-sdk/pull/11802)
     * Come to consensus on module dependency graph for the future
     * Begin socializing conventions 
-* [Remove global bech32](https://github.com/cosmos/cosmos-sdk/issues/13140) 
-* [Auth module](https://github.com/cosmos/cosmos-sdk/issues/14900)
+* [Remove global bech32](https://github.com/verzth/cosmos-sdk/issues/13140) 
+* [Auth module](https://github.com/verzth/cosmos-sdk/issues/14900)
     * Produce a spec/ADR on a proposed new auth module. 
-* [x] [Implement Amino Json encoder](https://github.com/cosmos/cosmos-sdk/issues/10993)
+* [x] [Implement Amino Json encoder](https://github.com/verzth/cosmos-sdk/issues/10993)
 
 ### Testing
 
-* [integration testing framework](https://github.com/cosmos/cosmos-sdk/issues/14145) 
+* [integration testing framework](https://github.com/verzth/cosmos-sdk/issues/14145) 
     * design and merge a integration testing framework. 
     * The goals of the framework would that a module only needs to depend on modules that it depends on outside of testing, not all modules in the sdk like today.
 
 
 ### ABCI 2.0
 
-Issue: https://github.com/cosmos/cosmos-sdk/issues/12272
+Issue: https://github.com/verzth/cosmos-sdk/issues/12272
 
-* [ADR ABCI 2.0](https://github.com/cosmos/cosmos-sdk/issues/14674)
+* [ADR ABCI 2.0](https://github.com/verzth/cosmos-sdk/issues/14674)
     * Write ADR for integration of vote extensions & finalize block
 
 **Blocked**:
@@ -86,7 +86,7 @@ Issue: https://github.com/cosmos/cosmos-sdk/issues/12272
 
 ### Security
 
-* [Circuit breaker](https://github.com/cosmos/cosmos-sdk/issues/14226)
+* [Circuit breaker](https://github.com/verzth/cosmos-sdk/issues/14226)
     * Implement the circuit breaker module and prepare releases for Cosmos SDK versions 0.45, 0.46 and 0.47
 
 

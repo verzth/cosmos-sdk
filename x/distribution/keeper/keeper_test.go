@@ -4,22 +4,22 @@ import (
 	"testing"
 	"time"
 
-	"cosmossdk.io/math"
 	cmtproto "github.com/cometbft/cometbft/proto/tendermint/types"
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/require"
+	"github.com/verzth/cosmos-sdk/math"
 
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	"github.com/cosmos/cosmos-sdk/testutil"
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	"github.com/cosmos/cosmos-sdk/x/distribution"
-	"github.com/cosmos/cosmos-sdk/x/distribution/keeper"
-	distrtestutil "github.com/cosmos/cosmos-sdk/x/distribution/testutil"
-	"github.com/cosmos/cosmos-sdk/x/distribution/types"
+	"github.com/verzth/cosmos-sdk/testutil"
+	simtestutil "github.com/verzth/cosmos-sdk/testutil/sims"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	moduletestutil "github.com/verzth/cosmos-sdk/types/module/testutil"
+	authtypes "github.com/verzth/cosmos-sdk/x/auth/types"
+	"github.com/verzth/cosmos-sdk/x/distribution"
+	"github.com/verzth/cosmos-sdk/x/distribution/keeper"
+	distrtestutil "github.com/verzth/cosmos-sdk/x/distribution/testutil"
+	"github.com/verzth/cosmos-sdk/x/distribution/types"
 )
 
 func TestSetWithdrawAddr(t *testing.T) {

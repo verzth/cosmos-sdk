@@ -9,19 +9,19 @@ import (
 	cmtproto "github.com/cometbft/cometbft/proto/tendermint/types"
 	cmttime "github.com/cometbft/cometbft/types/time"
 
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	sdktestutil "github.com/cosmos/cosmos-sdk/testutil"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
-	slashingkeeper "github.com/cosmos/cosmos-sdk/x/slashing/keeper"
-	slashingtestutil "github.com/cosmos/cosmos-sdk/x/slashing/testutil"
-	slashingtypes "github.com/cosmos/cosmos-sdk/x/slashing/types"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/verzth/cosmos-sdk/baseapp"
+	sdktestutil "github.com/verzth/cosmos-sdk/testutil"
+	"github.com/verzth/cosmos-sdk/testutil/testdata"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	moduletestutil "github.com/verzth/cosmos-sdk/types/module/testutil"
+	authtypes "github.com/verzth/cosmos-sdk/x/auth/types"
+	govtypes "github.com/verzth/cosmos-sdk/x/gov/types"
+	slashingkeeper "github.com/verzth/cosmos-sdk/x/slashing/keeper"
+	slashingtestutil "github.com/verzth/cosmos-sdk/x/slashing/testutil"
+	slashingtypes "github.com/verzth/cosmos-sdk/x/slashing/types"
+	stakingtypes "github.com/verzth/cosmos-sdk/x/staking/types"
 )
 
 var consAddr = sdk.ConsAddress(sdk.AccAddress([]byte("addr1_______________")))

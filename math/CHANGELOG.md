@@ -31,8 +31,8 @@ Ref: https://keepachangelog.com/en/1.0.0/
 
 ## [Unreleased]
 
-* [#14010](https://github.com/cosmos/cosmos-sdk/pull/14010) Optimize FormatInt to not do plain string concentation when formatting thousands and instead build it more efficiently.
-* [#13381](https://github.com/cosmos/cosmos-sdk/pull/13381) Add uint `IsNil` method.
-* [#12634](https://github.com/cosmos/cosmos-sdk/pull/12634) Move `sdk.Dec` to math package, call it `LegacyDec`.
-* [#14166](https://github.com/cosmos/cosmos-sdk/pull/14166) Add generics versions of Max and Min, catering to all numeric types and allow for variadic calls, replacing the prior typed and strenuous code
-* [#15043](https://github.com/cosmos/cosmos-sdk/pull/15043) Add rand functions for testing purposes
+* [#14010](https://github.com/verzth/cosmos-sdk/pull/14010) Optimize FormatInt to not do plain string concentation when formatting thousands and instead build it more efficiently.
+* [#13381](https://github.com/verzth/cosmos-sdk/pull/13381) Add uint `IsNil` method.
+* [#12634](https://github.com/verzth/cosmos-sdk/pull/12634) Move `sdk.Dec` to math package, call it `LegacyDec`.
+* [#14166](https://github.com/verzth/cosmos-sdk/pull/14166) Add generics versions of Max and Min, catering to all numeric types and allow for variadic calls, replacing the prior typed and strenuous code
+* [#15043](https://github.com/verzth/cosmos-sdk/pull/15043) Add rand functions for testing purposes

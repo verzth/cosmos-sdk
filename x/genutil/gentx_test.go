@@ -7,24 +7,24 @@ import (
 	"testing"
 	"time"
 
-	"cosmossdk.io/math"
+	"github.com/verzth/cosmos-sdk/math"
 
-	storetypes "cosmossdk.io/store/types"
 	abci "github.com/cometbft/cometbft/abci/types"
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/suite"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
-	"github.com/cosmos/cosmos-sdk/x/genutil"
-	genutiltestutil "github.com/cosmos/cosmos-sdk/x/genutil/testutil"
-	"github.com/cosmos/cosmos-sdk/x/genutil/types"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/verzth/cosmos-sdk/crypto/keys/secp256k1"
+	"github.com/verzth/cosmos-sdk/testutil"
+	simtestutil "github.com/verzth/cosmos-sdk/testutil/sims"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	sdkerrors "github.com/verzth/cosmos-sdk/types/errors"
+	moduletestutil "github.com/verzth/cosmos-sdk/types/module/testutil"
+	banktypes "github.com/verzth/cosmos-sdk/x/bank/types"
+	"github.com/verzth/cosmos-sdk/x/genutil"
+	genutiltestutil "github.com/verzth/cosmos-sdk/x/genutil/testutil"
+	"github.com/verzth/cosmos-sdk/x/genutil/types"
+	stakingtypes "github.com/verzth/cosmos-sdk/x/staking/types"
 )
 
 var (

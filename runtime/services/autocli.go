@@ -3,17 +3,17 @@ package services
 import (
 	"context"
 
-	autocliv1 "cosmossdk.io/api/cosmos/autocli/v1"
-	cosmosmsg "cosmossdk.io/api/cosmos/msg/v1"
-	"cosmossdk.io/core/appmodule"
 	gogogrpc "github.com/cosmos/gogoproto/grpc"
 	"github.com/cosmos/gogoproto/proto"
+	autocliv1 "github.com/verzth/cosmos-sdk/api/cosmos/autocli/v1"
+	cosmosmsg "github.com/verzth/cosmos-sdk/api/cosmos/msg/v1"
+	"github.com/verzth/cosmos-sdk/core/appmodule"
 	"google.golang.org/grpc"
 	protobuf "google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/reflect/protoreflect"
 	"google.golang.org/protobuf/reflect/protoregistry"
 
-	"github.com/cosmos/cosmos-sdk/types/module"
+	"github.com/verzth/cosmos-sdk/types/module"
 )
 
 // AutoCLIQueryService implements the cosmos.autocli.v1.Query service.

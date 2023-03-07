@@ -1,9 +1,9 @@
 package module_test
 
 import (
-	"cosmossdk.io/core/appmodule"
+	"github.com/verzth/cosmos-sdk/core/appmodule"
 
-	"github.com/cosmos/cosmos-sdk/types/module"
+	"github.com/verzth/cosmos-sdk/types/module"
 )
 
 // AppModuleWithAllExtensions is solely here for the purpose of generating

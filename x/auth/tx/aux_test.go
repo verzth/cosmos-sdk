@@ -5,16 +5,16 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"cosmossdk.io/depinject"
-	"github.com/cosmos/cosmos-sdk/client"
-	clienttx "github.com/cosmos/cosmos-sdk/client/tx"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	txtypes "github.com/cosmos/cosmos-sdk/types/tx"
-	"github.com/cosmos/cosmos-sdk/types/tx/signing"
-	authsigning "github.com/cosmos/cosmos-sdk/x/auth/signing"
-	"github.com/cosmos/cosmos-sdk/x/auth/testutil"
+	"github.com/verzth/cosmos-sdk/client"
+	clienttx "github.com/verzth/cosmos-sdk/client/tx"
+	codectypes "github.com/verzth/cosmos-sdk/codec/types"
+	"github.com/verzth/cosmos-sdk/depinject"
+	"github.com/verzth/cosmos-sdk/testutil/testdata"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	txtypes "github.com/verzth/cosmos-sdk/types/tx"
+	"github.com/verzth/cosmos-sdk/types/tx/signing"
+	authsigning "github.com/verzth/cosmos-sdk/x/auth/signing"
+	"github.com/verzth/cosmos-sdk/x/auth/testutil"
 )
 
 var (

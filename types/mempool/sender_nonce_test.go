@@ -8,10 +8,10 @@ import (
 	cmtproto "github.com/cometbft/cometbft/proto/tendermint/types"
 	"github.com/stretchr/testify/require"
 
-	"cosmossdk.io/log"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/mempool"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
+	"github.com/verzth/cosmos-sdk/log"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/types/mempool"
+	simtypes "github.com/verzth/cosmos-sdk/types/simulation"
 )
 
 func (s *MempoolTestSuite) TestTxOrder() {

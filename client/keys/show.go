@@ -7,15 +7,15 @@ import (
 	"github.com/cometbft/cometbft/libs/cli"
 	"github.com/spf13/cobra"
 
-	errorsmod "cosmossdk.io/errors"
+	errorsmod "github.com/verzth/cosmos-sdk/errors"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/multisig"
-	"github.com/cosmos/cosmos-sdk/crypto/ledger"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerr "github.com/cosmos/cosmos-sdk/types/errors"
+	"github.com/verzth/cosmos-sdk/client"
+	"github.com/verzth/cosmos-sdk/crypto/keyring"
+	"github.com/verzth/cosmos-sdk/crypto/keys/multisig"
+	"github.com/verzth/cosmos-sdk/crypto/ledger"
+	cryptotypes "github.com/verzth/cosmos-sdk/crypto/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	sdkerr "github.com/verzth/cosmos-sdk/types/errors"
 )
 
 const (

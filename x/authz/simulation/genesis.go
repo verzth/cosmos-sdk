@@ -4,13 +4,13 @@ import (
 	"math/rand"
 	"time"
 
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	"github.com/cosmos/cosmos-sdk/x/authz"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
-	v1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1"
+	codectypes "github.com/verzth/cosmos-sdk/codec/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/types/module"
+	simtypes "github.com/verzth/cosmos-sdk/types/simulation"
+	"github.com/verzth/cosmos-sdk/x/authz"
+	banktypes "github.com/verzth/cosmos-sdk/x/bank/types"
+	v1 "github.com/verzth/cosmos-sdk/x/gov/types/v1"
 )
 
 // genGrant returns a slice of authorization grants.

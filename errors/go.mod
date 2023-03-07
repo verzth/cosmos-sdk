@@ -1,4 +1,4 @@
-module cosmossdk.io/errors
+module github.com/verzth/cosmos-sdk/errors
 
 go 1.20
 

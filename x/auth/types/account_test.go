@@ -8,14 +8,14 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"cosmossdk.io/depinject"
+	"github.com/verzth/cosmos-sdk/depinject"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authkeeper "github.com/cosmos/cosmos-sdk/x/auth/keeper"
-	"github.com/cosmos/cosmos-sdk/x/auth/testutil"
-	"github.com/cosmos/cosmos-sdk/x/auth/types"
+	"github.com/verzth/cosmos-sdk/crypto/keys/secp256k1"
+	"github.com/verzth/cosmos-sdk/testutil/testdata"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	authkeeper "github.com/verzth/cosmos-sdk/x/auth/keeper"
+	"github.com/verzth/cosmos-sdk/x/auth/testutil"
+	"github.com/verzth/cosmos-sdk/x/auth/types"
 )
 
 func TestBaseAddressPubKey(t *testing.T) {

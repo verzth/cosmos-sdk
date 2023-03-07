@@ -1,14 +1,14 @@
 package keeper_test
 
 import (
-	"cosmossdk.io/depinject"
-	storetypes "cosmossdk.io/store/types"
+	"github.com/verzth/cosmos-sdk/depinject"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdktestutil "github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	paramskeeper "github.com/cosmos/cosmos-sdk/x/params/keeper"
-	"github.com/cosmos/cosmos-sdk/x/params/testutil"
+	"github.com/verzth/cosmos-sdk/codec"
+	sdktestutil "github.com/verzth/cosmos-sdk/testutil"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	paramskeeper "github.com/verzth/cosmos-sdk/x/params/keeper"
+	"github.com/verzth/cosmos-sdk/x/params/testutil"
 )
 
 func testComponents() (*codec.LegacyAmino, sdk.Context, storetypes.StoreKey, storetypes.StoreKey, paramskeeper.Keeper) {

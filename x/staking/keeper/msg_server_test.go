@@ -3,8 +3,8 @@ package keeper_test
 import (
 	"testing"
 
-	"cosmossdk.io/math"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/verzth/cosmos-sdk/math"
+	stakingtypes "github.com/verzth/cosmos-sdk/x/staking/types"
 )
 
 func (s *KeeperTestSuite) TestMsgUpdateParams() {

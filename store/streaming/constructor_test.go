@@ -5,10 +5,10 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"cosmossdk.io/log"
-	"cosmossdk.io/store/streaming"
-	"cosmossdk.io/store/streaming/file"
-	"cosmossdk.io/store/types"
+	"github.com/verzth/cosmos-sdk/log"
+	"github.com/verzth/cosmos-sdk/store/streaming"
+	"github.com/verzth/cosmos-sdk/store/streaming/file"
+	"github.com/verzth/cosmos-sdk/store/types"
 )
 
 type fakeOptions struct{}

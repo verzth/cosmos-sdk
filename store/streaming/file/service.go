@@ -10,11 +10,11 @@ import (
 	"sort"
 	"sync"
 
-	"cosmossdk.io/errors"
-	"cosmossdk.io/log"
+	"github.com/verzth/cosmos-sdk/errors"
+	"github.com/verzth/cosmos-sdk/log"
 	abci "github.com/cometbft/cometbft/abci/types"
 
-	"cosmossdk.io/store/types"
+	"github.com/verzth/cosmos-sdk/store/types"
 )
 
 var _ types.StreamingService = &StreamingService{}

@@ -38,4 +38,4 @@ Ref: https://keepachangelog.com/en/1.0.0/
 
 ### API-Breaking Changes
 
-- (store)[14635](https://github.com/cosmos/cosmos-sdk/pull/14635) Add error handling to all methods on the `KVStore` interface
+- (store)[14635](https://github.com/verzth/cosmos-sdk/pull/14635) Add error handling to all methods on the `KVStore` interface

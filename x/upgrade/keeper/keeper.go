@@ -9,18 +9,18 @@ import (
 	"path/filepath"
 	"sort"
 
-	errorsmod "cosmossdk.io/errors"
-	"cosmossdk.io/log"
-	"cosmossdk.io/store/prefix"
-	storetypes "cosmossdk.io/store/types"
-	xp "cosmossdk.io/x/upgrade/exported"
-	"cosmossdk.io/x/upgrade/types"
+	errorsmod "github.com/verzth/cosmos-sdk/errors"
+	"github.com/verzth/cosmos-sdk/log"
+	"github.com/verzth/cosmos-sdk/store/prefix"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
+	xp "github.com/verzth/cosmos-sdk/x/upgrade/exported"
+	"github.com/verzth/cosmos-sdk/x/upgrade/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/types/kv"
-	"github.com/cosmos/cosmos-sdk/types/module"
+	"github.com/verzth/cosmos-sdk/codec"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	sdkerrors "github.com/verzth/cosmos-sdk/types/errors"
+	"github.com/verzth/cosmos-sdk/types/kv"
+	"github.com/verzth/cosmos-sdk/types/module"
 )
 
 // Deprecated: UpgradeInfoFileName file to store upgrade information

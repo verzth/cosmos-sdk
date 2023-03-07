@@ -1,18 +1,18 @@
 package ante
 
 import (
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	errorsmod "cosmossdk.io/errors"
+	errorsmod "github.com/verzth/cosmos-sdk/errors"
 
-	"github.com/cosmos/cosmos-sdk/codec/legacy"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/multisig"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/types/tx/signing"
-	"github.com/cosmos/cosmos-sdk/x/auth/migrations/legacytx"
-	authsigning "github.com/cosmos/cosmos-sdk/x/auth/signing"
+	"github.com/verzth/cosmos-sdk/codec/legacy"
+	"github.com/verzth/cosmos-sdk/crypto/keys/multisig"
+	cryptotypes "github.com/verzth/cosmos-sdk/crypto/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	sdkerrors "github.com/verzth/cosmos-sdk/types/errors"
+	"github.com/verzth/cosmos-sdk/types/tx/signing"
+	"github.com/verzth/cosmos-sdk/x/auth/migrations/legacytx"
+	authsigning "github.com/verzth/cosmos-sdk/x/auth/signing"
 )
 
 // ValidateBasicDecorator will call tx.ValidateBasic and return any non-nil error.

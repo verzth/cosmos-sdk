@@ -6,27 +6,27 @@ import (
 	"testing"
 	"time"
 
-	errorsmod "cosmossdk.io/errors"
-	"cosmossdk.io/log"
-	"cosmossdk.io/store/metrics"
-	pruningtypes "cosmossdk.io/store/pruning/types"
-	"cosmossdk.io/store/rootmulti"
-	"cosmossdk.io/store/snapshots"
-	snapshottypes "cosmossdk.io/store/snapshots/types"
-	storetypes "cosmossdk.io/store/types"
 	abci "github.com/cometbft/cometbft/abci/types"
 	cmtproto "github.com/cometbft/cometbft/proto/tendermint/types"
 	dbm "github.com/cosmos/cosmos-db"
 	"github.com/stretchr/testify/require"
+	errorsmod "github.com/verzth/cosmos-sdk/errors"
+	"github.com/verzth/cosmos-sdk/log"
+	"github.com/verzth/cosmos-sdk/store/metrics"
+	pruningtypes "github.com/verzth/cosmos-sdk/store/pruning/types"
+	"github.com/verzth/cosmos-sdk/store/rootmulti"
+	"github.com/verzth/cosmos-sdk/store/snapshots"
+	snapshottypes "github.com/verzth/cosmos-sdk/store/snapshots/types"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	baseapptestutil "github.com/cosmos/cosmos-sdk/baseapp/testutil"
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authtx "github.com/cosmos/cosmos-sdk/x/auth/tx"
+	"github.com/verzth/cosmos-sdk/baseapp"
+	baseapptestutil "github.com/verzth/cosmos-sdk/baseapp/testutil"
+	"github.com/verzth/cosmos-sdk/client"
+	"github.com/verzth/cosmos-sdk/codec"
+	codectypes "github.com/verzth/cosmos-sdk/codec/types"
+	"github.com/verzth/cosmos-sdk/testutil"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	authtx "github.com/verzth/cosmos-sdk/x/auth/tx"
 )
 
 var (
@@ -535,8 +535,8 @@ func TestBaseAppAnteHandler(t *testing.T) {
 
 // Test and ensure that invalid block heights always cause errors.
 // See issues:
-// - https://github.com/cosmos/cosmos-sdk/issues/11220
-// - https://github.com/cosmos/cosmos-sdk/issues/7662
+// - https://github.com/verzth/cosmos-sdk/issues/11220
+// - https://github.com/verzth/cosmos-sdk/issues/7662
 func TestABCI_CreateQueryContext(t *testing.T) {
 	t.Parallel()
 

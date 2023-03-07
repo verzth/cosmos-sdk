@@ -8,20 +8,20 @@ import (
 	dbm "github.com/cosmos/cosmos-db"
 	"github.com/stretchr/testify/suite"
 
-	"cosmossdk.io/depinject"
-	pruningtypes "cosmossdk.io/store/pruning/types"
+	"github.com/verzth/cosmos-sdk/depinject"
+	pruningtypes "github.com/verzth/cosmos-sdk/store/pruning/types"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/runtime"
-	servertypes "github.com/cosmos/cosmos-sdk/server/types"
-	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
-	"github.com/cosmos/cosmos-sdk/testutil/network"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/params/client/cli"
-	"github.com/cosmos/cosmos-sdk/x/params/keeper"
-	"github.com/cosmos/cosmos-sdk/x/params/testutil"
-	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
+	"github.com/verzth/cosmos-sdk/baseapp"
+	"github.com/verzth/cosmos-sdk/client/flags"
+	"github.com/verzth/cosmos-sdk/runtime"
+	servertypes "github.com/verzth/cosmos-sdk/server/types"
+	clitestutil "github.com/verzth/cosmos-sdk/testutil/cli"
+	"github.com/verzth/cosmos-sdk/testutil/network"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/x/params/client/cli"
+	"github.com/verzth/cosmos-sdk/x/params/keeper"
+	"github.com/verzth/cosmos-sdk/x/params/testutil"
+	paramtypes "github.com/verzth/cosmos-sdk/x/params/types"
 )
 
 // mySubspace is a x/params subspace created for the purpose of this

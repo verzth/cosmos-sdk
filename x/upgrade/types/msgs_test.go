@@ -5,9 +5,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"cosmossdk.io/x/upgrade/types"
+	"github.com/verzth/cosmos-sdk/x/upgrade/types"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
 )
 
 var authority = sdk.AccAddress("authority")

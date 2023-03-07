@@ -7,14 +7,14 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 
-	"cosmossdk.io/log"
-	pruningtypes "cosmossdk.io/store/pruning/types"
-	"cosmossdk.io/store/rootmulti"
 	dbm "github.com/cosmos/cosmos-db"
+	"github.com/verzth/cosmos-sdk/log"
+	pruningtypes "github.com/verzth/cosmos-sdk/store/pruning/types"
+	"github.com/verzth/cosmos-sdk/store/rootmulti"
 
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/server"
-	servertypes "github.com/cosmos/cosmos-sdk/server/types"
+	"github.com/verzth/cosmos-sdk/client/flags"
+	"github.com/verzth/cosmos-sdk/server"
+	servertypes "github.com/verzth/cosmos-sdk/server/types"
 )
 
 const FlagAppDBBackend = "app-db-backend"

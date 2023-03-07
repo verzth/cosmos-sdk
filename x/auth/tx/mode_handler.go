@@ -3,10 +3,10 @@ package tx
 import (
 	"fmt"
 
-	"cosmossdk.io/x/tx/signing/textual"
+	"github.com/verzth/cosmos-sdk/x/tx/signing/textual"
 
-	signingtypes "github.com/cosmos/cosmos-sdk/types/tx/signing"
-	"github.com/cosmos/cosmos-sdk/x/auth/signing"
+	signingtypes "github.com/verzth/cosmos-sdk/types/tx/signing"
+	"github.com/verzth/cosmos-sdk/x/auth/signing"
 )
 
 // DefaultSignModes are the default sign modes enabled for protobuf transactions.
@@ -19,7 +19,7 @@ var DefaultSignModes = []signingtypes.SignMode{
 	// textual's sign mode handler is already available in this package. If you
 	// want to use textual for **TESTING** purposes, feel free to create a
 	// handler that includes SIGN_MODE_TEXTUAL.
-	// ref: Tracking issue for SIGN_MODE_TEXTUAL https://github.com/cosmos/cosmos-sdk/issues/11970
+	// ref: Tracking issue for SIGN_MODE_TEXTUAL https://github.com/verzth/cosmos-sdk/issues/11970
 }
 
 // makeSignModeHandler returns the default protobuf SignModeHandler supporting

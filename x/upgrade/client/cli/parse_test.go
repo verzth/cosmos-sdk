@@ -4,8 +4,8 @@ import (
 	"strconv"
 	"testing"
 
-	"cosmossdk.io/x/upgrade/types"
 	"github.com/stretchr/testify/require"
+	"github.com/verzth/cosmos-sdk/x/upgrade/types"
 )
 
 func TestParsePlan(t *testing.T) {

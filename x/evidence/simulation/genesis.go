@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"math/rand"
 
-	"cosmossdk.io/x/evidence/exported"
-	"cosmossdk.io/x/evidence/types"
+	"github.com/verzth/cosmos-sdk/x/evidence/exported"
+	"github.com/verzth/cosmos-sdk/x/evidence/types"
 
-	"github.com/cosmos/cosmos-sdk/types/module"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
+	"github.com/verzth/cosmos-sdk/types/module"
+	simtypes "github.com/verzth/cosmos-sdk/types/simulation"
 )
 
 // Simulation parameter constants

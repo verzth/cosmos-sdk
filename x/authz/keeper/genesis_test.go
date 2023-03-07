@@ -4,22 +4,22 @@ import (
 	"testing"
 	"time"
 
-	"cosmossdk.io/log"
 	cmtproto "github.com/cometbft/cometbft/proto/tendermint/types"
 	"github.com/stretchr/testify/suite"
+	"github.com/verzth/cosmos-sdk/log"
 
-	storetypes "cosmossdk.io/store/types"
 	"github.com/golang/mock/gomock"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	"github.com/cosmos/cosmos-sdk/x/authz/keeper"
-	authzmodule "github.com/cosmos/cosmos-sdk/x/authz/module"
-	authztestutil "github.com/cosmos/cosmos-sdk/x/authz/testutil"
-	bank "github.com/cosmos/cosmos-sdk/x/bank/types"
+	"github.com/verzth/cosmos-sdk/baseapp"
+	"github.com/verzth/cosmos-sdk/crypto/keys/secp256k1"
+	"github.com/verzth/cosmos-sdk/testutil"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	moduletestutil "github.com/verzth/cosmos-sdk/types/module/testutil"
+	"github.com/verzth/cosmos-sdk/x/authz/keeper"
+	authzmodule "github.com/verzth/cosmos-sdk/x/authz/module"
+	authztestutil "github.com/verzth/cosmos-sdk/x/authz/testutil"
+	bank "github.com/verzth/cosmos-sdk/x/bank/types"
 )
 
 type GenesisTestSuite struct {

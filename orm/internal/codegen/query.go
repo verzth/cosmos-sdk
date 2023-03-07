@@ -5,15 +5,15 @@ import (
 	"fmt"
 	"os"
 
-	ormv1 "cosmossdk.io/api/cosmos/orm/v1"
 	"github.com/iancoleman/strcase"
+	ormv1 "github.com/verzth/cosmos-sdk/api/cosmos/orm/v1"
 	"golang.org/x/exp/maps"
 	"golang.org/x/exp/slices"
 	"google.golang.org/protobuf/compiler/protogen"
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/reflect/protoreflect"
 
-	"github.com/cosmos/cosmos-sdk/orm/internal/fieldnames"
+	"github.com/verzth/cosmos-sdk/orm/internal/fieldnames"
 )
 
 type queryProtoGen struct {

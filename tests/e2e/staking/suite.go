@@ -7,23 +7,23 @@ import (
 	"strings"
 	"testing"
 
-	"cosmossdk.io/math"
 	"github.com/cometbft/cometbft/proto/tendermint/crypto"
 	"github.com/cometbft/cometbft/rpc/client/http"
 	"github.com/cosmos/gogoproto/proto"
 	"github.com/stretchr/testify/suite"
+	"github.com/verzth/cosmos-sdk/math"
 
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/crypto/hd"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
-	"github.com/cosmos/cosmos-sdk/testutil/network"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/types/query"
-	"github.com/cosmos/cosmos-sdk/x/staking/client/cli"
-	"github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/verzth/cosmos-sdk/client/flags"
+	"github.com/verzth/cosmos-sdk/crypto/hd"
+	"github.com/verzth/cosmos-sdk/crypto/keyring"
+	"github.com/verzth/cosmos-sdk/testutil"
+	clitestutil "github.com/verzth/cosmos-sdk/testutil/cli"
+	"github.com/verzth/cosmos-sdk/testutil/network"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	sdkerrors "github.com/verzth/cosmos-sdk/types/errors"
+	"github.com/verzth/cosmos-sdk/types/query"
+	"github.com/verzth/cosmos-sdk/x/staking/client/cli"
+	"github.com/verzth/cosmos-sdk/x/staking/types"
 )
 
 type E2ETestSuite struct {
@@ -1460,7 +1460,7 @@ func (s *E2ETestSuite) TestNewCancelUnbondingDelegationCmd() {
 
 // TestBlockResults tests that the validator updates correctly show when
 // calling the /block_results RPC endpoint.
-// ref: https://github.com/cosmos/cosmos-sdk/issues/7401.
+// ref: https://github.com/verzth/cosmos-sdk/issues/7401.
 func (s *E2ETestSuite) TestBlockResults() {
 	require := s.Require()
 	val := s.network.Validators[0]
@@ -1525,7 +1525,7 @@ func (s *E2ETestSuite) TestBlockResults() {
 	}, 10)
 }
 
-// https://github.com/cosmos/cosmos-sdk/issues/10660
+// https://github.com/verzth/cosmos-sdk/issues/10660
 func (s *E2ETestSuite) TestEditValidatorMoniker() {
 	val := s.network.Validators[0]
 	require := s.Require()

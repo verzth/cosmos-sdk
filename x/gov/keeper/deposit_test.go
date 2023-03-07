@@ -4,14 +4,14 @@ import (
 	"fmt"
 	"testing"
 
-	"cosmossdk.io/math"
 	"github.com/stretchr/testify/require"
+	"github.com/verzth/cosmos-sdk/math"
 
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	disttypes "github.com/cosmos/cosmos-sdk/x/distribution/types"
-	v1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1"
+	simtestutil "github.com/verzth/cosmos-sdk/testutil/sims"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	authtypes "github.com/verzth/cosmos-sdk/x/auth/types"
+	disttypes "github.com/verzth/cosmos-sdk/x/distribution/types"
+	v1 "github.com/verzth/cosmos-sdk/x/gov/types/v1"
 )
 
 const (

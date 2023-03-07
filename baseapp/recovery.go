@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"runtime/debug"
 
-	errorsmod "cosmossdk.io/errors"
-	storetypes "cosmossdk.io/store/types"
+	errorsmod "github.com/verzth/cosmos-sdk/errors"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	sdkerrors "github.com/verzth/cosmos-sdk/types/errors"
 )
 
 // RecoveryHandler handles recovery() object.

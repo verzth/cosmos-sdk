@@ -1,10 +1,10 @@
 package keeper
 
 import (
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/staking/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/x/staking/types"
 )
 
 // Return all validators that a delegator is bonded to. If maxRetrieve is supplied, the respective amount will be returned.

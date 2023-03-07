@@ -1,7 +1,7 @@
 package authz
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
 )
 
 // AccountKeeper defines the expected account keeper (noalias)

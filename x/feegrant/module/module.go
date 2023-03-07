@@ -9,25 +9,25 @@ import (
 	gwruntime "github.com/grpc-ecosystem/grpc-gateway/runtime"
 	"github.com/spf13/cobra"
 
-	"cosmossdk.io/core/appmodule"
-	"cosmossdk.io/errors"
+	"github.com/verzth/cosmos-sdk/core/appmodule"
+	"github.com/verzth/cosmos-sdk/errors"
 
-	modulev1 "cosmossdk.io/api/cosmos/feegrant/module/v1"
+	modulev1 "github.com/verzth/cosmos-sdk/api/cosmos/feegrant/module/v1"
 
-	"cosmossdk.io/depinject"
+	"github.com/verzth/cosmos-sdk/depinject"
 
-	store "cosmossdk.io/store/types"
-	"cosmossdk.io/x/feegrant"
-	"cosmossdk.io/x/feegrant/client/cli"
-	"cosmossdk.io/x/feegrant/keeper"
-	"cosmossdk.io/x/feegrant/simulation"
+	store "github.com/verzth/cosmos-sdk/store/types"
+	"github.com/verzth/cosmos-sdk/x/feegrant"
+	"github.com/verzth/cosmos-sdk/x/feegrant/client/cli"
+	"github.com/verzth/cosmos-sdk/x/feegrant/keeper"
+	"github.com/verzth/cosmos-sdk/x/feegrant/simulation"
 
-	sdkclient "github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	cdctypes "github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
+	sdkclient "github.com/verzth/cosmos-sdk/client"
+	"github.com/verzth/cosmos-sdk/codec"
+	cdctypes "github.com/verzth/cosmos-sdk/codec/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/types/module"
+	simtypes "github.com/verzth/cosmos-sdk/types/simulation"
 )
 
 var (

@@ -5,18 +5,18 @@ import (
 	"testing"
 	"time"
 
-	"cosmossdk.io/math"
 	"github.com/stretchr/testify/require"
+	"github.com/verzth/cosmos-sdk/math"
 
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	"github.com/cosmos/cosmos-sdk/testutil"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	v1 "github.com/cosmos/cosmos-sdk/x/gov/migrations/v1"
-	v2 "github.com/cosmos/cosmos-sdk/x/gov/migrations/v2"
-	"github.com/cosmos/cosmos-sdk/x/gov/types"
-	"github.com/cosmos/cosmos-sdk/x/gov/types/v1beta1"
+	"github.com/verzth/cosmos-sdk/testutil"
+	"github.com/verzth/cosmos-sdk/testutil/testdata"
+	moduletestutil "github.com/verzth/cosmos-sdk/types/module/testutil"
+	v1 "github.com/verzth/cosmos-sdk/x/gov/migrations/v1"
+	v2 "github.com/verzth/cosmos-sdk/x/gov/migrations/v2"
+	"github.com/verzth/cosmos-sdk/x/gov/types"
+	"github.com/verzth/cosmos-sdk/x/gov/types/v1beta1"
 )
 
 func TestMigrateStore(t *testing.T) {

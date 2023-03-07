@@ -27,4 +27,4 @@ Ref: https://keepachangelog.com/en/1.0.0/
 
 ### Features
 
-* (x/feegrant) [14649](https://github.com/cosmos/cosmos-sdk/pull/14649) The `x/feegrant` module is extracted to have a separate go.mod file which allows it to be a standalone module. 
+* (x/feegrant) [14649](https://github.com/verzth/cosmos-sdk/pull/14649) The `x/feegrant` module is extracted to have a separate go.mod file which allows it to be a standalone module. 

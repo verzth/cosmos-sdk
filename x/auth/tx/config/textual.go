@@ -7,10 +7,10 @@ import (
 	"google.golang.org/grpc/codes"
 	grpcstatus "google.golang.org/grpc/status"
 
-	bankv1beta1 "cosmossdk.io/api/cosmos/bank/v1beta1"
-	"cosmossdk.io/x/tx/signing/textual"
+	bankv1beta1 "github.com/verzth/cosmos-sdk/api/cosmos/bank/v1beta1"
+	"github.com/verzth/cosmos-sdk/x/tx/signing/textual"
 
-	"github.com/cosmos/cosmos-sdk/x/bank/types"
+	"github.com/verzth/cosmos-sdk/x/bank/types"
 )
 
 // NewTextualWithGRPCConn returns a new Textual instance where the metadata

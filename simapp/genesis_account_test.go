@@ -4,10 +4,10 @@ import (
 	"testing"
 	"time"
 
-	"cosmossdk.io/simapp"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
+	"github.com/verzth/cosmos-sdk/crypto/keys/secp256k1"
+	"github.com/verzth/cosmos-sdk/simapp"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	authtypes "github.com/verzth/cosmos-sdk/x/auth/types"
 
 	"github.com/cometbft/cometbft/crypto"
 	"github.com/stretchr/testify/require"

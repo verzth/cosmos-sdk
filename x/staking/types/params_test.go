@@ -3,10 +3,10 @@ package types_test
 import (
 	"testing"
 
-	"cosmossdk.io/math"
 	"github.com/stretchr/testify/require"
+	"github.com/verzth/cosmos-sdk/math"
 
-	"github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/verzth/cosmos-sdk/x/staking/types"
 )
 
 func TestParamsEqual(t *testing.T) {

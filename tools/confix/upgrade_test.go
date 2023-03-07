@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	"cosmossdk.io/tools/confix"
+	"github.com/verzth/cosmos-sdk/tools/confix"
 	"gotest.tools/v3/assert"
 )
 

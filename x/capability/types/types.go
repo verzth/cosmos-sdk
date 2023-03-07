@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"sort"
 
-	"cosmossdk.io/errors"
+	"github.com/verzth/cosmos-sdk/errors"
 )
 
 // NewCapability returns a reference to a new Capability to be used as an

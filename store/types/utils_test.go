@@ -5,7 +5,7 @@ import (
 
 	"gotest.tools/v3/assert"
 
-	"cosmossdk.io/store/types"
+	"github.com/verzth/cosmos-sdk/store/types"
 )
 
 func TestPrefixEndBytes(t *testing.T) {

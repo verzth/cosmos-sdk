@@ -12,9 +12,9 @@ import (
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
 
-	"cosmossdk.io/log"
-	"cosmossdk.io/tools/cosmovisor"
-	upgradetypes "cosmossdk.io/x/upgrade/types"
+	"github.com/verzth/cosmos-sdk/log"
+	"github.com/verzth/cosmos-sdk/tools/cosmovisor"
+	upgradetypes "github.com/verzth/cosmos-sdk/x/upgrade/types"
 )
 
 type processTestSuite struct {

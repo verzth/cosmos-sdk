@@ -8,8 +8,8 @@ import (
 	"strings"
 	"testing"
 
-	sdkmath "cosmossdk.io/math"
 	"github.com/stretchr/testify/suite"
+	sdkmath "github.com/verzth/cosmos-sdk/math"
 )
 
 type uintTestSuite struct {

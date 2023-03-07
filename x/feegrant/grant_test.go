@@ -7,12 +7,12 @@ import (
 	cmtproto "github.com/cometbft/cometbft/proto/tendermint/types"
 	"github.com/stretchr/testify/require"
 
-	storetypes "cosmossdk.io/store/types"
-	"cosmossdk.io/x/feegrant"
-	"cosmossdk.io/x/feegrant/module"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
+	"github.com/verzth/cosmos-sdk/testutil"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	moduletestutil "github.com/verzth/cosmos-sdk/types/module/testutil"
+	"github.com/verzth/cosmos-sdk/x/feegrant"
+	"github.com/verzth/cosmos-sdk/x/feegrant/module"
 )
 
 func TestGrant(t *testing.T) {

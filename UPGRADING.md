@@ -23,7 +23,7 @@ For backward compatibility, the `**/tendermint/**` gRPC services are still suppo
 
 Additionally, the SDK is starting its abstraction from CometBFT Go types thorought the codebase:
 
-* The usage of CometBFT have been replaced to use the Cosmos SDK logger interface (`cosmossdk.io/log.Logger`).
+* The usage of CometBFT have been replaced to use the Cosmos SDK logger interface (`github.com/verzth/cosmos-sdk/log.Logger`).
 * The usage of `github.com/cometbft/cometbft/libs/bytes.HexByte` have been replaced by `[]byte`.
 
 ### Configuration
@@ -53,7 +53,7 @@ The SDK is in the process of removing all `gogoproto` annotations.
 #### Stringer
 
 The `gogoproto.goproto_stringer = false` annotation has been removed from most proto files. This means that the `String()` method is being generated for types that previously had this annotation. The generated `String()` method uses `proto.CompactTextString` for _stringifying_ structs.
-[Verify](https://github.com/cosmos/cosmos-sdk/pull/13850#issuecomment-1328889651) the usage of the modified `String()` methods and double-check that they are not used in state-machine code.
+[Verify](https://github.com/verzth/cosmos-sdk/pull/13850#issuecomment-1328889651) the usage of the modified `String()` methods and double-check that they are not used in state-machine code.
 
 ### SimApp
 
@@ -65,7 +65,7 @@ This is no longer the case, the assertion has been loosened to only require modu
 #### Replaces
 
 * `GoLevelDB` version has been pinned to `v1.0.1-0.20210819022825-2ae1ddf74ef7`, following versions might cause unexpected behavior.
-    * [issue #14949 on cosmos-sdk](https://github.com/cosmos/cosmos-sdk/issues/14949)
+    * [issue #14949 on cosmos-sdk](https://github.com/verzth/cosmos-sdk/issues/14949)
     * [issue #25413 on go-ethereum](https://github.com/ethereum/go-ethereum/pull/25413)
 
 ### Packages
@@ -77,7 +77,7 @@ References to `types/store.go` which contained aliases for store types have been
 ##### Extract Store to a standalone module
 
 The `store` module is extracted to have a separate go.mod file which allows it be a standalone module. 
-All the store imports are now renamed to use `cosmossdk.io/store` instead of `github.com/cosmos/cosmos-sdk/store` across the SDK.
+All the store imports are now renamed to use `github.com/verzth/cosmos-sdk/store` instead of `github.com/verzth/cosmos-sdk/store` across the SDK.
 
 ### Modules
 
@@ -103,7 +103,7 @@ By default, the new `ProposalCancelRatio` parameter is set to 0.5 during migrati
 ##### Extract evidence to a standalone module
 
 The `x/evidence` module is extracted to have a separate go.mod file which allows it be a standalone module. 
-All the evidence imports are now renamed to use `cosmossdk.io/x/evidence` instead of `github.com/cosmos/cosmos-sdk/x/evidence` across the SDK.
+All the evidence imports are now renamed to use `github.com/verzth/cosmos-sdk/x/evidence` instead of `github.com/verzth/cosmos-sdk/x/evidence` across the SDK.
 
 #### `x/nft`
 
@@ -116,16 +116,16 @@ The `x/nft` module is extracted to have a separate go.mod file which allows it t
 ##### Extract feegrant to a standalone module
 
 The `x/feegrant` module is extracted to have a separate go.mod file which allows it to be a standalone module.
-All the feegrant imports are now renamed to use `cosmossdk.io/x/feegrant` instead of `github.com/cosmos/cosmos-sdk/x/feegrant` across the SDK.
+All the feegrant imports are now renamed to use `github.com/verzth/cosmos-sdk/x/feegrant` instead of `github.com/verzth/cosmos-sdk/x/feegrant` across the SDK.
 
 #### `x/upgrade`
 
 ##### Extract upgrade to a standalone module
 
 The `x/upgrade` module is extracted to have a separate go.mod file which allows it to be a standalone module. 
-All the upgrade imports are now renamed to use `cosmossdk.io/x/upgrade` instead of `github.com/cosmos/cosmos-sdk/x/upgrade` across the SDK.
+All the upgrade imports are now renamed to use `github.com/verzth/cosmos-sdk/x/upgrade` instead of `github.com/verzth/cosmos-sdk/x/upgrade` across the SDK.
 
-## [v0.47.x](https://github.com/cosmos/cosmos-sdk/releases/tag/v0.47.0)
+## [v0.47.x](https://github.com/verzth/cosmos-sdk/releases/tag/v0.47.0)
 
 ### Migration to CometBFT (Part 1)
 
@@ -164,18 +164,18 @@ interface. This removes and fully deprecates all legacy queriers. All modules no
 known as the LCD, and the `sdk.Msg#Route` method won't be used anymore.
 
 Most other existing `AppModule` methods have been moved to extension interfaces in preparation for the migration
-to the `cosmossdk.io/core/appmodule` API in the next release. Most `AppModule` implementations should not be broken
+to the `github.com/verzth/cosmos-sdk/core/appmodule` API in the next release. Most `AppModule` implementations should not be broken
 by this change.
 
 ### SimApp
 
-The `simapp` package **should not be imported in your own app**. Instead, you should import the `runtime.AppI` interface, that defines an `App`, and use the [`simtestutil` package](https://pkg.go.dev/github.com/cosmos/cosmos-sdk/testutil/sims) for application testing.
+The `simapp` package **should not be imported in your own app**. Instead, you should import the `runtime.AppI` interface, that defines an `App`, and use the [`simtestutil` package](https://pkg.go.dev/github.com/verzth/cosmos-sdk/testutil/sims) for application testing.
 
 #### App Wiring
 
 SimApp's `app_v2.go` is using [App Wiring](https://docs.cosmos.network/main/building-apps/app-go-v2), the dependency injection framework of the Cosmos SDK.
-This means that modules are injected directly into SimApp thanks to a [configuration file](https://github.com/cosmos/cosmos-sdk/blob/v0.47.0-rc1/simapp/app_config.go).
-The previous behavior, without the dependency injection framework, is still present in [`app.go`](https://github.com/cosmos/cosmos-sdk/blob/v0.47.0-rc1/simapp/app.go) and is not going anywhere.
+This means that modules are injected directly into SimApp thanks to a [configuration file](https://github.com/verzth/cosmos-sdk/blob/v0.47.0-rc1/simapp/app_config.go).
+The previous behavior, without the dependency injection framework, is still present in [`app.go`](https://github.com/verzth/cosmos-sdk/blob/v0.47.0-rc1/simapp/app.go) and is not going anywhere.
 
 If you are using a `app.go` without dependency injection, add the following lines to your `app.go` in order to provide newer gRPC services:
 
@@ -225,7 +225,7 @@ For example, assuming you put all your proto files in subfolders inside your roo
 
 If you are using a custom folder structure for your proto files, please reorganize them so that their OS path matches their proto package name.
 
-This is to allow the proto FileDescriptSets to be correctly registered, and this standardized OS import paths allows [Hubl](https://github.com/cosmos/cosmos-sdk/tree/main/tools/hubl) to reflectively talk to any chain.
+This is to allow the proto FileDescriptSets to be correctly registered, and this standardized OS import paths allows [Hubl](https://github.com/verzth/cosmos-sdk/tree/main/tools/hubl) to reflectively talk to any chain.
 
 #### `{accepts,implements}_interface` proto annotations
 
@@ -286,7 +286,7 @@ In case a module does not follow the standard message path, (e.g. IBC), it is ad
 
 The `params` module was deprecated since v0.46. The Cosmos SDK has migrated away from `x/params` for its own modules.
 Cosmos SDK modules now store their parameters directly in its repective modules.
-The `params` module will be removed in `v0.48`, as mentioned [in v0.46 release](https://github.com/cosmos/cosmos-sdk/blob/v0.46.1/UPGRADING.md#xparams). It is strongly encouraged to migrate away from `x/params` before `v0.48`.
+The `params` module will be removed in `v0.48`, as mentioned [in v0.46 release](https://github.com/verzth/cosmos-sdk/blob/v0.46.1/UPGRADING.md#xparams). It is strongly encouraged to migrate away from `x/params` before `v0.48`.
 
 When performing a chain migration, the params table must be initizalied manually. This was done in the modules keepers in previous versions.
 Have a look at `simapp.RegisterUpgradeHandlers()` for an example.
@@ -309,10 +309,10 @@ The `Proposal` proto has been updated with proposer field. For proposal state mi
 
 ```go
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	v4 "github.com/cosmos/cosmos-sdk/x/gov/migrations/v4"
-	upgradetypes "github.com/cosmos/cosmos-sdk/x/upgrade/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/types/module"
+	v4 "github.com/verzth/cosmos-sdk/x/gov/migrations/v4"
+	upgradetypes "github.com/verzth/cosmos-sdk/x/upgrade/types"
 )
 
 func (app SimApp) RegisterUpgradeHandlers() {
@@ -384,7 +384,7 @@ Ledger support has been generalized to enable use of different apps and keytypes
 
 This is not a breaking change, as all values will default to use the standard Cosmos app implementation unless specified otherwise.
 
-## [v0.46.x](https://github.com/cosmos/cosmos-sdk/releases/tag/v0.46.0)
+## [v0.46.x](https://github.com/verzth/cosmos-sdk/releases/tag/v0.46.0)
 
 ### Go API Changes
 
@@ -407,7 +407,7 @@ To improve clarity of the API, some renaming and improvements has been done:
 | `x/gov`   | `keeper.RefundDeposits`            | `keeper.RefundAndDeleteDeposits`     |
 | `x/{mod}` | package `legacy`                   | package `migrations`                 |
 
-For the exhaustive list of API renaming, please refer to the [CHANGELOG](https://github.com/cosmos/cosmos-sdk/blob/main/CHANGELOG.md).
+For the exhaustive list of API renaming, please refer to the [CHANGELOG](https://github.com/verzth/cosmos-sdk/blob/main/CHANGELOG.md).
 
 #### new packages
 
@@ -464,7 +464,7 @@ mistakes.
 
 #### `x/params`
 
-* The `x/params` module has been depreacted in favour of each module housing and providing way to modify their parameters. Each module that has parameters that are changable during runtime have an authority, the authority can be a module or user account. The Cosmos SDK team recommends migrating modules away from using the param module. An example of how this could look like can be found [here](https://github.com/cosmos/cosmos-sdk/pull/12363). 
+* The `x/params` module has been depreacted in favour of each module housing and providing way to modify their parameters. Each module that has parameters that are changable during runtime have an authority, the authority can be a module or user account. The Cosmos SDK team recommends migrating modules away from using the param module. An example of how this could look like can be found [here](https://github.com/verzth/cosmos-sdk/pull/12363). 
 * The Param module will be maintained until April 18, 2023. At this point the module will reach end of life and be removed from the Cosmos SDK.
 
 #### `x/gov`
@@ -481,7 +481,7 @@ The `staking module` added a new message type to cancel unbonding delegations. U
 
 ### Protobuf
 
-The `third_party/proto` folder that existed in [previous version](https://github.com/cosmos/cosmos-sdk/tree/v0.45.3/third_party/proto) now does not contains directly the [proto files](https://github.com/cosmos/cosmos-sdk/tree/release/v0.46.x/third_party/proto).
+The `third_party/proto` folder that existed in [previous version](https://github.com/verzth/cosmos-sdk/tree/v0.45.3/third_party/proto) now does not contains directly the [proto files](https://github.com/verzth/cosmos-sdk/tree/release/v0.46.x/third_party/proto).
 
 Instead, the SDK uses [`buf`](https://buf.build). Clients should have their own [`buf.yaml`](https://docs.buf.build/configuration/v1/buf-yaml) with `buf.build/cosmos/cosmos-sdk` as dependency, in order to avoid having to copy paste these files.
 

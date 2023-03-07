@@ -5,7 +5,7 @@ import (
 	"sort"
 	"strings"
 
-	"cosmossdk.io/errors"
+	"github.com/verzth/cosmos-sdk/errors"
 )
 
 // ----------------------------------------------------------------------------

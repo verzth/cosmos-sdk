@@ -3,18 +3,18 @@ package keeper_test
 import (
 	"testing"
 
-	"cosmossdk.io/simapp"
 	cmtproto "github.com/cometbft/cometbft/proto/tendermint/types"
+	"github.com/verzth/cosmos-sdk/simapp"
 	"gotest.tools/v3/assert"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/gov/keeper"
-	"github.com/cosmos/cosmos-sdk/x/gov/types"
-	v1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1"
-	"github.com/cosmos/cosmos-sdk/x/gov/types/v1beta1"
-	minttypes "github.com/cosmos/cosmos-sdk/x/mint/types"
+	"github.com/verzth/cosmos-sdk/baseapp"
+	simtestutil "github.com/verzth/cosmos-sdk/testutil/sims"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/x/gov/keeper"
+	"github.com/verzth/cosmos-sdk/x/gov/types"
+	v1 "github.com/verzth/cosmos-sdk/x/gov/types/v1"
+	"github.com/verzth/cosmos-sdk/x/gov/types/v1beta1"
+	minttypes "github.com/verzth/cosmos-sdk/x/mint/types"
 )
 
 // fixture only tests gov's keeper logic around tallying, since it

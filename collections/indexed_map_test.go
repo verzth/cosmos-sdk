@@ -3,9 +3,9 @@ package collections_test
 import (
 	"testing"
 
-	"cosmossdk.io/collections"
-	"cosmossdk.io/collections/colltest"
 	"github.com/stretchr/testify/require"
+	"github.com/verzth/cosmos-sdk/collections"
+	"github.com/verzth/cosmos-sdk/collections/colltest"
 )
 
 type company struct {

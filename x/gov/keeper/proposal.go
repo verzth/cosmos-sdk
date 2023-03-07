@@ -5,13 +5,13 @@ import (
 	"fmt"
 	"time"
 
-	errorsmod "cosmossdk.io/errors"
-	storetypes "cosmossdk.io/store/types"
+	errorsmod "github.com/verzth/cosmos-sdk/errors"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/gov/types"
-	v1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1"
+	"github.com/verzth/cosmos-sdk/client"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/x/gov/types"
+	v1 "github.com/verzth/cosmos-sdk/x/gov/types/v1"
 )
 
 // SubmitProposal creates a new proposal given an array of messages
@@ -66,7 +66,7 @@ func (keeper Keeper) SubmitProposal(ctx sdk.Context, messages []sdk.Msg, metadat
 		// proposal in a cached context.
 		// For other Msgs, we do not verify the proposal messages any further.
 		// They may fail upon execution.
-		// ref: https://github.com/cosmos/cosmos-sdk/pull/10868#discussion_r784872842
+		// ref: https://github.com/verzth/cosmos-sdk/pull/10868#discussion_r784872842
 		if msg, ok := msg.(*v1.MsgExecLegacyContent); ok {
 			cacheCtx, _ := ctx.CacheContext()
 			if _, err := handler(cacheCtx, msg); err != nil {
@@ -118,7 +118,7 @@ func (keeper Keeper) CancelProposal(ctx sdk.Context, proposalID uint64, proposer
 	}
 
 	// Checking proposal have proposer or not because old proposal doesn't have proposer field,
-	// https://github.com/cosmos/cosmos-sdk/blob/v0.46.2/proto/cosmos/gov/v1/gov.proto#L43
+	// https://github.com/verzth/cosmos-sdk/blob/v0.46.2/proto/cosmos/gov/v1/gov.proto#L43
 	if proposal.Proposer == "" {
 		return types.ErrInvalidProposal.Wrapf("proposal %d doesn't have proposer %s, so cannot be canceled", proposalID, proposer)
 	}

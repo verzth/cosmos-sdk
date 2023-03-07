@@ -1,14 +1,14 @@
 package autocli
 
 import (
-	autocliv1 "cosmossdk.io/api/cosmos/autocli/v1"
 	"fmt"
-	"github.com/cosmos/cosmos-sdk/client/flags"
 	"github.com/spf13/cobra"
+	autocliv1 "github.com/verzth/cosmos-sdk/api/cosmos/autocli/v1"
+	"github.com/verzth/cosmos-sdk/client/flags"
 	"google.golang.org/protobuf/reflect/protoreflect"
 	"sigs.k8s.io/yaml"
 
-	"cosmossdk.io/client/v2/internal/util"
+	"github.com/verzth/cosmos-sdk/client/v2/internal/util"
 )
 
 func (b *Builder) buildMethodCommandCommon(descriptor protoreflect.MethodDescriptor, options *autocliv1.RpcCommandOptions, exec func(cmd *cobra.Command, input protoreflect.Message) error) (*cobra.Command, error) {

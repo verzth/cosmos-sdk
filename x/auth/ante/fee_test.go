@@ -3,16 +3,16 @@ package ante_test
 import (
 	"testing"
 
-	"cosmossdk.io/math"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/types/tx/signing"
-	"github.com/cosmos/cosmos-sdk/x/auth/ante"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/require"
+	cryptotypes "github.com/verzth/cosmos-sdk/crypto/types"
+	"github.com/verzth/cosmos-sdk/math"
+	"github.com/verzth/cosmos-sdk/testutil/testdata"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	sdkerrors "github.com/verzth/cosmos-sdk/types/errors"
+	"github.com/verzth/cosmos-sdk/types/tx/signing"
+	"github.com/verzth/cosmos-sdk/x/auth/ante"
+	authtypes "github.com/verzth/cosmos-sdk/x/auth/types"
 )
 
 func TestDeductFeeDecorator_ZeroGas(t *testing.T) {

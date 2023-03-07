@@ -3,11 +3,11 @@ package keeper_test
 import (
 	"time"
 
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	"github.com/cosmos/cosmos-sdk/x/authz"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
+	simtestutil "github.com/verzth/cosmos-sdk/testutil/sims"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	authtypes "github.com/verzth/cosmos-sdk/x/auth/types"
+	"github.com/verzth/cosmos-sdk/x/authz"
+	banktypes "github.com/verzth/cosmos-sdk/x/bank/types"
 
 	"github.com/golang/mock/gomock"
 )

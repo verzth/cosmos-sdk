@@ -8,12 +8,12 @@ import (
 	context "context"
 	reflect "reflect"
 
-	math "cosmossdk.io/math"
-	types "github.com/cosmos/cosmos-sdk/types"
-	query "github.com/cosmos/cosmos-sdk/types/query"
-	keeper "github.com/cosmos/cosmos-sdk/x/bank/keeper"
-	types0 "github.com/cosmos/cosmos-sdk/x/bank/types"
-	types1 "github.com/cosmos/cosmos-sdk/x/staking/types"
+	math "github.com/verzth/cosmos-sdk/math"
+	types "github.com/verzth/cosmos-sdk/types"
+	query "github.com/verzth/cosmos-sdk/types/query"
+	keeper "github.com/verzth/cosmos-sdk/x/bank/keeper"
+	types0 "github.com/verzth/cosmos-sdk/x/bank/types"
+	types1 "github.com/verzth/cosmos-sdk/x/staking/types"
 	gomock "github.com/golang/mock/gomock"
 )
 

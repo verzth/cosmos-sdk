@@ -9,16 +9,16 @@ import (
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
 
-	"cosmossdk.io/log"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/mempool"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	txsigning "github.com/cosmos/cosmos-sdk/types/tx/signing"
-	"github.com/cosmos/cosmos-sdk/x/auth/signing"
-	"github.com/cosmos/cosmos-sdk/x/distribution"
-	"github.com/cosmos/cosmos-sdk/x/gov"
+	cryptotypes "github.com/verzth/cosmos-sdk/crypto/types"
+	"github.com/verzth/cosmos-sdk/log"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/types/mempool"
+	moduletestutil "github.com/verzth/cosmos-sdk/types/module/testutil"
+	simtypes "github.com/verzth/cosmos-sdk/types/simulation"
+	txsigning "github.com/verzth/cosmos-sdk/types/tx/signing"
+	"github.com/verzth/cosmos-sdk/x/auth/signing"
+	"github.com/verzth/cosmos-sdk/x/distribution"
+	"github.com/verzth/cosmos-sdk/x/gov"
 )
 
 // testPubKey is a dummy implementation of PubKey used for testing.

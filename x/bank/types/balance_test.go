@@ -4,12 +4,12 @@ import (
 	"bytes"
 	"testing"
 
-	"cosmossdk.io/math"
 	"github.com/stretchr/testify/require"
+	"github.com/verzth/cosmos-sdk/math"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	bank "github.com/cosmos/cosmos-sdk/x/bank/types"
+	"github.com/verzth/cosmos-sdk/crypto/keys/ed25519"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	bank "github.com/verzth/cosmos-sdk/x/bank/types"
 )
 
 func TestBalanceValidate(t *testing.T) {

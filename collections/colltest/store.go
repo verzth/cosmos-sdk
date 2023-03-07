@@ -3,8 +3,8 @@ package colltest
 import (
 	"context"
 
-	"cosmossdk.io/core/store"
 	db "github.com/cosmos/cosmos-db"
+	"github.com/verzth/cosmos-sdk/core/store"
 )
 
 // MockStore returns a mock store.KVStoreService and a mock context.Context.

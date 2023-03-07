@@ -2,7 +2,7 @@
 package circuitv1
 
 import (
-	_ "cosmossdk.io/api/cosmos/msg/v1"
+	_ "github.com/verzth/cosmos-sdk/api/cosmos/msg/v1"
 	fmt "fmt"
 	runtime "github.com/cosmos/cosmos-proto/runtime"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"

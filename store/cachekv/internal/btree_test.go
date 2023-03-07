@@ -3,8 +3,8 @@ package internal
 import (
 	"testing"
 
-	"cosmossdk.io/store/types"
 	"github.com/stretchr/testify/require"
+	"github.com/verzth/cosmos-sdk/store/types"
 )
 
 func TestGetSetDelete(t *testing.T) {

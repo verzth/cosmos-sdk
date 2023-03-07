@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/group"
-	client "github.com/cosmos/cosmos-sdk/x/group/client/cli"
+	"github.com/verzth/cosmos-sdk/client/flags"
+	"github.com/verzth/cosmos-sdk/crypto/keys/ed25519"
+	clitestutil "github.com/verzth/cosmos-sdk/testutil/cli"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/x/group"
+	client "github.com/verzth/cosmos-sdk/x/group/client/cli"
 )
 
 func (s *E2ETestSuite) TestQueryGroupInfo() {

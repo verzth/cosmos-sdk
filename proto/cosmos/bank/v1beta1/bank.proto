@@ -7,7 +7,7 @@ import "cosmos/base/v1beta1/coin.proto";
 import "cosmos/msg/v1/msg.proto";
 import "amino/amino.proto";
 
-option go_package = "github.com/cosmos/cosmos-sdk/x/bank/types";
+option go_package = "github.com/verzth/cosmos-sdk/x/bank/types";
 
 // Params defines the parameters for the bank module.
 message Params {
@@ -41,7 +41,7 @@ message Input {
     (gogoproto.nullable)     = false,
     (amino.dont_omitempty)   = true,
     (amino.encoding)         = "legacy_coins",
-    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"
+    (gogoproto.castrepeated) = "github.com/verzth/cosmos-sdk/types.Coins"
   ];
 }
 
@@ -55,7 +55,7 @@ message Output {
     (gogoproto.nullable)     = false,
     (amino.dont_omitempty)   = true,
     (amino.encoding)         = "legacy_coins",
-    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"
+    (gogoproto.castrepeated) = "github.com/verzth/cosmos-sdk/types.Coins"
   ];
 }
 
@@ -74,7 +74,7 @@ message Supply {
     (gogoproto.nullable)     = false,
     (amino.dont_omitempty)   = true,
     (amino.encoding)         = "legacy_coins",
-    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"
+    (gogoproto.castrepeated) = "github.com/verzth/cosmos-sdk/types.Coins"
   ];
 }
 

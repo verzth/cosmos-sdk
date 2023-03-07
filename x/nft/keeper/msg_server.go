@@ -3,11 +3,11 @@ package keeper
 import (
 	"context"
 
-	errorsmod "cosmossdk.io/errors"
-	"cosmossdk.io/x/nft"
+	errorsmod "github.com/verzth/cosmos-sdk/errors"
+	"github.com/verzth/cosmos-sdk/x/nft"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	sdkerrors "github.com/verzth/cosmos-sdk/types/errors"
 )
 
 var _ nft.MsgServer = Keeper{}

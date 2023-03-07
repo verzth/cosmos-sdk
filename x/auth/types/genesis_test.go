@@ -4,16 +4,16 @@ import (
 	"encoding/json"
 	"testing"
 
-	"cosmossdk.io/depinject"
 	proto "github.com/cosmos/gogoproto/proto"
 	"github.com/stretchr/testify/require"
+	"github.com/verzth/cosmos-sdk/depinject"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/auth/testutil"
-	"github.com/cosmos/cosmos-sdk/x/auth/types"
+	"github.com/verzth/cosmos-sdk/codec"
+	codectypes "github.com/verzth/cosmos-sdk/codec/types"
+	"github.com/verzth/cosmos-sdk/crypto/keys/ed25519"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/x/auth/testutil"
+	"github.com/verzth/cosmos-sdk/x/auth/types"
 )
 
 func TestSanitize(t *testing.T) {

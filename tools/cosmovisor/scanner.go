@@ -9,9 +9,9 @@ import (
 	"strings"
 	"time"
 
-	"cosmossdk.io/log"
-	upgradetypes "cosmossdk.io/x/upgrade/types"
 	"github.com/rs/zerolog"
+	"github.com/verzth/cosmos-sdk/log"
+	upgradetypes "github.com/verzth/cosmos-sdk/x/upgrade/types"
 )
 
 type fileWatcher struct {

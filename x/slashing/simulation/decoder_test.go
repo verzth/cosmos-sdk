@@ -8,14 +8,14 @@ import (
 	gogotypes "github.com/cosmos/gogoproto/types"
 	"github.com/stretchr/testify/require"
 
-	"cosmossdk.io/depinject"
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/kv"
-	"github.com/cosmos/cosmos-sdk/x/slashing/simulation"
-	"github.com/cosmos/cosmos-sdk/x/slashing/testutil"
-	"github.com/cosmos/cosmos-sdk/x/slashing/types"
+	"github.com/verzth/cosmos-sdk/codec"
+	"github.com/verzth/cosmos-sdk/crypto/keys/ed25519"
+	"github.com/verzth/cosmos-sdk/depinject"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/types/kv"
+	"github.com/verzth/cosmos-sdk/x/slashing/simulation"
+	"github.com/verzth/cosmos-sdk/x/slashing/testutil"
+	"github.com/verzth/cosmos-sdk/x/slashing/types"
 )
 
 //nolint:deadcode,varcheck

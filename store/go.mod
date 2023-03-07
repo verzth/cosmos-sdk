@@ -1,11 +1,11 @@
-module cosmossdk.io/store
+module github.com/verzth/cosmos-sdk/store
 
 go 1.20
 
 require (
-	cosmossdk.io/errors v1.0.0-beta.7
-	cosmossdk.io/log v0.0.0-20230306220716-5e55f56d39d5
-	cosmossdk.io/math v1.0.0-beta.6.0.20230216172121-959ce49135e4
+	github.com/verzth/cosmos-sdk/errors v1.0.0-beta.7
+	github.com/verzth/cosmos-sdk/log v0.0.0-20230306220716-5e55f56d39d5
+	github.com/verzth/cosmos-sdk/math v1.0.0-beta.6.0.20230216172121-959ce49135e4
 	github.com/armon/go-metrics v0.4.1
 	github.com/cometbft/cometbft v0.37.0
 	github.com/confio/ics23/go v0.9.0
@@ -70,5 +70,5 @@ require (
 
 // Below are the long-lived replace for store.
 // Fix upstream GHSA-h395-qcrw-5vmq vulnerability.
-// TODO Remove it: https://github.com/cosmos/cosmos-sdk/issues/10409
+// TODO Remove it: https://github.com/verzth/cosmos-sdk/issues/10409
 replace github.com/gin-gonic/gin => github.com/gin-gonic/gin v1.8.1

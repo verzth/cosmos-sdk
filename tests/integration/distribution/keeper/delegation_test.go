@@ -3,21 +3,21 @@ package keeper_test
 import (
 	"testing"
 
-	"cosmossdk.io/math"
 	cmtproto "github.com/cometbft/cometbft/proto/tendermint/types"
+	"github.com/verzth/cosmos-sdk/math"
 	"gotest.tools/v3/assert"
 
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authkeeper "github.com/cosmos/cosmos-sdk/x/auth/keeper"
-	bankkeeper "github.com/cosmos/cosmos-sdk/x/bank/keeper"
-	banktestutil "github.com/cosmos/cosmos-sdk/x/bank/testutil"
-	"github.com/cosmos/cosmos-sdk/x/distribution/keeper"
-	"github.com/cosmos/cosmos-sdk/x/distribution/testutil"
-	"github.com/cosmos/cosmos-sdk/x/staking"
-	stakingkeeper "github.com/cosmos/cosmos-sdk/x/staking/keeper"
-	stakingtestutil "github.com/cosmos/cosmos-sdk/x/staking/testutil"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	simtestutil "github.com/verzth/cosmos-sdk/testutil/sims"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	authkeeper "github.com/verzth/cosmos-sdk/x/auth/keeper"
+	bankkeeper "github.com/verzth/cosmos-sdk/x/bank/keeper"
+	banktestutil "github.com/verzth/cosmos-sdk/x/bank/testutil"
+	"github.com/verzth/cosmos-sdk/x/distribution/keeper"
+	"github.com/verzth/cosmos-sdk/x/distribution/testutil"
+	"github.com/verzth/cosmos-sdk/x/staking"
+	stakingkeeper "github.com/verzth/cosmos-sdk/x/staking/keeper"
+	stakingtestutil "github.com/verzth/cosmos-sdk/x/staking/testutil"
+	stakingtypes "github.com/verzth/cosmos-sdk/x/staking/types"
 )
 
 func TestCalculateRewardsBasic(t *testing.T) {

@@ -1,8 +1,8 @@
 package codec
 
 import (
-	collcodec "cosmossdk.io/collections/codec"
 	"github.com/cosmos/gogoproto/proto"
+	collcodec "github.com/verzth/cosmos-sdk/collections/codec"
 )
 
 type protoMessage[T any] interface {

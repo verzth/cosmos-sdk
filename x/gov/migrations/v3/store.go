@@ -1,14 +1,14 @@
 package v3
 
 import (
-	"cosmossdk.io/store/prefix"
-	storetypes "cosmossdk.io/store/types"
+	"github.com/verzth/cosmos-sdk/store/prefix"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	v1 "github.com/cosmos/cosmos-sdk/x/gov/migrations/v1"
-	govv1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1"
-	govv1beta1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1beta1"
+	"github.com/verzth/cosmos-sdk/codec"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	v1 "github.com/verzth/cosmos-sdk/x/gov/migrations/v1"
+	govv1 "github.com/verzth/cosmos-sdk/x/gov/types/v1"
+	govv1beta1 "github.com/verzth/cosmos-sdk/x/gov/types/v1beta1"
 )
 
 // migrateProposals migrates all legacy proposals into MsgExecLegacyContent

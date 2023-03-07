@@ -5,14 +5,14 @@ import (
 	"fmt"
 	"time"
 
-	"cosmossdk.io/math"
-	storetypes "cosmossdk.io/store/types"
+	"github.com/verzth/cosmos-sdk/math"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	errorsmod "cosmossdk.io/errors"
+	errorsmod "github.com/verzth/cosmos-sdk/errors"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/x/staking/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	sdkerrors "github.com/verzth/cosmos-sdk/types/errors"
+	"github.com/verzth/cosmos-sdk/x/staking/types"
 )
 
 // GetDelegation returns a specific delegation.

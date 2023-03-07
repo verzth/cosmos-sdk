@@ -2,7 +2,7 @@ package cmtservice
 
 import (
 	cmtprototypes "github.com/cometbft/cometbft/proto/tendermint/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
 )
 
 // convertHeader converts CometBFT header to sdk header

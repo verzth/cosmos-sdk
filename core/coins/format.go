@@ -5,9 +5,9 @@ import (
 	"sort"
 	"strings"
 
-	bankv1beta1 "cosmossdk.io/api/cosmos/bank/v1beta1"
-	basev1beta1 "cosmossdk.io/api/cosmos/base/v1beta1"
-	"cosmossdk.io/math"
+	bankv1beta1 "github.com/verzth/cosmos-sdk/api/cosmos/bank/v1beta1"
+	basev1beta1 "github.com/verzth/cosmos-sdk/api/cosmos/base/v1beta1"
+	"github.com/verzth/cosmos-sdk/math"
 )
 
 const emptyCoins = "zero"

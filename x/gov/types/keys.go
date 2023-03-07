@@ -4,9 +4,9 @@ import (
 	"encoding/binary"
 	"time"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/address"
-	"github.com/cosmos/cosmos-sdk/types/kv"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/types/address"
+	"github.com/verzth/cosmos-sdk/types/kv"
 )
 
 const (

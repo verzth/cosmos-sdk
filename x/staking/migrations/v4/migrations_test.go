@@ -6,17 +6,17 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	"github.com/cosmos/cosmos-sdk/testutil/sims"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
-	"github.com/cosmos/cosmos-sdk/x/staking"
-	v4 "github.com/cosmos/cosmos-sdk/x/staking/migrations/v4"
-	"github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/verzth/cosmos-sdk/codec"
+	"github.com/verzth/cosmos-sdk/testutil"
+	"github.com/verzth/cosmos-sdk/testutil/sims"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	moduletestutil "github.com/verzth/cosmos-sdk/types/module/testutil"
+	paramtypes "github.com/verzth/cosmos-sdk/x/params/types"
+	"github.com/verzth/cosmos-sdk/x/staking"
+	v4 "github.com/verzth/cosmos-sdk/x/staking/migrations/v4"
+	"github.com/verzth/cosmos-sdk/x/staking/types"
 )
 
 type mockSubspace struct {

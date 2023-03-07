@@ -3,13 +3,13 @@ package params
 import (
 	"fmt"
 
-	errorsmod "cosmossdk.io/errors"
+	errorsmod "github.com/verzth/cosmos-sdk/errors"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types/v1beta1"
-	"github.com/cosmos/cosmos-sdk/x/params/keeper"
-	"github.com/cosmos/cosmos-sdk/x/params/types/proposal"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	sdkerrors "github.com/verzth/cosmos-sdk/types/errors"
+	govtypes "github.com/verzth/cosmos-sdk/x/gov/types/v1beta1"
+	"github.com/verzth/cosmos-sdk/x/params/keeper"
+	"github.com/verzth/cosmos-sdk/x/params/types/proposal"
 )
 
 // NewParamChangeProposalHandler creates a new governance Handler for a ParamChangeProposal

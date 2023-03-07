@@ -6,14 +6,14 @@ import (
 	"sort"
 	"sync"
 
-	"cosmossdk.io/math"
 	dbm "github.com/cosmos/cosmos-db"
+	"github.com/verzth/cosmos-sdk/math"
 
-	"cosmossdk.io/store/cachekv/internal"
-	"cosmossdk.io/store/internal/conv"
-	"cosmossdk.io/store/internal/kv"
-	"cosmossdk.io/store/tracekv"
-	"cosmossdk.io/store/types"
+	"github.com/verzth/cosmos-sdk/store/cachekv/internal"
+	"github.com/verzth/cosmos-sdk/store/internal/conv"
+	"github.com/verzth/cosmos-sdk/store/internal/kv"
+	"github.com/verzth/cosmos-sdk/store/tracekv"
+	"github.com/verzth/cosmos-sdk/store/types"
 )
 
 // cValue represents a cached value.

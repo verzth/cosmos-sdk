@@ -4,9 +4,9 @@ import (
 	"errors"
 	"fmt"
 
-	"cosmossdk.io/math"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
+	"github.com/verzth/cosmos-sdk/math"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	paramtypes "github.com/verzth/cosmos-sdk/x/params/types"
 )
 
 // Parameter store key

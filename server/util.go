@@ -25,19 +25,19 @@ import (
 	"github.com/spf13/pflag"
 	"github.com/spf13/viper"
 
-	"cosmossdk.io/log"
-	"cosmossdk.io/store"
-	"cosmossdk.io/store/snapshots"
-	snapshottypes "cosmossdk.io/store/snapshots/types"
-	storetypes "cosmossdk.io/store/types"
+	"github.com/verzth/cosmos-sdk/log"
+	"github.com/verzth/cosmos-sdk/store"
+	"github.com/verzth/cosmos-sdk/store/snapshots"
+	snapshottypes "github.com/verzth/cosmos-sdk/store/snapshots/types"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/server/config"
-	"github.com/cosmos/cosmos-sdk/server/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/mempool"
-	"github.com/cosmos/cosmos-sdk/version"
+	"github.com/verzth/cosmos-sdk/baseapp"
+	"github.com/verzth/cosmos-sdk/client/flags"
+	"github.com/verzth/cosmos-sdk/server/config"
+	"github.com/verzth/cosmos-sdk/server/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/types/mempool"
+	"github.com/verzth/cosmos-sdk/version"
 )
 
 // ServerContextKey defines the context key used to retrieve a server.Context from

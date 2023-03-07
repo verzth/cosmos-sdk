@@ -9,10 +9,10 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"cosmossdk.io/x/tx/signing/aminojson"
-	"github.com/cosmos/cosmos-sdk/codec"
-	gogopb "github.com/cosmos/cosmos-sdk/tests/integration/aminojson/internal/gogo/testpb"
-	pulsarpb "github.com/cosmos/cosmos-sdk/tests/integration/aminojson/internal/pulsar/testpb"
+	"github.com/verzth/cosmos-sdk/codec"
+	gogopb "github.com/verzth/cosmos-sdk/tests/integration/aminojson/internal/gogo/testpb"
+	pulsarpb "github.com/verzth/cosmos-sdk/tests/integration/aminojson/internal/pulsar/testpb"
+	"github.com/verzth/cosmos-sdk/x/tx/signing/aminojson"
 )
 
 func TestRepeatedFields(t *testing.T) {

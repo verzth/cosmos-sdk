@@ -6,10 +6,10 @@ import (
 	"strings"
 	"testing"
 
-	"cosmossdk.io/tools/confix/cmd"
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/config"
-	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
+	"github.com/verzth/cosmos-sdk/client"
+	"github.com/verzth/cosmos-sdk/client/config"
+	clitestutil "github.com/verzth/cosmos-sdk/testutil/cli"
+	"github.com/verzth/cosmos-sdk/tools/confix/cmd"
 	"gotest.tools/v3/assert"
 )
 

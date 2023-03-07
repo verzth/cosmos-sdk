@@ -2,7 +2,7 @@
 package testpb
 
 import (
-	_ "cosmossdk.io/api/amino"
+	_ "github.com/verzth/cosmos-sdk/api/amino"
 	binary "encoding/binary"
 	fmt "fmt"
 	runtime "github.com/cosmos/cosmos-proto/runtime"

@@ -1,10 +1,10 @@
 package orm
 
 import (
-	storetypes "cosmossdk.io/store/types"
 	"github.com/cosmos/gogoproto/proto"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
+	"github.com/verzth/cosmos-sdk/codec"
 )
 
 var (

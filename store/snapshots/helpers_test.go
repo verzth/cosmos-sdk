@@ -11,15 +11,15 @@ import (
 	"testing"
 	"time"
 
-	"cosmossdk.io/log"
 	db "github.com/cosmos/cosmos-db"
 	protoio "github.com/cosmos/gogoproto/io"
 	"github.com/stretchr/testify/require"
+	"github.com/verzth/cosmos-sdk/log"
 
-	errorsmod "cosmossdk.io/errors"
-	"cosmossdk.io/store/snapshots"
-	snapshottypes "cosmossdk.io/store/snapshots/types"
-	"cosmossdk.io/store/types"
+	errorsmod "github.com/verzth/cosmos-sdk/errors"
+	"github.com/verzth/cosmos-sdk/store/snapshots"
+	snapshottypes "github.com/verzth/cosmos-sdk/store/snapshots/types"
+	"github.com/verzth/cosmos-sdk/store/types"
 )
 
 func checksums(slice [][]byte) [][]byte {
@@ -283,8 +283,8 @@ func (s *extSnapshotter) RestoreExtension(height uint64, format uint32, payloadR
 func GetTempDir(t testing.TB) string {
 	t.Helper()
 	// os.MkDir() is used instead of testing.T.TempDir()
-	// see https://github.com/cosmos/cosmos-sdk/pull/8475 and
-	// https://github.com/cosmos/cosmos-sdk/pull/10341 for
+	// see https://github.com/verzth/cosmos-sdk/pull/8475 and
+	// https://github.com/verzth/cosmos-sdk/pull/10341 for
 	// this change's rationale.
 	tempdir, err := os.MkdirTemp("", "")
 	require.NoError(t, err)

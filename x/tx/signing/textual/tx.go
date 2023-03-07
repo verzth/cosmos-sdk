@@ -13,11 +13,11 @@ import (
 	"google.golang.org/protobuf/reflect/protoreflect"
 	"google.golang.org/protobuf/types/known/anypb"
 
-	msg "cosmossdk.io/api/cosmos/msg/v1"
-	signingv1beta1 "cosmossdk.io/api/cosmos/tx/signing/v1beta1"
-	txv1beta1 "cosmossdk.io/api/cosmos/tx/v1beta1"
+	msg "github.com/verzth/cosmos-sdk/api/cosmos/msg/v1"
+	signingv1beta1 "github.com/verzth/cosmos-sdk/api/cosmos/tx/signing/v1beta1"
+	txv1beta1 "github.com/verzth/cosmos-sdk/api/cosmos/tx/v1beta1"
 
-	"cosmossdk.io/x/tx/signing/textual/internal/textualpb"
+	"github.com/verzth/cosmos-sdk/x/tx/signing/textual/internal/textualpb"
 )
 
 var (

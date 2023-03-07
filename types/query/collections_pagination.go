@@ -5,9 +5,9 @@ import (
 	"errors"
 	"fmt"
 
-	"cosmossdk.io/collections"
-	collcodec "cosmossdk.io/collections/codec"
-	storetypes "cosmossdk.io/store/types"
+	"github.com/verzth/cosmos-sdk/collections"
+	collcodec "github.com/verzth/cosmos-sdk/collections/codec"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 )
 
 // CollectionsPaginateOptions provides extra options for pagination in collections.

@@ -3,21 +3,21 @@ package keeper_test
 import (
 	"testing"
 
-	"cosmossdk.io/simapp"
+	"github.com/verzth/cosmos-sdk/simapp"
 	"gotest.tools/v3/assert"
 
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
-	"github.com/cosmos/cosmos-sdk/x/gov/types"
-	v1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1"
-	"github.com/cosmos/cosmos-sdk/x/gov/types/v1beta1"
-	"github.com/cosmos/cosmos-sdk/x/staking"
-	stakingkeeper "github.com/cosmos/cosmos-sdk/x/staking/keeper"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	simtestutil "github.com/verzth/cosmos-sdk/testutil/sims"
+	"github.com/verzth/cosmos-sdk/testutil/testdata"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	moduletestutil "github.com/verzth/cosmos-sdk/types/module/testutil"
+	authtypes "github.com/verzth/cosmos-sdk/x/auth/types"
+	banktypes "github.com/verzth/cosmos-sdk/x/bank/types"
+	"github.com/verzth/cosmos-sdk/x/gov/types"
+	v1 "github.com/verzth/cosmos-sdk/x/gov/types/v1"
+	"github.com/verzth/cosmos-sdk/x/gov/types/v1beta1"
+	"github.com/verzth/cosmos-sdk/x/staking"
+	stakingkeeper "github.com/verzth/cosmos-sdk/x/staking/keeper"
+	stakingtypes "github.com/verzth/cosmos-sdk/x/staking/types"
 )
 
 var (

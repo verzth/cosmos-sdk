@@ -3,8 +3,8 @@ package indexes
 import (
 	"context"
 
-	"cosmossdk.io/collections"
-	"cosmossdk.io/collections/codec"
+	"github.com/verzth/cosmos-sdk/collections"
+	"github.com/verzth/cosmos-sdk/collections/codec"
 )
 
 // Unique identifies an index that imposes uniqueness constraints on the reference key.

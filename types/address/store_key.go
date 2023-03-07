@@ -1,9 +1,9 @@
 package address
 
 import (
-	errorsmod "cosmossdk.io/errors"
+	errorsmod "github.com/verzth/cosmos-sdk/errors"
 
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	sdkerrors "github.com/verzth/cosmos-sdk/types/errors"
 )
 
 // MaxAddrLen is the maximum allowed length (in bytes) for an address.

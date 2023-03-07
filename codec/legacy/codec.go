@@ -1,10 +1,10 @@
 package legacy
 
 import (
-	"github.com/cosmos/cosmos-sdk/codec"
-	cryptocodec "github.com/cosmos/cosmos-sdk/crypto/codec"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/codec"
+	cryptocodec "github.com/verzth/cosmos-sdk/crypto/codec"
+	cryptotypes "github.com/verzth/cosmos-sdk/crypto/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
 )
 
 // Cdc defines a global generic sealed Amino codec to be used throughout sdk. It

@@ -8,15 +8,15 @@ import (
 
 	"google.golang.org/protobuf/types/known/timestamppb"
 
-	"github.com/cosmos/cosmos-sdk/orm/encoding/ormfield"
+	"github.com/verzth/cosmos-sdk/orm/encoding/ormfield"
 
 	"google.golang.org/protobuf/reflect/protoreflect"
 	"gotest.tools/v3/assert"
 	"pgregory.net/rapid"
 
-	"github.com/cosmos/cosmos-sdk/orm/types/ormerrors"
+	"github.com/verzth/cosmos-sdk/orm/types/ormerrors"
 
-	"github.com/cosmos/cosmos-sdk/orm/internal/testutil"
+	"github.com/verzth/cosmos-sdk/orm/internal/testutil"
 )
 
 func TestCodec(t *testing.T) {

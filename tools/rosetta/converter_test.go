@@ -5,20 +5,20 @@ import (
 	"encoding/json"
 	"testing"
 
-	"cosmossdk.io/tools/rosetta"
-	crgerrs "cosmossdk.io/tools/rosetta/lib/errors"
+	"github.com/verzth/cosmos-sdk/tools/rosetta"
+	crgerrs "github.com/verzth/cosmos-sdk/tools/rosetta/lib/errors"
 
 	rosettatypes "github.com/coinbase/rosetta-sdk-go/types"
 	abci "github.com/cometbft/cometbft/abci/types"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authsigning "github.com/cosmos/cosmos-sdk/x/auth/signing"
-	authtx "github.com/cosmos/cosmos-sdk/x/auth/tx"
-	bank "github.com/cosmos/cosmos-sdk/x/bank/types"
+	"github.com/verzth/cosmos-sdk/client"
+	"github.com/verzth/cosmos-sdk/codec"
+	codectypes "github.com/verzth/cosmos-sdk/codec/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	authsigning "github.com/verzth/cosmos-sdk/x/auth/signing"
+	authtx "github.com/verzth/cosmos-sdk/x/auth/tx"
+	bank "github.com/verzth/cosmos-sdk/x/bank/types"
 )
 
 type ConverterTestSuite struct {

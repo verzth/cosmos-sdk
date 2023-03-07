@@ -1,11 +1,11 @@
 package orm
 
 import (
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	errorsmod "cosmossdk.io/errors"
+	errorsmod "github.com/verzth/cosmos-sdk/errors"
 
-	"github.com/cosmos/cosmos-sdk/x/group/errors"
+	"github.com/verzth/cosmos-sdk/x/group/errors"
 )
 
 // IndexerFunc creates one or multiple index keys for the source object.

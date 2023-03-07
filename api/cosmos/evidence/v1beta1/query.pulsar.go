@@ -2,7 +2,7 @@
 package evidencev1beta1
 
 import (
-	v1beta1 "cosmossdk.io/api/cosmos/base/query/v1beta1"
+	v1beta1 "github.com/verzth/cosmos-sdk/api/cosmos/base/query/v1beta1"
 	fmt "fmt"
 	runtime "github.com/cosmos/cosmos-proto/runtime"
 	_ "google.golang.org/genproto/googleapis/api/annotations"

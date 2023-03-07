@@ -10,11 +10,11 @@ import (
 	"strings"
 	"time"
 
-	"cosmossdk.io/log"
-	cverrors "cosmossdk.io/tools/cosmovisor/errors"
-	upgradekeeper "cosmossdk.io/x/upgrade/keeper"
-	"cosmossdk.io/x/upgrade/plan"
-	upgradetypes "cosmossdk.io/x/upgrade/types"
+	"github.com/verzth/cosmos-sdk/log"
+	cverrors "github.com/verzth/cosmos-sdk/tools/cosmovisor/errors"
+	upgradekeeper "github.com/verzth/cosmos-sdk/x/upgrade/keeper"
+	"github.com/verzth/cosmos-sdk/x/upgrade/plan"
+	upgradetypes "github.com/verzth/cosmos-sdk/x/upgrade/types"
 )
 
 // environment variable names

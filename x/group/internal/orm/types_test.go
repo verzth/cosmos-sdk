@@ -4,17 +4,17 @@ import (
 	"reflect"
 	"testing"
 
-	errorsmod "cosmossdk.io/errors"
-	"cosmossdk.io/store/prefix"
-	storetypes "cosmossdk.io/store/types"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	errorsmod "github.com/verzth/cosmos-sdk/errors"
+	"github.com/verzth/cosmos-sdk/store/prefix"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/x/group/errors"
+	"github.com/verzth/cosmos-sdk/codec"
+	"github.com/verzth/cosmos-sdk/codec/types"
+	"github.com/verzth/cosmos-sdk/testutil/testdata"
+	sdkerrors "github.com/verzth/cosmos-sdk/types/errors"
+	"github.com/verzth/cosmos-sdk/x/group/errors"
 )
 
 func TestTypeSafeRowGetter(t *testing.T) {

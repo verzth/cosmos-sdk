@@ -7,18 +7,18 @@ import (
 	"testing"
 
 	rpcclientmock "github.com/cometbft/cometbft/rpc/client/mock"
-	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
 	"github.com/stretchr/testify/require"
+	clitestutil "github.com/verzth/cosmos-sdk/testutil/cli"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	svrcmd "github.com/cosmos/cosmos-sdk/server/cmd"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	testutilmod "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	"github.com/cosmos/cosmos-sdk/x/crisis"
-	"github.com/cosmos/cosmos-sdk/x/crisis/client/cli"
+	"github.com/verzth/cosmos-sdk/client"
+	"github.com/verzth/cosmos-sdk/client/flags"
+	"github.com/verzth/cosmos-sdk/crypto/keyring"
+	svrcmd "github.com/verzth/cosmos-sdk/server/cmd"
+	"github.com/verzth/cosmos-sdk/testutil"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	testutilmod "github.com/verzth/cosmos-sdk/types/module/testutil"
+	"github.com/verzth/cosmos-sdk/x/crisis"
+	"github.com/verzth/cosmos-sdk/x/crisis/client/cli"
 )
 
 func TestNewMsgVerifyInvariantTxCmd(t *testing.T) {

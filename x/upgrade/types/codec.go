@@ -1,16 +1,16 @@
 package types
 
 import (
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/codec/legacy"
-	"github.com/cosmos/cosmos-sdk/codec/types"
-	cryptocodec "github.com/cosmos/cosmos-sdk/crypto/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/msgservice"
-	authzcodec "github.com/cosmos/cosmos-sdk/x/authz/codec"
-	govcodec "github.com/cosmos/cosmos-sdk/x/gov/codec"
-	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types/v1beta1"
-	groupcodec "github.com/cosmos/cosmos-sdk/x/group/codec"
+	"github.com/verzth/cosmos-sdk/codec"
+	"github.com/verzth/cosmos-sdk/codec/legacy"
+	"github.com/verzth/cosmos-sdk/codec/types"
+	cryptocodec "github.com/verzth/cosmos-sdk/crypto/codec"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/types/msgservice"
+	authzcodec "github.com/verzth/cosmos-sdk/x/authz/codec"
+	govcodec "github.com/verzth/cosmos-sdk/x/gov/codec"
+	govtypes "github.com/verzth/cosmos-sdk/x/gov/types/v1beta1"
+	groupcodec "github.com/verzth/cosmos-sdk/x/group/codec"
 )
 
 // RegisterLegacyAminoCodec registers concrete types on the LegacyAmino codec

@@ -3,14 +3,14 @@ package autocli
 import (
 	"fmt"
 
-	autocliv1 "cosmossdk.io/api/cosmos/autocli/v1"
 	"github.com/cockroachdb/errors"
 	"github.com/spf13/cobra"
+	autocliv1 "github.com/verzth/cosmos-sdk/api/cosmos/autocli/v1"
 	"google.golang.org/protobuf/encoding/protojson"
 	"google.golang.org/protobuf/reflect/protoreflect"
 	"google.golang.org/protobuf/reflect/protoregistry"
 
-	"cosmossdk.io/client/v2/internal/util"
+	"github.com/verzth/cosmos-sdk/client/v2/internal/util"
 )
 
 // BuildQueryCommand builds the query commands for all the provided modules. If a custom command is provided for a

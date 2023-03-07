@@ -6,9 +6,9 @@ import (
 
 	"github.com/cockroachdb/apd/v2"
 
-	errorsmod "cosmossdk.io/errors"
+	errorsmod "github.com/verzth/cosmos-sdk/errors"
 
-	"github.com/cosmos/cosmos-sdk/x/group/errors"
+	"github.com/verzth/cosmos-sdk/x/group/errors"
 )
 
 // Dec is a wrapper struct around apd.Decimal that does no mutation of apd.Decimal's when performing

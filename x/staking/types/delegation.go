@@ -5,9 +5,9 @@ import (
 	"strings"
 	"time"
 
-	"cosmossdk.io/math"
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/codec"
+	"github.com/verzth/cosmos-sdk/math"
+	sdk "github.com/verzth/cosmos-sdk/types"
 )
 
 // Implements Delegation interface

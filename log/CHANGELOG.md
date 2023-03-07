@@ -33,4 +33,4 @@ Ref: https://keepachangelog.com/en/1.0.0/
 
 ### Improvements
 
-- [#15261](https://github.com/cosmos/cosmos-sdk/pull/15261): Provide `log.NewTestLogger(*testing.T)` function to create new log.Logger associated with a test
+- [#15261](https://github.com/verzth/cosmos-sdk/pull/15261): Provide `log.NewTestLogger(*testing.T)` function to create new log.Logger associated with a test

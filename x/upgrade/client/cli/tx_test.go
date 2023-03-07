@@ -9,15 +9,15 @@ import (
 	rpcclientmock "github.com/cometbft/cometbft/rpc/client/mock"
 	"github.com/stretchr/testify/require"
 
-	"cosmossdk.io/x/upgrade"
-	upgradecli "cosmossdk.io/x/upgrade/client/cli"
+	"github.com/verzth/cosmos-sdk/x/upgrade"
+	upgradecli "github.com/verzth/cosmos-sdk/x/upgrade/client/cli"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	svrcmd "github.com/cosmos/cosmos-sdk/server/cmd"
-	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
-	testutilmod "github.com/cosmos/cosmos-sdk/types/module/testutil"
+	"github.com/verzth/cosmos-sdk/client"
+	"github.com/verzth/cosmos-sdk/client/flags"
+	"github.com/verzth/cosmos-sdk/crypto/keyring"
+	svrcmd "github.com/verzth/cosmos-sdk/server/cmd"
+	clitestutil "github.com/verzth/cosmos-sdk/testutil/cli"
+	testutilmod "github.com/verzth/cosmos-sdk/types/module/testutil"
 )
 
 func TestModuleVersionsCLI(t *testing.T) {

@@ -1,11 +1,11 @@
-module cosmossdk.io/core
+module github.com/verzth/cosmos-sdk/core
 
 go 1.20
 
 require (
-	cosmossdk.io/api v0.3.1
-	cosmossdk.io/depinject v1.0.0-alpha.3
-	cosmossdk.io/math v1.0.0-beta.6
+	github.com/verzth/cosmos-sdk/api v0.3.1
+	github.com/verzth/cosmos-sdk/depinject v1.0.0-alpha.3
+	github.com/verzth/cosmos-sdk/math v1.0.0-beta.6
 	github.com/cosmos/cosmos-db v1.0.0-rc.1
 	github.com/cosmos/cosmos-proto v1.0.0-beta.2
 	github.com/stretchr/testify v1.8.2

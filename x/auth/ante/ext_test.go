@@ -3,12 +3,12 @@ package ante_test
 import (
 	"testing"
 
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/auth/ante"
-	"github.com/cosmos/cosmos-sdk/x/auth/tx"
 	"github.com/stretchr/testify/require"
+	codectypes "github.com/verzth/cosmos-sdk/codec/types"
+	"github.com/verzth/cosmos-sdk/testutil/testdata"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/x/auth/ante"
+	"github.com/verzth/cosmos-sdk/x/auth/tx"
 )
 
 func TestRejectExtensionOptionsDecorator(t *testing.T) {

@@ -1,6 +1,6 @@
 package proposal
 
-import "cosmossdk.io/errors"
+import "github.com/verzth/cosmos-sdk/errors"
 
 // x/params module sentinel errors
 var (

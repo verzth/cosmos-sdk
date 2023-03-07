@@ -5,12 +5,12 @@ import (
 	"github.com/cometbft/cometbft/crypto/encoding"
 	cmtprotocrypto "github.com/cometbft/cometbft/proto/tendermint/crypto"
 
-	"cosmossdk.io/errors"
+	"github.com/verzth/cosmos-sdk/errors"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	"github.com/verzth/cosmos-sdk/crypto/keys/ed25519"
+	"github.com/verzth/cosmos-sdk/crypto/keys/secp256k1"
+	cryptotypes "github.com/verzth/cosmos-sdk/crypto/types"
+	sdkerrors "github.com/verzth/cosmos-sdk/types/errors"
 )
 
 // FromCmtProtoPublicKey converts a CMT's cmtprotocrypto.PublicKey into our own PubKey.

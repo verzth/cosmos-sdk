@@ -6,17 +6,17 @@ import (
 	"strconv"
 	"strings"
 
-	errorsmod "cosmossdk.io/errors"
 	"github.com/spf13/cobra"
+	errorsmod "github.com/verzth/cosmos-sdk/errors"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/errors"
-	querytypes "github.com/cosmos/cosmos-sdk/types/query"
-	"github.com/cosmos/cosmos-sdk/version"
-	authtx "github.com/cosmos/cosmos-sdk/x/auth/tx"
-	"github.com/cosmos/cosmos-sdk/x/auth/types"
+	"github.com/verzth/cosmos-sdk/client"
+	"github.com/verzth/cosmos-sdk/client/flags"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/types/errors"
+	querytypes "github.com/verzth/cosmos-sdk/types/query"
+	"github.com/verzth/cosmos-sdk/version"
+	authtx "github.com/verzth/cosmos-sdk/x/auth/tx"
+	"github.com/verzth/cosmos-sdk/x/auth/types"
 )
 
 const (

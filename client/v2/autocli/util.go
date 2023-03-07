@@ -4,8 +4,8 @@ import (
 	"google.golang.org/protobuf/reflect/protoreflect"
 	"strings"
 
-	"cosmossdk.io/client/v2/internal/strcase"
 	"github.com/spf13/cobra"
+	"github.com/verzth/cosmos-sdk/client/v2/internal/strcase"
 )
 
 // findSubCommand finds a sub-command of the provided command whose Use

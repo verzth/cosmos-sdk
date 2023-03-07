@@ -9,7 +9,7 @@ import (
 	"gotest.tools/v3/golden"
 
 	cmttypes "github.com/cometbft/cometbft/types"
-	"github.com/cosmos/cosmos-sdk/x/genutil/types"
+	"github.com/verzth/cosmos-sdk/x/genutil/types"
 )
 
 func TestAppGenesis_Marshal(t *testing.T) {

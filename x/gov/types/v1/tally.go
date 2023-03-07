@@ -1,8 +1,8 @@
 package v1
 
 import (
-	"cosmossdk.io/math"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/math"
+	sdk "github.com/verzth/cosmos-sdk/types"
 )
 
 // ValidatorGovInfo used for tallying

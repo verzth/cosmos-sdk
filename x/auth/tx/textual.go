@@ -4,24 +4,24 @@ import (
 	"context"
 	"fmt"
 
-	txv1beta1 "cosmossdk.io/api/cosmos/tx/v1beta1"
-	"cosmossdk.io/x/tx/signing/textual"
+	txv1beta1 "github.com/verzth/cosmos-sdk/api/cosmos/tx/v1beta1"
+	"github.com/verzth/cosmos-sdk/x/tx/signing/textual"
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/types/known/anypb"
 
-	signingtypes "github.com/cosmos/cosmos-sdk/types/tx/signing"
+	signingtypes "github.com/verzth/cosmos-sdk/types/tx/signing"
 
-	txsigning "cosmossdk.io/x/tx/signing"
+	txsigning "github.com/verzth/cosmos-sdk/x/tx/signing"
 
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/auth/signing"
+	codectypes "github.com/verzth/cosmos-sdk/codec/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/x/auth/signing"
 )
 
 // signModeTextualHandler defines the SIGN_MODE_TEXTUAL SignModeHandler.
 // It is currently not enabled by default, but you can enable it manually
 // for TESTING purposes. It will be enabled once SIGN_MODE_TEXTUAL is fully
-// released, see https://github.com/cosmos/cosmos-sdk/issues/11970.
+// released, see https://github.com/verzth/cosmos-sdk/issues/11970.
 type signModeTextualHandler struct {
 	t textual.SignModeHandler
 }

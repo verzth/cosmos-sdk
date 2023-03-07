@@ -6,19 +6,19 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"cosmossdk.io/depinject"
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/codec/legacy"
-	"github.com/cosmos/cosmos-sdk/codec/types"
-	cryptocodec "github.com/cosmos/cosmos-sdk/crypto/codec"
-	kmultisig "github.com/cosmos/cosmos-sdk/crypto/keys/multisig"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	"github.com/cosmos/cosmos-sdk/crypto/types/multisig"
-	_ "github.com/cosmos/cosmos-sdk/runtime"
-	"github.com/cosmos/cosmos-sdk/testutil/configurator"
-	"github.com/cosmos/cosmos-sdk/types/tx/signing"
-	"github.com/cosmos/cosmos-sdk/x/auth/migrations/legacytx"
+	"github.com/verzth/cosmos-sdk/codec"
+	"github.com/verzth/cosmos-sdk/codec/legacy"
+	"github.com/verzth/cosmos-sdk/codec/types"
+	cryptocodec "github.com/verzth/cosmos-sdk/crypto/codec"
+	kmultisig "github.com/verzth/cosmos-sdk/crypto/keys/multisig"
+	"github.com/verzth/cosmos-sdk/crypto/keys/secp256k1"
+	cryptotypes "github.com/verzth/cosmos-sdk/crypto/types"
+	"github.com/verzth/cosmos-sdk/crypto/types/multisig"
+	"github.com/verzth/cosmos-sdk/depinject"
+	_ "github.com/verzth/cosmos-sdk/runtime"
+	"github.com/verzth/cosmos-sdk/testutil/configurator"
+	"github.com/verzth/cosmos-sdk/types/tx/signing"
+	"github.com/verzth/cosmos-sdk/x/auth/migrations/legacytx"
 )
 
 func TestNewMultiSig(t *testing.T) {
@@ -394,7 +394,7 @@ func TestAminoUnmarshalJSON(t *testing.T) {
 	// v0.39, hence the `threshold` field as a string.
 	// We are testing that when unmarshaling this JSON into a LegacyAminoPubKey
 	// with amino, there's no error.
-	// ref: https://github.com/cosmos/cosmos-sdk/issues/8776
+	// ref: https://github.com/verzth/cosmos-sdk/issues/8776
 	pkJSON := `{
 	"type": "tendermint/PubKeyMultisigThreshold",
 	"value": {

@@ -5,10 +5,10 @@ import (
 
 	abci "github.com/cometbft/cometbft/abci/types"
 
-	"cosmossdk.io/math"
+	"github.com/verzth/cosmos-sdk/math"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/staking/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/x/staking/types"
 )
 
 // InitGenesis sets the pool and parameters for the provided keeper.  For each
@@ -109,7 +109,7 @@ func (k Keeper) InitGenesis(ctx sdk.Context, data *types.GenesisState) (res []ab
 		panic(fmt.Sprintf("%s module account has not been set", types.BondedPoolName))
 	}
 
-	// TODO: remove with genesis 2-phases refactor https://github.com/cosmos/cosmos-sdk/issues/2862
+	// TODO: remove with genesis 2-phases refactor https://github.com/verzth/cosmos-sdk/issues/2862
 
 	bondedBalance := k.bankKeeper.GetAllBalances(ctx, bondedPool.GetAddress())
 	if bondedBalance.IsZero() {

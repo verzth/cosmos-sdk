@@ -4,14 +4,14 @@ import (
 	"fmt"
 	"testing"
 
-	"cosmossdk.io/log"
-	"cosmossdk.io/simapp"
 	abci "github.com/cometbft/cometbft/abci/types"
 	cmtproto "github.com/cometbft/cometbft/proto/tendermint/types"
 	dbm "github.com/cosmos/cosmos-db"
+	"github.com/verzth/cosmos-sdk/log"
+	"github.com/verzth/cosmos-sdk/simapp"
 	"gotest.tools/v3/assert"
 
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
+	simtestutil "github.com/verzth/cosmos-sdk/testutil/sims"
 )
 
 func TestRollback(t *testing.T) {

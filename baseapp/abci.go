@@ -16,14 +16,14 @@ import (
 	"google.golang.org/grpc/codes"
 	grpcstatus "google.golang.org/grpc/status"
 
-	errorsmod "cosmossdk.io/errors"
-	snapshottypes "cosmossdk.io/store/snapshots/types"
-	storetypes "cosmossdk.io/store/types"
+	errorsmod "github.com/verzth/cosmos-sdk/errors"
+	snapshottypes "github.com/verzth/cosmos-sdk/store/snapshots/types"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/telemetry"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	"github.com/verzth/cosmos-sdk/codec"
+	"github.com/verzth/cosmos-sdk/telemetry"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	sdkerrors "github.com/verzth/cosmos-sdk/types/errors"
 )
 
 // Supported ABCI Query prefixes
@@ -251,7 +251,7 @@ func (app *BaseApp) EndBlock(req abci.RequestEndBlock) (res abci.ResponseEndBloc
 // transactions to return based on the mempool's semantics and the MaxTxBytes
 // provided by the client's request.
 //
-// Ref: https://github.com/cosmos/cosmos-sdk/blob/main/docs/architecture/adr-060-abci-1.0.md
+// Ref: https://github.com/verzth/cosmos-sdk/blob/main/docs/architecture/adr-060-abci-1.0.md
 // Ref: https://github.com/cometbft/cometbft/blob/main/spec/abci/abci%2B%2B_basic_concepts.md
 func (app *BaseApp) PrepareProposal(req abci.RequestPrepareProposal) (resp abci.ResponsePrepareProposal) {
 	if app.prepareProposal == nil {
@@ -304,7 +304,7 @@ func (app *BaseApp) PrepareProposal(req abci.RequestPrepareProposal) (resp abci.
 // If a panic is detected during execution of an application's ProcessProposal
 // handler, it will be recovered and we will reject the proposal.
 //
-// Ref: https://github.com/cosmos/cosmos-sdk/blob/main/docs/architecture/adr-060-abci-1.0.md
+// Ref: https://github.com/verzth/cosmos-sdk/blob/main/docs/architecture/adr-060-abci-1.0.md
 // Ref: https://github.com/cometbft/cometbft/blob/main/spec/abci/abci%2B%2B_basic_concepts.md
 func (app *BaseApp) ProcessProposal(req abci.RequestProcessProposal) (resp abci.ResponseProcessProposal) {
 	if app.processProposal == nil {
@@ -505,7 +505,7 @@ func (app *BaseApp) halt() {
 // implements Queryable.
 func (app *BaseApp) Query(req abci.RequestQuery) (res abci.ResponseQuery) {
 	// Add panic recovery for all queries.
-	// ref: https://github.com/cosmos/cosmos-sdk/pull/8039
+	// ref: https://github.com/verzth/cosmos-sdk/pull/8039
 	defer func() {
 		if r := recover(); r != nil {
 			res = sdkerrors.QueryResult(errorsmod.Wrapf(sdkerrors.ErrPanic, "%v", r), app.trace)

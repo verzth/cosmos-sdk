@@ -3,7 +3,7 @@ package signing
 import (
 	"fmt"
 
-	msgv1 "cosmossdk.io/api/cosmos/msg/v1"
+	msgv1 "github.com/verzth/cosmos-sdk/api/cosmos/msg/v1"
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/reflect/protoreflect"
 	"google.golang.org/protobuf/reflect/protoregistry"

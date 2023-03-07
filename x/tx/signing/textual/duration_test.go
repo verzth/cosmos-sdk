@@ -7,8 +7,8 @@ import (
 	"os"
 	"testing"
 
-	"cosmossdk.io/x/tx/signing/textual"
 	"github.com/stretchr/testify/require"
+	"github.com/verzth/cosmos-sdk/x/tx/signing/textual"
 
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/reflect/protoreflect"

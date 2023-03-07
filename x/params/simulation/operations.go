@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"math/rand"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/simulation"
-	"github.com/cosmos/cosmos-sdk/x/params/types/proposal"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/types/simulation"
+	"github.com/verzth/cosmos-sdk/x/params/types/proposal"
 )
 
 func min(a int, b int) int {

@@ -4,19 +4,19 @@ import (
 	"encoding/json"
 	"testing"
 
-	"cosmossdk.io/math"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"github.com/verzth/cosmos-sdk/math"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
-	"github.com/cosmos/cosmos-sdk/x/genutil"
-	"github.com/cosmos/cosmos-sdk/x/genutil/types"
-	"github.com/cosmos/cosmos-sdk/x/staking"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/verzth/cosmos-sdk/codec"
+	"github.com/verzth/cosmos-sdk/crypto/keys/ed25519"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	moduletestutil "github.com/verzth/cosmos-sdk/types/module/testutil"
+	banktypes "github.com/verzth/cosmos-sdk/x/bank/types"
+	"github.com/verzth/cosmos-sdk/x/genutil"
+	"github.com/verzth/cosmos-sdk/x/genutil/types"
+	"github.com/verzth/cosmos-sdk/x/staking"
+	stakingtypes "github.com/verzth/cosmos-sdk/x/staking/types"
 )
 
 var (
@@ -26,7 +26,7 @@ var (
 
 func TestNetGenesisState(t *testing.T) {
 	gen := types.NewGenesisState(nil)
-	assert.NotNil(t, gen.GenTxs) // https://github.com/cosmos/cosmos-sdk/issues/5086
+	assert.NotNil(t, gen.GenTxs) // https://github.com/verzth/cosmos-sdk/issues/5086
 
 	gen = types.NewGenesisState(
 		[]json.RawMessage{

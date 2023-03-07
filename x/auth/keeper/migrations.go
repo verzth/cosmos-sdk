@@ -3,12 +3,12 @@ package keeper
 import (
 	"github.com/cosmos/gogoproto/grpc"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/auth/exported"
-	v2 "github.com/cosmos/cosmos-sdk/x/auth/migrations/v2"
-	v3 "github.com/cosmos/cosmos-sdk/x/auth/migrations/v3"
-	v4 "github.com/cosmos/cosmos-sdk/x/auth/migrations/v4"
-	"github.com/cosmos/cosmos-sdk/x/auth/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/x/auth/exported"
+	v2 "github.com/verzth/cosmos-sdk/x/auth/migrations/v2"
+	v3 "github.com/verzth/cosmos-sdk/x/auth/migrations/v3"
+	v4 "github.com/verzth/cosmos-sdk/x/auth/migrations/v4"
+	"github.com/verzth/cosmos-sdk/x/auth/types"
 )
 
 // Migrator is a struct for handling in-place store migrations.

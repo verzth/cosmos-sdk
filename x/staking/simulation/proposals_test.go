@@ -8,11 +8,11 @@ import (
 	cmtproto "github.com/cometbft/cometbft/proto/tendermint/types"
 	"gotest.tools/v3/assert"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/address"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	"github.com/cosmos/cosmos-sdk/x/staking/simulation"
-	"github.com/cosmos/cosmos-sdk/x/staking/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/types/address"
+	simtypes "github.com/verzth/cosmos-sdk/types/simulation"
+	"github.com/verzth/cosmos-sdk/x/staking/simulation"
+	"github.com/verzth/cosmos-sdk/x/staking/types"
 )
 
 func TestProposalMsgs(t *testing.T) {

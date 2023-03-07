@@ -4,18 +4,18 @@ import (
 	"context"
 	"strconv"
 
-	errorsmod "cosmossdk.io/errors"
 	gogogrpc "github.com/cosmos/gogoproto/grpc"
 	grpcmiddleware "github.com/grpc-ecosystem/go-grpc-middleware"
 	grpcrecovery "github.com/grpc-ecosystem/go-grpc-middleware/recovery"
+	errorsmod "github.com/verzth/cosmos-sdk/errors"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/metadata"
 	"google.golang.org/grpc/status"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	grpctypes "github.com/cosmos/cosmos-sdk/types/grpc"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	sdkerrors "github.com/verzth/cosmos-sdk/types/errors"
+	grpctypes "github.com/verzth/cosmos-sdk/types/grpc"
 )
 
 // GRPCQueryRouter returns the GRPCQueryRouter of a BaseApp.

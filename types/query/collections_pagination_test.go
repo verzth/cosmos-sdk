@@ -4,10 +4,10 @@ import (
 	"context"
 	"testing"
 
-	"cosmossdk.io/collections"
-	"cosmossdk.io/core/store"
 	db "github.com/cosmos/cosmos-db"
 	"github.com/stretchr/testify/require"
+	"github.com/verzth/cosmos-sdk/collections"
+	"github.com/verzth/cosmos-sdk/core/store"
 )
 
 func TestCollectionPagination(t *testing.T) {

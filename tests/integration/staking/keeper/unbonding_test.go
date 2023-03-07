@@ -4,17 +4,17 @@ import (
 	"testing"
 	"time"
 
-	"cosmossdk.io/math"
-	"cosmossdk.io/simapp"
 	"github.com/golang/mock/gomock"
+	"github.com/verzth/cosmos-sdk/math"
+	"github.com/verzth/cosmos-sdk/simapp"
 	"gotest.tools/v3/assert"
 
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	banktestutil "github.com/cosmos/cosmos-sdk/x/bank/testutil"
-	stakingkeeper "github.com/cosmos/cosmos-sdk/x/staking/keeper"
-	"github.com/cosmos/cosmos-sdk/x/staking/testutil"
-	"github.com/cosmos/cosmos-sdk/x/staking/types"
+	simtestutil "github.com/verzth/cosmos-sdk/testutil/sims"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	banktestutil "github.com/verzth/cosmos-sdk/x/bank/testutil"
+	stakingkeeper "github.com/verzth/cosmos-sdk/x/staking/keeper"
+	"github.com/verzth/cosmos-sdk/x/staking/testutil"
+	"github.com/verzth/cosmos-sdk/x/staking/types"
 )
 
 // SetupUnbondingTests creates two validators and setup mocked staking hooks for testing unbonding

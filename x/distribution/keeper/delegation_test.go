@@ -7,18 +7,18 @@ import (
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/require"
 
-	"cosmossdk.io/math"
-	storetypes "cosmossdk.io/store/types"
+	"github.com/verzth/cosmos-sdk/math"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	"github.com/cosmos/cosmos-sdk/x/distribution"
-	"github.com/cosmos/cosmos-sdk/x/distribution/keeper"
-	distrtestutil "github.com/cosmos/cosmos-sdk/x/distribution/testutil"
-	disttypes "github.com/cosmos/cosmos-sdk/x/distribution/types"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/verzth/cosmos-sdk/testutil"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	moduletestutil "github.com/verzth/cosmos-sdk/types/module/testutil"
+	authtypes "github.com/verzth/cosmos-sdk/x/auth/types"
+	"github.com/verzth/cosmos-sdk/x/distribution"
+	"github.com/verzth/cosmos-sdk/x/distribution/keeper"
+	distrtestutil "github.com/verzth/cosmos-sdk/x/distribution/testutil"
+	disttypes "github.com/verzth/cosmos-sdk/x/distribution/types"
+	stakingtypes "github.com/verzth/cosmos-sdk/x/staking/types"
 )
 
 func TestCalculateRewardsBasic(t *testing.T) {

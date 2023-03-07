@@ -4,20 +4,20 @@ import (
 	"testing"
 	"time"
 
-	"cosmossdk.io/depinject"
-	storetypes "cosmossdk.io/store/types"
 	"github.com/stretchr/testify/require"
+	"github.com/verzth/cosmos-sdk/depinject"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/authz"
-	v2 "github.com/cosmos/cosmos-sdk/x/authz/migrations/v2"
-	authztestutil "github.com/cosmos/cosmos-sdk/x/authz/testutil"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
-	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types/v1beta1"
+	"github.com/verzth/cosmos-sdk/codec"
+	codectypes "github.com/verzth/cosmos-sdk/codec/types"
+	"github.com/verzth/cosmos-sdk/crypto/keys/ed25519"
+	"github.com/verzth/cosmos-sdk/testutil"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/x/authz"
+	v2 "github.com/verzth/cosmos-sdk/x/authz/migrations/v2"
+	authztestutil "github.com/verzth/cosmos-sdk/x/authz/testutil"
+	banktypes "github.com/verzth/cosmos-sdk/x/bank/types"
+	govtypes "github.com/verzth/cosmos-sdk/x/gov/types/v1beta1"
 )
 
 func TestMigration(t *testing.T) {

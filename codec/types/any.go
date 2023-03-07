@@ -6,9 +6,9 @@ import (
 
 	"github.com/cosmos/gogoproto/proto"
 
-	errorsmod "cosmossdk.io/errors"
+	errorsmod "github.com/verzth/cosmos-sdk/errors"
 
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	sdkerrors "github.com/verzth/cosmos-sdk/types/errors"
 )
 
 type Any struct {

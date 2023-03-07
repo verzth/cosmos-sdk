@@ -1,11 +1,11 @@
 package v2
 
 import (
-	"cosmossdk.io/store/prefix"
-	storetypes "cosmossdk.io/store/types"
+	"github.com/verzth/cosmos-sdk/store/prefix"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	"github.com/cosmos/cosmos-sdk/types/address"
-	v1auth "github.com/cosmos/cosmos-sdk/x/auth/migrations/v1"
+	"github.com/verzth/cosmos-sdk/types/address"
+	v1auth "github.com/verzth/cosmos-sdk/x/auth/migrations/v1"
 )
 
 // MigratePrefixAddress is a helper function that migrates all keys of format:

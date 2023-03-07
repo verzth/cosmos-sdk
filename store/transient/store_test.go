@@ -6,8 +6,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	pruningtypes "cosmossdk.io/store/pruning/types"
-	"cosmossdk.io/store/transient"
+	pruningtypes "github.com/verzth/cosmos-sdk/store/pruning/types"
+	"github.com/verzth/cosmos-sdk/store/transient"
 )
 
 var k, v = []byte("hello"), []byte("world")

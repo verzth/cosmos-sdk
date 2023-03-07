@@ -1,8 +1,8 @@
 package cmd
 
 import (
-	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/spf13/cobra"
+	"github.com/verzth/cosmos-sdk/client"
 )
 
 func HomeCommand() *cobra.Command {

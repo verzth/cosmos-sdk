@@ -6,19 +6,19 @@ import (
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/suite"
 
-	storetypes "cosmossdk.io/store/types"
-	"cosmossdk.io/x/feegrant"
-	"cosmossdk.io/x/feegrant/keeper"
-	"cosmossdk.io/x/feegrant/module"
-	feegranttestutil "cosmossdk.io/x/feegrant/testutil"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
+	"github.com/verzth/cosmos-sdk/x/feegrant"
+	"github.com/verzth/cosmos-sdk/x/feegrant/keeper"
+	"github.com/verzth/cosmos-sdk/x/feegrant/module"
+	feegranttestutil "github.com/verzth/cosmos-sdk/x/feegrant/testutil"
 
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
+	codectypes "github.com/verzth/cosmos-sdk/codec/types"
+	"github.com/verzth/cosmos-sdk/crypto/keys/secp256k1"
+	"github.com/verzth/cosmos-sdk/testutil"
+	"github.com/verzth/cosmos-sdk/testutil/testdata"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	moduletestutil "github.com/verzth/cosmos-sdk/types/module/testutil"
+	authtypes "github.com/verzth/cosmos-sdk/x/auth/types"
 )
 
 type GenesisTestSuite struct {

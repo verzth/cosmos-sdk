@@ -5,10 +5,10 @@ import (
 
 	"github.com/cosmos/gogoproto/proto"
 
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/slashing/client/cli"
+	"github.com/verzth/cosmos-sdk/client/flags"
+	clitestutil "github.com/verzth/cosmos-sdk/testutil/cli"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/x/slashing/client/cli"
 )
 
 func (s *CLITestSuite) TestNewUnjailTxCmd() {

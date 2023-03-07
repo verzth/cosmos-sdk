@@ -4,19 +4,19 @@ import (
 	"fmt"
 	"testing"
 
-	"cosmossdk.io/math"
-	"cosmossdk.io/simapp"
 	abci "github.com/cometbft/cometbft/abci/types"
+	"github.com/verzth/cosmos-sdk/math"
+	"github.com/verzth/cosmos-sdk/simapp"
 	"gotest.tools/v3/assert"
 
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	banktestutil "github.com/cosmos/cosmos-sdk/x/bank/testutil"
-	"github.com/cosmos/cosmos-sdk/x/staking"
-	"github.com/cosmos/cosmos-sdk/x/staking/keeper"
-	"github.com/cosmos/cosmos-sdk/x/staking/testutil"
-	"github.com/cosmos/cosmos-sdk/x/staking/types"
+	cryptotypes "github.com/verzth/cosmos-sdk/crypto/types"
+	simtestutil "github.com/verzth/cosmos-sdk/testutil/sims"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	banktestutil "github.com/verzth/cosmos-sdk/x/bank/testutil"
+	"github.com/verzth/cosmos-sdk/x/staking"
+	"github.com/verzth/cosmos-sdk/x/staking/keeper"
+	"github.com/verzth/cosmos-sdk/x/staking/testutil"
+	"github.com/verzth/cosmos-sdk/x/staking/types"
 )
 
 func newMonikerValidator(t testing.TB, operator sdk.ValAddress, pubKey cryptotypes.PubKey, moniker string) types.Validator {

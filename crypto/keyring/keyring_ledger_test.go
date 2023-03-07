@@ -10,9 +10,9 @@ import (
 	"github.com/cockroachdb/errors"
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/crypto/hd"
-	"github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/tx/signing"
+	"github.com/verzth/cosmos-sdk/crypto/hd"
+	"github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/types/tx/signing"
 )
 
 func TestInMemoryCreateLedger(t *testing.T) {

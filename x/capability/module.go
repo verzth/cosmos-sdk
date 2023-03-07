@@ -8,25 +8,25 @@ import (
 	gwruntime "github.com/grpc-ecosystem/grpc-gateway/runtime"
 	"github.com/spf13/cobra"
 
-	"cosmossdk.io/core/appmodule"
+	"github.com/verzth/cosmos-sdk/core/appmodule"
 
 	abci "github.com/cometbft/cometbft/abci/types"
 
-	modulev1 "cosmossdk.io/api/cosmos/capability/module/v1"
-	"cosmossdk.io/depinject"
+	modulev1 "github.com/verzth/cosmos-sdk/api/cosmos/capability/module/v1"
+	"github.com/verzth/cosmos-sdk/depinject"
 
-	store "cosmossdk.io/store/types"
+	store "github.com/verzth/cosmos-sdk/store/types"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	cdctypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/telemetry"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	"github.com/cosmos/cosmos-sdk/x/capability/keeper"
-	"github.com/cosmos/cosmos-sdk/x/capability/simulation"
-	"github.com/cosmos/cosmos-sdk/x/capability/types"
+	"github.com/verzth/cosmos-sdk/client"
+	"github.com/verzth/cosmos-sdk/codec"
+	cdctypes "github.com/verzth/cosmos-sdk/codec/types"
+	"github.com/verzth/cosmos-sdk/telemetry"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/types/module"
+	simtypes "github.com/verzth/cosmos-sdk/types/simulation"
+	"github.com/verzth/cosmos-sdk/x/capability/keeper"
+	"github.com/verzth/cosmos-sdk/x/capability/simulation"
+	"github.com/verzth/cosmos-sdk/x/capability/types"
 )
 
 var (

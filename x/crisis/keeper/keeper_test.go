@@ -6,15 +6,15 @@ import (
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/require"
 
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	"github.com/cosmos/cosmos-sdk/x/crisis"
-	"github.com/cosmos/cosmos-sdk/x/crisis/keeper"
-	crisistestutil "github.com/cosmos/cosmos-sdk/x/crisis/testutil"
-	"github.com/cosmos/cosmos-sdk/x/crisis/types"
+	"github.com/verzth/cosmos-sdk/testutil"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	moduletestutil "github.com/verzth/cosmos-sdk/types/module/testutil"
+	"github.com/verzth/cosmos-sdk/x/crisis"
+	"github.com/verzth/cosmos-sdk/x/crisis/keeper"
+	crisistestutil "github.com/verzth/cosmos-sdk/x/crisis/testutil"
+	"github.com/verzth/cosmos-sdk/x/crisis/types"
 )
 
 func TestLogger(t *testing.T) {

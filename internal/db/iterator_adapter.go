@@ -1,9 +1,9 @@
 package db
 
 import (
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	dbm "github.com/cosmos/cosmos-sdk/db"
+	dbm "github.com/verzth/cosmos-sdk/db"
 )
 
 var _ = (*storetypes.Iterator)(nil)

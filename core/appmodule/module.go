@@ -3,7 +3,7 @@ package appmodule
 import (
 	"context"
 
-	"cosmossdk.io/depinject"
+	"github.com/verzth/cosmos-sdk/depinject"
 	"google.golang.org/grpc"
 )
 

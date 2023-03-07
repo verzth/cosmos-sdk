@@ -1,12 +1,12 @@
 package v2
 
 import (
-	"cosmossdk.io/store/prefix"
-	storetypes "cosmossdk.io/store/types"
-	"cosmossdk.io/x/feegrant"
+	"github.com/verzth/cosmos-sdk/store/prefix"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
+	"github.com/verzth/cosmos-sdk/x/feegrant"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/codec"
+	"github.com/verzth/cosmos-sdk/types"
 )
 
 func addAllowancesByExpTimeQueue(ctx types.Context, store storetypes.KVStore, cdc codec.BinaryCodec) error {

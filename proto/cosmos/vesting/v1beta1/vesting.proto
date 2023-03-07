@@ -6,7 +6,7 @@ import "gogoproto/gogo.proto";
 import "cosmos/base/v1beta1/coin.proto";
 import "cosmos/auth/v1beta1/auth.proto";
 
-option go_package = "github.com/cosmos/cosmos-sdk/x/auth/vesting/types";
+option go_package = "github.com/verzth/cosmos-sdk/x/auth/vesting/types";
 
 // BaseVestingAccount implements the VestingAccount interface. It contains all
 // the necessary fields needed for any vesting account implementation.
@@ -19,19 +19,19 @@ message BaseVestingAccount {
     (gogoproto.nullable)     = false,
     (amino.dont_omitempty)   = true,
     (amino.encoding)         = "legacy_coins",
-    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"
+    (gogoproto.castrepeated) = "github.com/verzth/cosmos-sdk/types.Coins"
   ];
   repeated cosmos.base.v1beta1.Coin delegated_free = 3 [
     (gogoproto.nullable)     = false,
     (amino.dont_omitempty)   = true,
     (amino.encoding)         = "legacy_coins",
-    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"
+    (gogoproto.castrepeated) = "github.com/verzth/cosmos-sdk/types.Coins"
   ];
   repeated cosmos.base.v1beta1.Coin delegated_vesting = 4 [
     (gogoproto.nullable)     = false,
     (amino.dont_omitempty)   = true,
     (amino.encoding)         = "legacy_coins",
-    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"
+    (gogoproto.castrepeated) = "github.com/verzth/cosmos-sdk/types.Coins"
   ];
   int64 end_time = 5;
 }
@@ -63,7 +63,7 @@ message Period {
     (gogoproto.nullable)     = false,
     (amino.dont_omitempty)   = true,
     (amino.encoding)         = "legacy_coins",
-    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"
+    (gogoproto.castrepeated) = "github.com/verzth/cosmos-sdk/types.Coins"
   ];
 }
 

@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"reflect"
 
-	errorsmod "cosmossdk.io/errors"
 	"github.com/cosmos/gogoproto/proto"
+	errorsmod "github.com/verzth/cosmos-sdk/errors"
 
-	"github.com/cosmos/cosmos-sdk/types/query"
-	"github.com/cosmos/cosmos-sdk/x/group/errors"
+	"github.com/verzth/cosmos-sdk/types/query"
+	"github.com/verzth/cosmos-sdk/x/group/errors"
 )
 
 // defaultPageLimit is the default limit value for pagination requests.

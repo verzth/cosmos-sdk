@@ -7,9 +7,9 @@ import (
 
 	"gotest.tools/v3/assert"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	v1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1"
-	"github.com/cosmos/cosmos-sdk/x/gov/types/v1beta1"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	v1 "github.com/verzth/cosmos-sdk/x/gov/types/v1"
+	"github.com/verzth/cosmos-sdk/x/gov/types/v1beta1"
 )
 
 func TestGRPCQueryTally(t *testing.T) {

@@ -1,7 +1,7 @@
 package nft
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
 )
 
 // BankKeeper defines the contract needed to be fulfilled for banking and supply

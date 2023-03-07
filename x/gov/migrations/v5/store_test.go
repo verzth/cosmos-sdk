@@ -6,15 +6,15 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	"github.com/cosmos/cosmos-sdk/testutil"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	"github.com/cosmos/cosmos-sdk/x/bank"
-	"github.com/cosmos/cosmos-sdk/x/gov"
-	v4 "github.com/cosmos/cosmos-sdk/x/gov/migrations/v4"
-	v5 "github.com/cosmos/cosmos-sdk/x/gov/migrations/v5"
-	v1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1"
+	"github.com/verzth/cosmos-sdk/testutil"
+	moduletestutil "github.com/verzth/cosmos-sdk/types/module/testutil"
+	"github.com/verzth/cosmos-sdk/x/bank"
+	"github.com/verzth/cosmos-sdk/x/gov"
+	v4 "github.com/verzth/cosmos-sdk/x/gov/migrations/v4"
+	v5 "github.com/verzth/cosmos-sdk/x/gov/migrations/v5"
+	v1 "github.com/verzth/cosmos-sdk/x/gov/types/v1"
 )
 
 func TestMigrateStore(t *testing.T) {

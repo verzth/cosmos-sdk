@@ -4,12 +4,12 @@ import (
 	"strings"
 	"time"
 
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
-	v1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1"
-	"github.com/cosmos/cosmos-sdk/x/gov/types/v1beta1"
+	simtestutil "github.com/verzth/cosmos-sdk/testutil/sims"
+	"github.com/verzth/cosmos-sdk/testutil/testdata"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	banktypes "github.com/verzth/cosmos-sdk/x/bank/types"
+	v1 "github.com/verzth/cosmos-sdk/x/gov/types/v1"
+	"github.com/verzth/cosmos-sdk/x/gov/types/v1beta1"
 )
 
 func (suite *KeeperTestSuite) TestSubmitProposalReq() {

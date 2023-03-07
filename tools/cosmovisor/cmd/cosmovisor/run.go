@@ -1,8 +1,8 @@
 package main
 
 import (
-	"cosmossdk.io/log"
-	"cosmossdk.io/tools/cosmovisor"
+	"github.com/verzth/cosmos-sdk/log"
+	"github.com/verzth/cosmos-sdk/tools/cosmovisor"
 	"github.com/spf13/cobra"
 )
 

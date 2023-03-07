@@ -5,8 +5,8 @@ import (
 	"context"
 	"testing"
 
-	"cosmossdk.io/log"
 	"github.com/stretchr/testify/require"
+	"github.com/verzth/cosmos-sdk/log"
 )
 
 func TestVersionCommand_Error(t *testing.T) {

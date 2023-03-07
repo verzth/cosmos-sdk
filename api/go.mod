@@ -1,4 +1,4 @@
-module cosmossdk.io/api
+module github.com/verzth/cosmos-sdk/api
 
 go 1.20
 

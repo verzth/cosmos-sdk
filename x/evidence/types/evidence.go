@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"time"
 
-	"cosmossdk.io/x/evidence/exported"
 	abci "github.com/cometbft/cometbft/abci/types"
 	"github.com/cometbft/cometbft/crypto/tmhash"
+	"github.com/verzth/cosmos-sdk/x/evidence/exported"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
 )
 
 // Evidence type constants

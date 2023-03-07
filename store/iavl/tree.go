@@ -3,8 +3,8 @@ package iavl
 import (
 	"fmt"
 
-	"cosmossdk.io/store/types"
 	"github.com/cosmos/iavl"
+	"github.com/verzth/cosmos-sdk/store/types"
 )
 
 var (

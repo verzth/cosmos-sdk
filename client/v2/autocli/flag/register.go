@@ -4,9 +4,9 @@ import (
 	"context"
 	"fmt"
 
-	autocliv1 "cosmossdk.io/api/cosmos/autocli/v1"
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
+	autocliv1 "github.com/verzth/cosmos-sdk/api/cosmos/autocli/v1"
 	"google.golang.org/protobuf/reflect/protoreflect"
 )
 

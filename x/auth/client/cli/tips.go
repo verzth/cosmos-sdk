@@ -6,12 +6,12 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	clienttx "github.com/cosmos/cosmos-sdk/client/tx"
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/types/tx"
-	authclient "github.com/cosmos/cosmos-sdk/x/auth/client"
+	"github.com/verzth/cosmos-sdk/client"
+	"github.com/verzth/cosmos-sdk/client/flags"
+	clienttx "github.com/verzth/cosmos-sdk/client/tx"
+	"github.com/verzth/cosmos-sdk/codec"
+	"github.com/verzth/cosmos-sdk/types/tx"
+	authclient "github.com/verzth/cosmos-sdk/x/auth/client"
 )
 
 func GetAuxToFeeCommand() *cobra.Command {

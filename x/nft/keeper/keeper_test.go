@@ -8,17 +8,17 @@ import (
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/suite"
 
-	storetypes "cosmossdk.io/store/types"
-	"cosmossdk.io/x/nft"
-	"cosmossdk.io/x/nft/keeper"
-	"cosmossdk.io/x/nft/module"
-	nfttestutil "cosmossdk.io/x/nft/testutil"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
+	"github.com/verzth/cosmos-sdk/x/nft"
+	"github.com/verzth/cosmos-sdk/x/nft/keeper"
+	"github.com/verzth/cosmos-sdk/x/nft/module"
+	nfttestutil "github.com/verzth/cosmos-sdk/x/nft/testutil"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
+	"github.com/verzth/cosmos-sdk/baseapp"
+	"github.com/verzth/cosmos-sdk/testutil"
+	simtestutil "github.com/verzth/cosmos-sdk/testutil/sims"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	moduletestutil "github.com/verzth/cosmos-sdk/types/module/testutil"
 )
 
 const (

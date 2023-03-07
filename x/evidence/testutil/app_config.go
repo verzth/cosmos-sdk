@@ -1,37 +1,37 @@
 package testutil
 
 import (
-	"cosmossdk.io/core/appconfig"
-	_ "cosmossdk.io/x/evidence" // import as blank for app wiring
-	evidencetypes "cosmossdk.io/x/evidence/types"
-	_ "github.com/cosmos/cosmos-sdk/x/auth"           // import as blank for app wiring
-	_ "github.com/cosmos/cosmos-sdk/x/auth/tx/config" // import as blank for app wiring
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	_ "github.com/cosmos/cosmos-sdk/x/bank" // import as blank for app wiring
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
-	_ "github.com/cosmos/cosmos-sdk/x/consensus" // import as blank for app wiring
-	consensustypes "github.com/cosmos/cosmos-sdk/x/consensus/types"
-	_ "github.com/cosmos/cosmos-sdk/x/genutil" // import as blank for app wiring
-	genutiltypes "github.com/cosmos/cosmos-sdk/x/genutil/types"
-	minttypes "github.com/cosmos/cosmos-sdk/x/mint/types"
-	_ "github.com/cosmos/cosmos-sdk/x/params" // import as blank for app wiring
-	paramstypes "github.com/cosmos/cosmos-sdk/x/params/types"
-	_ "github.com/cosmos/cosmos-sdk/x/slashing" // import as blank for app wiring
-	slashingtypes "github.com/cosmos/cosmos-sdk/x/slashing/types"
-	_ "github.com/cosmos/cosmos-sdk/x/staking" // import as blank for app wiring
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/verzth/cosmos-sdk/core/appconfig"
+	_ "github.com/verzth/cosmos-sdk/x/auth"           // import as blank for app wiring
+	_ "github.com/verzth/cosmos-sdk/x/auth/tx/config" // import as blank for app wiring
+	authtypes "github.com/verzth/cosmos-sdk/x/auth/types"
+	_ "github.com/verzth/cosmos-sdk/x/bank" // import as blank for app wiring
+	banktypes "github.com/verzth/cosmos-sdk/x/bank/types"
+	_ "github.com/verzth/cosmos-sdk/x/consensus" // import as blank for app wiring
+	consensustypes "github.com/verzth/cosmos-sdk/x/consensus/types"
+	_ "github.com/verzth/cosmos-sdk/x/evidence" // import as blank for app wiring
+	evidencetypes "github.com/verzth/cosmos-sdk/x/evidence/types"
+	_ "github.com/verzth/cosmos-sdk/x/genutil" // import as blank for app wiring
+	genutiltypes "github.com/verzth/cosmos-sdk/x/genutil/types"
+	minttypes "github.com/verzth/cosmos-sdk/x/mint/types"
+	_ "github.com/verzth/cosmos-sdk/x/params" // import as blank for app wiring
+	paramstypes "github.com/verzth/cosmos-sdk/x/params/types"
+	_ "github.com/verzth/cosmos-sdk/x/slashing" // import as blank for app wiring
+	slashingtypes "github.com/verzth/cosmos-sdk/x/slashing/types"
+	_ "github.com/verzth/cosmos-sdk/x/staking" // import as blank for app wiring
+	stakingtypes "github.com/verzth/cosmos-sdk/x/staking/types"
 
-	runtimev1alpha1 "cosmossdk.io/api/cosmos/app/runtime/v1alpha1"
-	appv1alpha1 "cosmossdk.io/api/cosmos/app/v1alpha1"
-	authmodulev1 "cosmossdk.io/api/cosmos/auth/module/v1"
-	bankmodulev1 "cosmossdk.io/api/cosmos/bank/module/v1"
-	consensusmodulev1 "cosmossdk.io/api/cosmos/consensus/module/v1"
-	evidencemodulev1 "cosmossdk.io/api/cosmos/evidence/module/v1"
-	genutilmodulev1 "cosmossdk.io/api/cosmos/genutil/module/v1"
-	paramsmodulev1 "cosmossdk.io/api/cosmos/params/module/v1"
-	slashingmodulev1 "cosmossdk.io/api/cosmos/slashing/module/v1"
-	stakingmodulev1 "cosmossdk.io/api/cosmos/staking/module/v1"
-	txconfigv1 "cosmossdk.io/api/cosmos/tx/config/v1"
+	runtimev1alpha1 "github.com/verzth/cosmos-sdk/api/cosmos/app/runtime/v1alpha1"
+	appv1alpha1 "github.com/verzth/cosmos-sdk/api/cosmos/app/v1alpha1"
+	authmodulev1 "github.com/verzth/cosmos-sdk/api/cosmos/auth/module/v1"
+	bankmodulev1 "github.com/verzth/cosmos-sdk/api/cosmos/bank/module/v1"
+	consensusmodulev1 "github.com/verzth/cosmos-sdk/api/cosmos/consensus/module/v1"
+	evidencemodulev1 "github.com/verzth/cosmos-sdk/api/cosmos/evidence/module/v1"
+	genutilmodulev1 "github.com/verzth/cosmos-sdk/api/cosmos/genutil/module/v1"
+	paramsmodulev1 "github.com/verzth/cosmos-sdk/api/cosmos/params/module/v1"
+	slashingmodulev1 "github.com/verzth/cosmos-sdk/api/cosmos/slashing/module/v1"
+	stakingmodulev1 "github.com/verzth/cosmos-sdk/api/cosmos/staking/module/v1"
+	txconfigv1 "github.com/verzth/cosmos-sdk/api/cosmos/tx/config/v1"
 )
 
 var AppConfig = appconfig.Compose(&appv1alpha1.Config{

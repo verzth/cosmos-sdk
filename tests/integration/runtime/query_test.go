@@ -3,29 +3,29 @@ package runtime
 import (
 	"testing"
 
-	reflectionv1 "cosmossdk.io/api/cosmos/reflection/v1"
 	cmtproto "github.com/cometbft/cometbft/proto/tendermint/types"
 	"github.com/cosmos/gogoproto/proto"
+	reflectionv1 "github.com/verzth/cosmos-sdk/api/cosmos/reflection/v1"
 	"google.golang.org/protobuf/reflect/protoreflect"
 	"google.golang.org/protobuf/reflect/protoregistry"
 	"google.golang.org/protobuf/types/descriptorpb"
 	"gotest.tools/v3/assert"
 
-	appv1alpha1 "cosmossdk.io/api/cosmos/app/v1alpha1"
-	autocliv1 "cosmossdk.io/api/cosmos/autocli/v1"
+	appv1alpha1 "github.com/verzth/cosmos-sdk/api/cosmos/app/v1alpha1"
+	autocliv1 "github.com/verzth/cosmos-sdk/api/cosmos/autocli/v1"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/testutil/configurator"
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/baseapp"
+	codectypes "github.com/verzth/cosmos-sdk/codec/types"
+	"github.com/verzth/cosmos-sdk/testutil/configurator"
+	simtestutil "github.com/verzth/cosmos-sdk/testutil/sims"
+	sdk "github.com/verzth/cosmos-sdk/types"
 
-	_ "github.com/cosmos/cosmos-sdk/x/auth"
-	_ "github.com/cosmos/cosmos-sdk/x/auth/tx/config"
-	_ "github.com/cosmos/cosmos-sdk/x/bank"
-	_ "github.com/cosmos/cosmos-sdk/x/consensus"
-	_ "github.com/cosmos/cosmos-sdk/x/params"
-	_ "github.com/cosmos/cosmos-sdk/x/staking"
+	_ "github.com/verzth/cosmos-sdk/x/auth"
+	_ "github.com/verzth/cosmos-sdk/x/auth/tx/config"
+	_ "github.com/verzth/cosmos-sdk/x/bank"
+	_ "github.com/verzth/cosmos-sdk/x/consensus"
+	_ "github.com/verzth/cosmos-sdk/x/params"
+	_ "github.com/verzth/cosmos-sdk/x/staking"
 )
 
 type fixture struct {

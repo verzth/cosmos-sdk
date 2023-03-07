@@ -5,7 +5,7 @@ import (
 
 	"github.com/cockroachdb/errors"
 
-	"github.com/cosmos/cosmos-sdk/crypto/hd"
+	"github.com/verzth/cosmos-sdk/crypto/hd"
 )
 
 // SignatureAlgo defines the interface for a keyring supported algorithm.

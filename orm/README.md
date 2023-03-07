@@ -174,7 +174,7 @@ API. That means it will not work with code generated using gogo-proto.
 
 To install the ORM's code generator, run:
 ```shell
-go install github.com/cosmos/cosmos-sdk/orm/cmd/protoc-gen-go-cosmos-orm@latest
+go install github.com/verzth/cosmos-sdk/orm/cmd/protoc-gen-go-cosmos-orm@latest
 ```
 
 The recommended way to run the code generator is to use [buf build](https://docs.buf.build/build/usage).
@@ -187,7 +187,7 @@ managed:
   go_package_prefix:
     default: foo.bar/api # the go package prefix of your package
     override:
-      buf.build/cosmos/cosmos-sdk: cosmossdk.io/api # required to import the Cosmos SDK api module
+      buf.build/cosmos/cosmos-sdk: github.com/verzth/cosmos-sdk/api # required to import the Cosmos SDK api module
 plugins:
   - name: go
     out: .
@@ -227,7 +227,7 @@ type Keeper struct {
 ```
 
 Then instantiate the `StateStore` instance via an `ormdb.ModuleDB` that is instantiated from the `SchemaDescriptor`
-above and one or more store services from `cosmossdk.io/core/store`. Ex:
+above and one or more store services from `github.com/verzth/cosmos-sdk/core/store`. Ex:
 ```go
 func NewKeeper(storeService store.KVStoreService) (*Keeper, error) {
     modDb, err := ormdb.NewModuleDB(MyModuleSchema, ormdb.ModuleDBOptions{KVStoreService: storeService})

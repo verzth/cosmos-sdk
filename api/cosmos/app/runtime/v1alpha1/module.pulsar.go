@@ -2,7 +2,7 @@
 package runtimev1alpha1
 
 import (
-	_ "cosmossdk.io/api/cosmos/app/v1alpha1"
+	_ "github.com/verzth/cosmos-sdk/api/cosmos/app/v1alpha1"
 	fmt "fmt"
 	runtime "github.com/cosmos/cosmos-proto/runtime"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
@@ -1717,7 +1717,7 @@ type Module struct {
 	OverrideStoreKeys []*StoreKeyConfig `protobuf:"bytes,6,rep,name=override_store_keys,json=overrideStoreKeys,proto3" json:"override_store_keys,omitempty"`
 	// order_migrations defines the order in which module migrations are performed.
 	// If this is left empty, it uses the default migration order.
-	// https://pkg.go.dev/github.com/cosmos/cosmos-sdk@v0.47.0-alpha2/types/module#DefaultMigrationsOrder
+	// https://pkg.go.dev/github.com/verzth/cosmos-sdk@v0.47.0-alpha2/types/module#DefaultMigrationsOrder
 	OrderMigrations []string `protobuf:"bytes,7,rep,name=order_migrations,json=orderMigrations,proto3" json:"order_migrations,omitempty"`
 }
 

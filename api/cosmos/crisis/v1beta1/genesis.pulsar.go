@@ -2,8 +2,8 @@
 package crisisv1beta1
 
 import (
-	_ "cosmossdk.io/api/amino"
-	v1beta1 "cosmossdk.io/api/cosmos/base/v1beta1"
+	_ "github.com/verzth/cosmos-sdk/api/amino"
+	v1beta1 "github.com/verzth/cosmos-sdk/api/cosmos/base/v1beta1"
 	fmt "fmt"
 	runtime "github.com/cosmos/cosmos-proto/runtime"
 	_ "github.com/cosmos/gogoproto/gogoproto"

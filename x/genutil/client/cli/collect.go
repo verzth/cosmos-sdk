@@ -4,14 +4,14 @@ import (
 	"encoding/json"
 	"path/filepath"
 
-	"cosmossdk.io/errors"
 	"github.com/spf13/cobra"
+	"github.com/verzth/cosmos-sdk/errors"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/server"
-	"github.com/cosmos/cosmos-sdk/x/genutil"
-	"github.com/cosmos/cosmos-sdk/x/genutil/types"
+	"github.com/verzth/cosmos-sdk/client"
+	"github.com/verzth/cosmos-sdk/client/flags"
+	"github.com/verzth/cosmos-sdk/server"
+	"github.com/verzth/cosmos-sdk/x/genutil"
+	"github.com/verzth/cosmos-sdk/x/genutil/types"
 )
 
 const flagGenTxDir = "gentx-dir"

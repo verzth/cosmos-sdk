@@ -1,13 +1,13 @@
 package autocli
 
 import (
-	autocliv1 "cosmossdk.io/api/cosmos/autocli/v1"
-	"cosmossdk.io/core/appmodule"
-	"cosmossdk.io/depinject"
 	"fmt"
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
 	"github.com/spf13/cobra"
+	autocliv1 "github.com/verzth/cosmos-sdk/api/cosmos/autocli/v1"
+	"github.com/verzth/cosmos-sdk/client"
+	"github.com/verzth/cosmos-sdk/client/flags"
+	"github.com/verzth/cosmos-sdk/core/appmodule"
+	"github.com/verzth/cosmos-sdk/depinject"
 	"google.golang.org/grpc"
 )
 
@@ -18,7 +18,7 @@ import (
 //	err := depinject.Inject(appConfig, &encodingConfig.InterfaceRegistry, &autoCliOpts)
 //
 // If depinject isn't used, options can be provided manually or extracted from modules. One method for extracting autocli
-// options is via the github.com/cosmos/cosmos-sdk/runtime/services.ExtractAutoCLIOptions function.
+// options is via the github.com/verzth/cosmos-sdk/runtime/services.ExtractAutoCLIOptions function.
 type AppOptions struct {
 	depinject.In
 

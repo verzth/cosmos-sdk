@@ -3,10 +3,10 @@ package keeper_test
 import (
 	"time"
 
-	"cosmossdk.io/x/evidence/types"
+	"github.com/verzth/cosmos-sdk/x/evidence/types"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/crypto/keys/ed25519"
+	sdk "github.com/verzth/cosmos-sdk/types"
 )
 
 func (s *KeeperTestSuite) TestSubmitEvidence() {

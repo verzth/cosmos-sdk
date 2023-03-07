@@ -12,12 +12,12 @@ import (
 
 	cfg "github.com/cometbft/cometbft/config"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	bankexported "github.com/cosmos/cosmos-sdk/x/bank/exported"
-	"github.com/cosmos/cosmos-sdk/x/genutil/types"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/verzth/cosmos-sdk/client"
+	"github.com/verzth/cosmos-sdk/codec"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	bankexported "github.com/verzth/cosmos-sdk/x/bank/exported"
+	"github.com/verzth/cosmos-sdk/x/genutil/types"
+	stakingtypes "github.com/verzth/cosmos-sdk/x/staking/types"
 )
 
 // GenAppStateFromConfig gets the genesis app state from the config

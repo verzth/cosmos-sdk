@@ -3,9 +3,9 @@ package keeper
 import (
 	"context"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
 
-	"cosmossdk.io/x/feegrant"
+	"github.com/verzth/cosmos-sdk/x/feegrant"
 )
 
 type msgServer struct {

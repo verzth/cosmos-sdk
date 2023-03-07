@@ -1,9 +1,9 @@
 package codec
 
 import (
-	"github.com/cosmos/cosmos-sdk/codec"
-	cryptocodec "github.com/cosmos/cosmos-sdk/crypto/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/codec"
+	cryptocodec "github.com/verzth/cosmos-sdk/crypto/codec"
+	sdk "github.com/verzth/cosmos-sdk/types"
 )
 
 var (

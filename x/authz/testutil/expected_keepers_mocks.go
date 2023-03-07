@@ -7,7 +7,7 @@ package testutil
 import (
 	reflect "reflect"
 
-	types "github.com/cosmos/cosmos-sdk/types"
+	types "github.com/verzth/cosmos-sdk/types"
 	gomock "github.com/golang/mock/gomock"
 )
 

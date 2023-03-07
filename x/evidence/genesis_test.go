@@ -5,18 +5,18 @@ import (
 	"testing"
 	"time"
 
-	"cosmossdk.io/x/evidence"
-	"cosmossdk.io/x/evidence/exported"
-	"cosmossdk.io/x/evidence/keeper"
-	"cosmossdk.io/x/evidence/testutil"
-	"cosmossdk.io/x/evidence/types"
 	cmtproto "github.com/cometbft/cometbft/proto/tendermint/types"
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
+	"github.com/verzth/cosmos-sdk/x/evidence"
+	"github.com/verzth/cosmos-sdk/x/evidence/exported"
+	"github.com/verzth/cosmos-sdk/x/evidence/keeper"
+	"github.com/verzth/cosmos-sdk/x/evidence/testutil"
+	"github.com/verzth/cosmos-sdk/x/evidence/types"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/crypto/keys/ed25519"
+	simtestutil "github.com/verzth/cosmos-sdk/testutil/sims"
+	sdk "github.com/verzth/cosmos-sdk/types"
 )
 
 type GenesisTestSuite struct {

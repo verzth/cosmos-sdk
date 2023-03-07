@@ -5,16 +5,16 @@ import (
 	"fmt"
 	"strings"
 
-	"cosmossdk.io/log"
-	"cosmossdk.io/x/evidence/exported"
-	"cosmossdk.io/x/evidence/types"
+	"github.com/verzth/cosmos-sdk/log"
+	"github.com/verzth/cosmos-sdk/x/evidence/exported"
+	"github.com/verzth/cosmos-sdk/x/evidence/types"
 
-	"cosmossdk.io/errors"
-	"cosmossdk.io/store/prefix"
-	storetypes "cosmossdk.io/store/types"
+	"github.com/verzth/cosmos-sdk/errors"
+	"github.com/verzth/cosmos-sdk/store/prefix"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/codec"
+	sdk "github.com/verzth/cosmos-sdk/types"
 )
 
 // Keeper defines the evidence module's keeper. The keeper is responsible for

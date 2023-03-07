@@ -8,31 +8,31 @@ import (
 	"strings"
 	"testing"
 
-	appv1alpha1 "cosmossdk.io/api/cosmos/app/v1alpha1"
-	ormmodulev1alpha1 "cosmossdk.io/api/cosmos/orm/module/v1alpha1"
-	ormv1alpha1 "cosmossdk.io/api/cosmos/orm/v1alpha1"
-	"cosmossdk.io/core/appconfig"
-	"cosmossdk.io/core/appmodule"
-	"cosmossdk.io/core/genesis"
-	"cosmossdk.io/core/store"
 	dbm "github.com/cosmos/cosmos-db"
+	appv1alpha1 "github.com/verzth/cosmos-sdk/api/cosmos/app/v1alpha1"
+	ormmodulev1alpha1 "github.com/verzth/cosmos-sdk/api/cosmos/orm/module/v1alpha1"
+	ormv1alpha1 "github.com/verzth/cosmos-sdk/api/cosmos/orm/v1alpha1"
+	"github.com/verzth/cosmos-sdk/core/appconfig"
+	"github.com/verzth/cosmos-sdk/core/appmodule"
+	"github.com/verzth/cosmos-sdk/core/genesis"
+	"github.com/verzth/cosmos-sdk/core/store"
 
-	"cosmossdk.io/depinject"
+	"github.com/verzth/cosmos-sdk/depinject"
 
 	"github.com/golang/mock/gomock"
 
-	"github.com/cosmos/cosmos-sdk/orm/testing/ormmocks"
+	"github.com/verzth/cosmos-sdk/orm/testing/ormmocks"
 
 	"gotest.tools/v3/assert"
 	"gotest.tools/v3/golden"
 
-	_ "github.com/cosmos/cosmos-sdk/orm" // required for ORM module registration
-	"github.com/cosmos/cosmos-sdk/orm/internal/testkv"
-	"github.com/cosmos/cosmos-sdk/orm/internal/testpb"
-	"github.com/cosmos/cosmos-sdk/orm/model/ormdb"
-	"github.com/cosmos/cosmos-sdk/orm/model/ormtable"
-	"github.com/cosmos/cosmos-sdk/orm/testing/ormtest"
-	"github.com/cosmos/cosmos-sdk/orm/types/ormerrors"
+	_ "github.com/verzth/cosmos-sdk/orm" // required for ORM module registration
+	"github.com/verzth/cosmos-sdk/orm/internal/testkv"
+	"github.com/verzth/cosmos-sdk/orm/internal/testpb"
+	"github.com/verzth/cosmos-sdk/orm/model/ormdb"
+	"github.com/verzth/cosmos-sdk/orm/model/ormtable"
+	"github.com/verzth/cosmos-sdk/orm/testing/ormtest"
+	"github.com/verzth/cosmos-sdk/orm/types/ormerrors"
 )
 
 // These tests use a simulated bank keeper. Addresses and balances use

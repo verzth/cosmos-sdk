@@ -3,11 +3,11 @@ package orm
 import (
 	"encoding/binary"
 
-	errorsmod "cosmossdk.io/errors"
-	"cosmossdk.io/store/prefix"
-	storetypes "cosmossdk.io/store/types"
+	errorsmod "github.com/verzth/cosmos-sdk/errors"
+	"github.com/verzth/cosmos-sdk/store/prefix"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	"github.com/cosmos/cosmos-sdk/x/group/errors"
+	"github.com/verzth/cosmos-sdk/x/group/errors"
 )
 
 // sequenceStorageKey is a fix key to read/ write data on the storage layer

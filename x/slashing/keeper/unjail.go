@@ -1,10 +1,10 @@
 package keeper
 
 import (
-	"cosmossdk.io/errors"
+	"github.com/verzth/cosmos-sdk/errors"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/slashing/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/x/slashing/types"
 )
 
 // Unjail calls the staking Unjail function to unjail a validator if the

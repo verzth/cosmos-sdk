@@ -5,37 +5,37 @@ import (
 	"io"
 	"os"
 
-	"cosmossdk.io/log"
 	cmtcfg "github.com/cometbft/cometbft/config"
 	dbm "github.com/cosmos/cosmos-db"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
+	"github.com/verzth/cosmos-sdk/log"
 
-	"cosmossdk.io/simapp"
-	"cosmossdk.io/simapp/params"
-	confixcmd "cosmossdk.io/tools/confix/cmd"
-	rosettaCmd "cosmossdk.io/tools/rosetta/cmd"
+	"github.com/verzth/cosmos-sdk/simapp"
+	"github.com/verzth/cosmos-sdk/simapp/params"
+	confixcmd "github.com/verzth/cosmos-sdk/tools/confix/cmd"
+	rosettaCmd "github.com/verzth/cosmos-sdk/tools/rosetta/cmd"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/config"
-	"github.com/cosmos/cosmos-sdk/client/debug"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/client/keys"
-	"github.com/cosmos/cosmos-sdk/client/pruning"
-	"github.com/cosmos/cosmos-sdk/client/rpc"
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/server"
-	serverconfig "github.com/cosmos/cosmos-sdk/server/config"
-	servertypes "github.com/cosmos/cosmos-sdk/server/types"
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authcmd "github.com/cosmos/cosmos-sdk/x/auth/client/cli"
-	"github.com/cosmos/cosmos-sdk/x/auth/tx"
-	txmodule "github.com/cosmos/cosmos-sdk/x/auth/tx/config"
-	"github.com/cosmos/cosmos-sdk/x/auth/types"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
-	"github.com/cosmos/cosmos-sdk/x/crisis"
-	genutilcli "github.com/cosmos/cosmos-sdk/x/genutil/client/cli"
+	"github.com/verzth/cosmos-sdk/client"
+	"github.com/verzth/cosmos-sdk/client/config"
+	"github.com/verzth/cosmos-sdk/client/debug"
+	"github.com/verzth/cosmos-sdk/client/flags"
+	"github.com/verzth/cosmos-sdk/client/keys"
+	"github.com/verzth/cosmos-sdk/client/pruning"
+	"github.com/verzth/cosmos-sdk/client/rpc"
+	"github.com/verzth/cosmos-sdk/codec"
+	"github.com/verzth/cosmos-sdk/server"
+	serverconfig "github.com/verzth/cosmos-sdk/server/config"
+	servertypes "github.com/verzth/cosmos-sdk/server/types"
+	simtestutil "github.com/verzth/cosmos-sdk/testutil/sims"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	authcmd "github.com/verzth/cosmos-sdk/x/auth/client/cli"
+	"github.com/verzth/cosmos-sdk/x/auth/tx"
+	txmodule "github.com/verzth/cosmos-sdk/x/auth/tx/config"
+	"github.com/verzth/cosmos-sdk/x/auth/types"
+	banktypes "github.com/verzth/cosmos-sdk/x/bank/types"
+	"github.com/verzth/cosmos-sdk/x/crisis"
+	genutilcli "github.com/verzth/cosmos-sdk/x/genutil/client/cli"
 )
 
 // NewRootCmd creates a new root command for simd. It is called once in the
@@ -84,7 +84,7 @@ func NewRootCmd() *cobra.Command {
 			//
 			// TODO Currently, the TxConfig below doesn't include Textual, so
 			// an error will arise when using the --textual flag.
-			// ref: https://github.com/cosmos/cosmos-sdk/issues/11970
+			// ref: https://github.com/verzth/cosmos-sdk/issues/11970
 			txConfigWithTextual := tx.NewTxConfigWithTextual(
 				codec.NewProtoCodec(encodingConfig.InterfaceRegistry),
 				encodingConfig.TxConfig.SignModeHandler().Modes(),

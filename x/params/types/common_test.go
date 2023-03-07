@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"time"
 
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	"github.com/cosmos/cosmos-sdk/x/params/types"
+	"github.com/verzth/cosmos-sdk/x/params/types"
 )
 
 var (

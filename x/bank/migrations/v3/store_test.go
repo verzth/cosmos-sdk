@@ -3,19 +3,19 @@ package v3_test
 import (
 	"testing"
 
-	"cosmossdk.io/math"
 	"github.com/stretchr/testify/require"
+	"github.com/verzth/cosmos-sdk/math"
 
-	"cosmossdk.io/store/prefix"
-	storetypes "cosmossdk.io/store/types"
+	"github.com/verzth/cosmos-sdk/store/prefix"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/address"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	v2 "github.com/cosmos/cosmos-sdk/x/bank/migrations/v2"
-	v3 "github.com/cosmos/cosmos-sdk/x/bank/migrations/v3"
-	"github.com/cosmos/cosmos-sdk/x/bank/types"
+	"github.com/verzth/cosmos-sdk/testutil"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/types/address"
+	moduletestutil "github.com/verzth/cosmos-sdk/types/module/testutil"
+	v2 "github.com/verzth/cosmos-sdk/x/bank/migrations/v2"
+	v3 "github.com/verzth/cosmos-sdk/x/bank/migrations/v3"
+	"github.com/verzth/cosmos-sdk/x/bank/types"
 )
 
 func TestMigrateStore(t *testing.T) {

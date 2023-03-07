@@ -6,18 +6,18 @@ import (
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/suite"
 
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	govv1beta1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1beta1"
-	"github.com/cosmos/cosmos-sdk/x/params"
-	"github.com/cosmos/cosmos-sdk/x/params/keeper"
-	paramstestutil "github.com/cosmos/cosmos-sdk/x/params/testutil"
-	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
-	"github.com/cosmos/cosmos-sdk/x/params/types/proposal"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/verzth/cosmos-sdk/testutil"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	moduletestutil "github.com/verzth/cosmos-sdk/types/module/testutil"
+	govv1beta1 "github.com/verzth/cosmos-sdk/x/gov/types/v1beta1"
+	"github.com/verzth/cosmos-sdk/x/params"
+	"github.com/verzth/cosmos-sdk/x/params/keeper"
+	paramstestutil "github.com/verzth/cosmos-sdk/x/params/testutil"
+	paramtypes "github.com/verzth/cosmos-sdk/x/params/types"
+	"github.com/verzth/cosmos-sdk/x/params/types/proposal"
+	stakingtypes "github.com/verzth/cosmos-sdk/x/staking/types"
 )
 
 // StakingKeeper defines the expected staking keeper

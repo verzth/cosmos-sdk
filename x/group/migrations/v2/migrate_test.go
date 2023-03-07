@@ -5,20 +5,20 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	"github.com/cosmos/cosmos-sdk/x/auth"
-	authkeeper "github.com/cosmos/cosmos-sdk/x/auth/keeper"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	"github.com/cosmos/cosmos-sdk/x/group"
-	"github.com/cosmos/cosmos-sdk/x/group/internal/orm"
-	groupkeeper "github.com/cosmos/cosmos-sdk/x/group/keeper"
-	v2 "github.com/cosmos/cosmos-sdk/x/group/migrations/v2"
-	groupmodule "github.com/cosmos/cosmos-sdk/x/group/module"
+	"github.com/verzth/cosmos-sdk/codec"
+	"github.com/verzth/cosmos-sdk/testutil"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	moduletestutil "github.com/verzth/cosmos-sdk/types/module/testutil"
+	"github.com/verzth/cosmos-sdk/x/auth"
+	authkeeper "github.com/verzth/cosmos-sdk/x/auth/keeper"
+	authtypes "github.com/verzth/cosmos-sdk/x/auth/types"
+	"github.com/verzth/cosmos-sdk/x/group"
+	"github.com/verzth/cosmos-sdk/x/group/internal/orm"
+	groupkeeper "github.com/verzth/cosmos-sdk/x/group/keeper"
+	v2 "github.com/verzth/cosmos-sdk/x/group/migrations/v2"
+	groupmodule "github.com/verzth/cosmos-sdk/x/group/module"
 )
 
 var (

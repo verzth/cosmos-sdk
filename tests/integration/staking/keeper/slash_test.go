@@ -4,17 +4,17 @@ import (
 	"testing"
 	"time"
 
-	"cosmossdk.io/math"
-	"cosmossdk.io/simapp"
 	cmtproto "github.com/cometbft/cometbft/proto/tendermint/types"
+	"github.com/verzth/cosmos-sdk/math"
+	"github.com/verzth/cosmos-sdk/simapp"
 	"gotest.tools/v3/assert"
 
-	sdktestutil "github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	banktestutil "github.com/cosmos/cosmos-sdk/x/bank/testutil"
-	"github.com/cosmos/cosmos-sdk/x/staking/keeper"
-	"github.com/cosmos/cosmos-sdk/x/staking/testutil"
-	"github.com/cosmos/cosmos-sdk/x/staking/types"
+	sdktestutil "github.com/verzth/cosmos-sdk/testutil"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	banktestutil "github.com/verzth/cosmos-sdk/x/bank/testutil"
+	"github.com/verzth/cosmos-sdk/x/staking/keeper"
+	"github.com/verzth/cosmos-sdk/x/staking/testutil"
+	"github.com/verzth/cosmos-sdk/x/staking/types"
 )
 
 // bootstrapSlashTest creates 3 validators and bootstrap the app.
@@ -297,7 +297,7 @@ func TestSlashWithUnbondingDelegation(t *testing.T) {
 	// slash validator again
 	// all originally bonded stake has been slashed, so this will have no effect
 	// on the unbonding delegation, but it will slash stake bonded since the infraction
-	// this may not be the desirable behaviour, ref https://github.com/cosmos/cosmos-sdk/issues/1440
+	// this may not be the desirable behaviour, ref https://github.com/verzth/cosmos-sdk/issues/1440
 	ctx = ctx.WithBlockHeight(13)
 	app.StakingKeeper.Slash(ctx, consAddr, 9, 10, fraction)
 
@@ -323,7 +323,7 @@ func TestSlashWithUnbondingDelegation(t *testing.T) {
 	// slash validator again
 	// all originally bonded stake has been slashed, so this will have no effect
 	// on the unbonding delegation, but it will slash stake bonded since the infraction
-	// this may not be the desirable behaviour, ref https://github.com/cosmos/cosmos-sdk/issues/1440
+	// this may not be the desirable behaviour, ref https://github.com/verzth/cosmos-sdk/issues/1440
 	ctx = ctx.WithBlockHeight(13)
 	app.StakingKeeper.Slash(ctx, consAddr, 9, 10, fraction)
 

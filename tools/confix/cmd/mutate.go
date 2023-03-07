@@ -6,13 +6,13 @@ import (
 	"fmt"
 	"strings"
 
-	"cosmossdk.io/tools/confix"
 	"github.com/creachadair/tomledit"
 	"github.com/creachadair/tomledit/parser"
 	"github.com/creachadair/tomledit/transform"
 	"github.com/spf13/cobra"
+	"github.com/verzth/cosmos-sdk/tools/confix"
 
-	"github.com/cosmos/cosmos-sdk/client"
+	"github.com/verzth/cosmos-sdk/client"
 )
 
 // SetCommand returns a CLI command to interactively update an application config value.

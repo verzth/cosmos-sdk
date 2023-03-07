@@ -34,22 +34,22 @@ import (
 	"fmt"
 	"sort"
 
-	"cosmossdk.io/core/appmodule"
-	"cosmossdk.io/core/genesis"
 	abci "github.com/cometbft/cometbft/abci/types"
 	"github.com/grpc-ecosystem/grpc-gateway/runtime"
 	"github.com/spf13/cobra"
+	"github.com/verzth/cosmos-sdk/core/appmodule"
+	"github.com/verzth/cosmos-sdk/core/genesis"
 	"golang.org/x/exp/maps"
 
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	errorsmod "cosmossdk.io/errors"
+	errorsmod "github.com/verzth/cosmos-sdk/errors"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	"github.com/verzth/cosmos-sdk/client"
+	"github.com/verzth/cosmos-sdk/codec"
+	"github.com/verzth/cosmos-sdk/codec/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	sdkerrors "github.com/verzth/cosmos-sdk/types/errors"
 )
 
 // AppModuleBasic is the standard form for basic non-dependant elements of an application module.
@@ -139,7 +139,7 @@ func (bm BasicManager) RegisterGRPCGatewayRoutes(clientCtx client.Context, rtr *
 // AddTxCommands adds all tx commands to the rootTxCmd.
 //
 // TODO: Remove clientCtx argument.
-// REF: https://github.com/cosmos/cosmos-sdk/issues/6571
+// REF: https://github.com/verzth/cosmos-sdk/issues/6571
 func (bm BasicManager) AddTxCommands(rootTxCmd *cobra.Command) {
 	for _, b := range bm {
 		if cmd := b.GetTxCmd(); cmd != nil {
@@ -151,7 +151,7 @@ func (bm BasicManager) AddTxCommands(rootTxCmd *cobra.Command) {
 // AddQueryCommands adds all query commands to the rootQueryCmd.
 //
 // TODO: Remove clientCtx argument.
-// REF: https://github.com/cosmos/cosmos-sdk/issues/6571
+// REF: https://github.com/verzth/cosmos-sdk/issues/6571
 func (bm BasicManager) AddQueryCommands(rootQueryCmd *cobra.Command) {
 	for _, b := range bm {
 		if cmd := b.GetQueryCmd(); cmd != nil {
@@ -280,7 +280,7 @@ func NewManager(modules ...AppModule) *Manager {
 }
 
 // NewManagerFromMap creates a new Manager object from a map of module names to module implementations.
-// This method should be used for apps and modules which have migrated to the cosmossdk.io/core.appmodule.AppModule API.
+// This method should be used for apps and modules which have migrated to the github.com/verzth/cosmos-sdk/core.appmodule.AppModule API.
 func NewManagerFromMap(moduleMap map[string]appmodule.AppModule) *Manager {
 	simpleModuleMap := make(map[string]interface{})
 	modulesStr := make([]string, 0, len(simpleModuleMap))
@@ -728,7 +728,7 @@ func (m *Manager) ModuleNames() []string {
 
 // DefaultMigrationsOrder returns a default migrations order: ascending alphabetical by module name,
 // except x/auth which will run last, see:
-// https://github.com/cosmos/cosmos-sdk/issues/10591
+// https://github.com/verzth/cosmos-sdk/issues/10591
 func DefaultMigrationsOrder(modules []string) []string {
 	const authName = "auth"
 	out := make([]string, 0, len(modules))

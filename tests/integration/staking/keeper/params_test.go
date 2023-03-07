@@ -6,10 +6,10 @@ import (
 	cmtproto "github.com/cometbft/cometbft/proto/tendermint/types"
 	"gotest.tools/v3/assert"
 
-	"github.com/cosmos/cosmos-sdk/testutil/configurator"
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	"github.com/cosmos/cosmos-sdk/x/staking/keeper"
-	"github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/verzth/cosmos-sdk/testutil/configurator"
+	simtestutil "github.com/verzth/cosmos-sdk/testutil/sims"
+	"github.com/verzth/cosmos-sdk/x/staking/keeper"
+	"github.com/verzth/cosmos-sdk/x/staking/types"
 )
 
 func TestParams(t *testing.T) {

@@ -5,7 +5,7 @@ import (
 	"errors"
 	"fmt"
 
-	"cosmossdk.io/collections/codec"
+	"github.com/verzth/cosmos-sdk/collections/codec"
 )
 
 // Indexes represents a type which groups multiple Index

@@ -3,16 +3,16 @@ package v4_test
 import (
 	"testing"
 
-	storetypes "cosmossdk.io/store/types"
 	"github.com/stretchr/testify/require"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	"github.com/cosmos/cosmos-sdk/x/bank"
-	"github.com/cosmos/cosmos-sdk/x/bank/exported"
-	v4 "github.com/cosmos/cosmos-sdk/x/bank/migrations/v4"
-	"github.com/cosmos/cosmos-sdk/x/bank/types"
+	"github.com/verzth/cosmos-sdk/testutil"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	moduletestutil "github.com/verzth/cosmos-sdk/types/module/testutil"
+	"github.com/verzth/cosmos-sdk/x/bank"
+	"github.com/verzth/cosmos-sdk/x/bank/exported"
+	v4 "github.com/verzth/cosmos-sdk/x/bank/migrations/v4"
+	"github.com/verzth/cosmos-sdk/x/bank/types"
 )
 
 type mockSubspace struct {

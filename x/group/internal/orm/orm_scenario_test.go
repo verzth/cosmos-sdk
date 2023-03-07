@@ -6,14 +6,14 @@ import (
 	"fmt"
 	"testing"
 
-	storetypes "cosmossdk.io/store/types"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	"github.com/cosmos/cosmos-sdk/x/group/errors"
+	"github.com/verzth/cosmos-sdk/codec"
+	"github.com/verzth/cosmos-sdk/codec/types"
+	"github.com/verzth/cosmos-sdk/testutil/testdata"
+	"github.com/verzth/cosmos-sdk/x/group/errors"
 )
 
 // Testing ORM with arbitrary metadata length

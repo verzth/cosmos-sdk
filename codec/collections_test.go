@@ -3,9 +3,9 @@ package codec
 import (
 	"testing"
 
-	"cosmossdk.io/collections/colltest"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
 	"github.com/cosmos/gogoproto/types"
+	codectypes "github.com/verzth/cosmos-sdk/codec/types"
+	"github.com/verzth/cosmos-sdk/collections/colltest"
 )
 
 func TestCollectionsCorrectness(t *testing.T) {

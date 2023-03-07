@@ -11,20 +11,20 @@ import (
 	rpcclientmock "github.com/cometbft/cometbft/rpc/client/mock"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	svrcmd "github.com/cosmos/cosmos-sdk/server/cmd"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
-	"github.com/cosmos/cosmos-sdk/testutil/network"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	testutilmod "github.com/cosmos/cosmos-sdk/types/module/testutil"
+	"github.com/verzth/cosmos-sdk/client"
+	"github.com/verzth/cosmos-sdk/client/flags"
+	"github.com/verzth/cosmos-sdk/crypto/keyring"
+	svrcmd "github.com/verzth/cosmos-sdk/server/cmd"
+	"github.com/verzth/cosmos-sdk/testutil"
+	clitestutil "github.com/verzth/cosmos-sdk/testutil/cli"
+	"github.com/verzth/cosmos-sdk/testutil/network"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	testutilmod "github.com/verzth/cosmos-sdk/types/module/testutil"
 
-	"cosmossdk.io/x/nft"
-	"cosmossdk.io/x/nft/client/cli"
-	nftmodule "cosmossdk.io/x/nft/module"
-	nfttestutil "cosmossdk.io/x/nft/testutil"
+	"github.com/verzth/cosmos-sdk/x/nft"
+	"github.com/verzth/cosmos-sdk/x/nft/client/cli"
+	nftmodule "github.com/verzth/cosmos-sdk/x/nft/module"
+	nfttestutil "github.com/verzth/cosmos-sdk/x/nft/testutil"
 )
 
 const (

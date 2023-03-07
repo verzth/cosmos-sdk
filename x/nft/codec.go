@@ -1,9 +1,9 @@
 package nft
 
 import (
-	types "github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/msgservice"
+	types "github.com/verzth/cosmos-sdk/codec/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/types/msgservice"
 )
 
 // RegisterInterfaces registers the interfaces types with the interface registry.

@@ -6,9 +6,9 @@ import (
 	cmtproto "github.com/cometbft/cometbft/proto/tendermint/types"
 	"github.com/stretchr/testify/require"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/gov"
-	v1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/x/gov"
+	v1 "github.com/verzth/cosmos-sdk/x/gov/types/v1"
 )
 
 func TestImportExportQueues_ErrorUnconsistentState(t *testing.T) {

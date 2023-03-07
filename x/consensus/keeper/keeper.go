@@ -3,12 +3,12 @@ package keeper
 import (
 	cmtproto "github.com/cometbft/cometbft/proto/tendermint/types"
 
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/consensus/exported"
-	"github.com/cosmos/cosmos-sdk/x/consensus/types"
+	"github.com/verzth/cosmos-sdk/codec"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/x/consensus/exported"
+	"github.com/verzth/cosmos-sdk/x/consensus/types"
 )
 
 var _ exported.ConsensusParamSetter = (*Keeper)(nil)

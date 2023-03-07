@@ -8,8 +8,8 @@ import (
 	gogogrpc "github.com/cosmos/gogoproto/grpc"
 	"google.golang.org/grpc"
 
-	"github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/codec/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
 )
 
 // QueryServiceTestHelper provides a helper for making grpc query service

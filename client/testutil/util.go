@@ -5,12 +5,12 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	runtimev1alpha1 "cosmossdk.io/api/cosmos/app/runtime/v1alpha1"
-	appv1alpha1 "cosmossdk.io/api/cosmos/app/v1alpha1"
-	"cosmossdk.io/core/appconfig"
-	"cosmossdk.io/depinject"
-	"github.com/cosmos/cosmos-sdk/codec"
-	_ "github.com/cosmos/cosmos-sdk/runtime" // Register runtime module
+	runtimev1alpha1 "github.com/verzth/cosmos-sdk/api/cosmos/app/runtime/v1alpha1"
+	appv1alpha1 "github.com/verzth/cosmos-sdk/api/cosmos/app/v1alpha1"
+	"github.com/verzth/cosmos-sdk/codec"
+	"github.com/verzth/cosmos-sdk/core/appconfig"
+	"github.com/verzth/cosmos-sdk/depinject"
+	_ "github.com/verzth/cosmos-sdk/runtime" // Register runtime module
 )
 
 var TestConfig = appconfig.Compose(&appv1alpha1.Config{

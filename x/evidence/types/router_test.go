@@ -3,11 +3,11 @@ package types_test
 import (
 	"testing"
 
-	"cosmossdk.io/x/evidence/exported"
-	"cosmossdk.io/x/evidence/types"
 	"github.com/stretchr/testify/require"
+	"github.com/verzth/cosmos-sdk/x/evidence/exported"
+	"github.com/verzth/cosmos-sdk/x/evidence/types"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
 )
 
 func testHandler(sdk.Context, exported.Evidence) error { return nil }

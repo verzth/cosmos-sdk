@@ -5,10 +5,10 @@ import (
 	"errors"
 	"testing"
 
-	"cosmossdk.io/store/cachekv"
-	"cosmossdk.io/store/dbadapter"
-	"cosmossdk.io/store/mock"
-	"cosmossdk.io/store/types"
+	"github.com/verzth/cosmos-sdk/store/cachekv"
+	"github.com/verzth/cosmos-sdk/store/dbadapter"
+	"github.com/verzth/cosmos-sdk/store/mock"
+	"github.com/verzth/cosmos-sdk/store/types"
 
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/require"

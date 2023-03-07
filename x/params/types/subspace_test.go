@@ -6,20 +6,20 @@ import (
 	"testing"
 	"time"
 
-	"cosmossdk.io/log"
 	cmtproto "github.com/cometbft/cometbft/proto/tendermint/types"
 	dbm "github.com/cosmos/cosmos-db"
 	"github.com/stretchr/testify/suite"
+	"github.com/verzth/cosmos-sdk/log"
 
-	"cosmossdk.io/depinject"
-	"cosmossdk.io/store"
-	"cosmossdk.io/store/metrics"
-	storetypes "cosmossdk.io/store/types"
+	"github.com/verzth/cosmos-sdk/depinject"
+	"github.com/verzth/cosmos-sdk/store"
+	"github.com/verzth/cosmos-sdk/store/metrics"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/params/testutil"
-	"github.com/cosmos/cosmos-sdk/x/params/types"
+	"github.com/verzth/cosmos-sdk/codec"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/x/params/testutil"
+	"github.com/verzth/cosmos-sdk/x/params/types"
 )
 
 type SubspaceTestSuite struct {

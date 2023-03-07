@@ -5,13 +5,13 @@ import (
 	"testing"
 	"time"
 
-	"cosmossdk.io/x/evidence/exported"
-	"cosmossdk.io/x/evidence/types"
 	"github.com/stretchr/testify/require"
+	"github.com/verzth/cosmos-sdk/x/evidence/exported"
+	"github.com/verzth/cosmos-sdk/x/evidence/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
+	"github.com/verzth/cosmos-sdk/codec"
+	codectypes "github.com/verzth/cosmos-sdk/codec/types"
+	"github.com/verzth/cosmos-sdk/crypto/keys/ed25519"
 )
 
 func TestDefaultGenesisState(t *testing.T) {

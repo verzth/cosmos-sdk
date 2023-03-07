@@ -4,18 +4,18 @@ import (
 	"fmt"
 	"testing"
 
-	"cosmossdk.io/math"
-	"cosmossdk.io/simapp"
 	abci "github.com/cometbft/cometbft/abci/types"
 	cmtproto "github.com/cometbft/cometbft/proto/tendermint/types"
+	"github.com/verzth/cosmos-sdk/math"
+	"github.com/verzth/cosmos-sdk/simapp"
 	"gotest.tools/v3/assert"
 
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	sdktestutil "github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/bank/testutil"
-	"github.com/cosmos/cosmos-sdk/x/staking"
-	"github.com/cosmos/cosmos-sdk/x/staking/types"
+	codectypes "github.com/verzth/cosmos-sdk/codec/types"
+	sdktestutil "github.com/verzth/cosmos-sdk/testutil"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/x/bank/testutil"
+	"github.com/verzth/cosmos-sdk/x/staking"
+	"github.com/verzth/cosmos-sdk/x/staking/types"
 )
 
 func bootstrapGenesisTest(t *testing.T, numAddrs int) (*simapp.SimApp, sdk.Context, []sdk.AccAddress) {

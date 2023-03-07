@@ -1,10 +1,10 @@
 package keeper
 
 import (
-	"cosmossdk.io/errors"
-	"cosmossdk.io/x/nft"
+	"github.com/verzth/cosmos-sdk/errors"
+	"github.com/verzth/cosmos-sdk/x/nft"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
 )
 
 // BatchMint defines a method for minting a batch of nfts

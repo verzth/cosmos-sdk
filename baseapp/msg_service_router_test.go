@@ -8,16 +8,16 @@ import (
 	dbm "github.com/cosmos/cosmos-db"
 	"github.com/stretchr/testify/require"
 
-	"cosmossdk.io/depinject"
-	"cosmossdk.io/log"
-	"github.com/cosmos/cosmos-sdk/client/tx"
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/runtime"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	"github.com/cosmos/cosmos-sdk/types/tx/signing"
-	authsigning "github.com/cosmos/cosmos-sdk/x/auth/signing"
-	authtx "github.com/cosmos/cosmos-sdk/x/auth/tx"
+	"github.com/verzth/cosmos-sdk/client/tx"
+	"github.com/verzth/cosmos-sdk/codec"
+	codectypes "github.com/verzth/cosmos-sdk/codec/types"
+	"github.com/verzth/cosmos-sdk/depinject"
+	"github.com/verzth/cosmos-sdk/log"
+	"github.com/verzth/cosmos-sdk/runtime"
+	"github.com/verzth/cosmos-sdk/testutil/testdata"
+	"github.com/verzth/cosmos-sdk/types/tx/signing"
+	authsigning "github.com/verzth/cosmos-sdk/x/auth/signing"
+	authtx "github.com/verzth/cosmos-sdk/x/auth/tx"
 )
 
 func TestRegisterMsgService(t *testing.T) {

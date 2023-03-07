@@ -8,10 +8,10 @@ import (
 	"github.com/cometbft/cometbft/p2p"
 	coretypes "github.com/cometbft/cometbft/rpc/core/types"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	cryptocodec "github.com/cosmos/cosmos-sdk/crypto/codec"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
+	"github.com/verzth/cosmos-sdk/client"
+	"github.com/verzth/cosmos-sdk/client/flags"
+	cryptocodec "github.com/verzth/cosmos-sdk/crypto/codec"
+	cryptotypes "github.com/verzth/cosmos-sdk/crypto/types"
 )
 
 // ValidatorInfo is info about the node's validator, same as CometBFT,

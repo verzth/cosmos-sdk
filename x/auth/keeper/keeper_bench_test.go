@@ -4,11 +4,11 @@ import (
 	"testing"
 
 	cmtproto "github.com/cometbft/cometbft/proto/tendermint/types"
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/auth/keeper"
-	"github.com/cosmos/cosmos-sdk/x/auth/testutil"
 	"github.com/stretchr/testify/require"
+	simtestutil "github.com/verzth/cosmos-sdk/testutil/sims"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/x/auth/keeper"
+	"github.com/verzth/cosmos-sdk/x/auth/testutil"
 )
 
 func BenchmarkAccountMapperGetAccountFound(b *testing.B) {

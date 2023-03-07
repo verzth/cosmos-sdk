@@ -1,7 +1,7 @@
 package ormerrors
 
 import (
-	"cosmossdk.io/errors"
+	"github.com/verzth/cosmos-sdk/errors"
 	"google.golang.org/grpc/codes"
 )
 

@@ -5,15 +5,15 @@ import (
 	"encoding/hex"
 	"fmt"
 
-	"cosmossdk.io/store/prefix"
-	"cosmossdk.io/x/evidence/types"
 	proto "github.com/cosmos/gogoproto/proto"
+	"github.com/verzth/cosmos-sdk/store/prefix"
+	"github.com/verzth/cosmos-sdk/x/evidence/types"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/query"
+	codectypes "github.com/verzth/cosmos-sdk/codec/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/types/query"
 )
 
 var _ types.QueryServer = Keeper{}

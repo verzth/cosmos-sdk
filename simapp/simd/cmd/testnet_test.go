@@ -8,17 +8,17 @@ import (
 	"github.com/spf13/viper"
 	"github.com/stretchr/testify/require"
 
-	"cosmossdk.io/log"
-	"cosmossdk.io/simapp"
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/server"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	"github.com/cosmos/cosmos-sdk/x/auth"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
-	genutiltest "github.com/cosmos/cosmos-sdk/x/genutil/client/testutil"
-	genutiltypes "github.com/cosmos/cosmos-sdk/x/genutil/types"
-	"github.com/cosmos/cosmos-sdk/x/staking"
+	"github.com/verzth/cosmos-sdk/client"
+	"github.com/verzth/cosmos-sdk/client/flags"
+	"github.com/verzth/cosmos-sdk/log"
+	"github.com/verzth/cosmos-sdk/server"
+	"github.com/verzth/cosmos-sdk/simapp"
+	moduletestutil "github.com/verzth/cosmos-sdk/types/module/testutil"
+	"github.com/verzth/cosmos-sdk/x/auth"
+	banktypes "github.com/verzth/cosmos-sdk/x/bank/types"
+	genutiltest "github.com/verzth/cosmos-sdk/x/genutil/client/testutil"
+	genutiltypes "github.com/verzth/cosmos-sdk/x/genutil/types"
+	"github.com/verzth/cosmos-sdk/x/staking"
 )
 
 func Test_TestnetCmd(t *testing.T) {

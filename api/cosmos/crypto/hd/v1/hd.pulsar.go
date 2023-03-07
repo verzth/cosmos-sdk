@@ -2,7 +2,7 @@
 package hdv1
 
 import (
-	_ "cosmossdk.io/api/amino"
+	_ "github.com/verzth/cosmos-sdk/api/amino"
 	fmt "fmt"
 	runtime "github.com/cosmos/cosmos-proto/runtime"
 	_ "github.com/cosmos/gogoproto/gogoproto"

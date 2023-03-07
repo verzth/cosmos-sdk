@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"time"
 
-	"cosmossdk.io/log"
+	"github.com/verzth/cosmos-sdk/log"
 
-	"github.com/cosmos/cosmos-sdk/types/kv"
+	"github.com/verzth/cosmos-sdk/types/kv"
 )
 
 // SortedJSON takes any JSON and returns it sorted by keys. Also, all white-spaces

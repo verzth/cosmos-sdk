@@ -3,9 +3,9 @@ package v1_test
 import (
 	"testing"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	v1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1"
 	"github.com/stretchr/testify/require"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	v1 "github.com/verzth/cosmos-sdk/x/gov/types/v1"
 )
 
 func TestEmptyGenesis(t *testing.T) {

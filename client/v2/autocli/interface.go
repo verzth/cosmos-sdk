@@ -1,10 +1,10 @@
 package autocli
 
 import (
-	autocliv1 "cosmossdk.io/api/cosmos/autocli/v1"
 	"github.com/spf13/cobra"
+	autocliv1 "github.com/verzth/cosmos-sdk/api/cosmos/autocli/v1"
 
-	"cosmossdk.io/core/appmodule"
+	"github.com/verzth/cosmos-sdk/core/appmodule"
 )
 
 // HasAutoCLIConfig is an AppModule extension interface for declaring autocli module options.

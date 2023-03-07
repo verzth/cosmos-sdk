@@ -1,4 +1,4 @@
-module cosmossdk.io/log
+module github.com/verzth/cosmos-sdk/log
 
 go 1.20
 

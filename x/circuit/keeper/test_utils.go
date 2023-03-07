@@ -4,8 +4,8 @@ import (
 	"context"
 	"testing"
 
-	storetypes "cosmossdk.io/store/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
 )
 
 type baseFixture struct {

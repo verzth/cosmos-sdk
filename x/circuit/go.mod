@@ -1,10 +1,10 @@
-module github.com/cosmos/cosmos-sdk/x/circuit
+module github.com/verzth/cosmos-sdk/x/circuit
 
 go 1.20
 
 require (
-	cosmossdk.io/store v0.0.0-20230302163046-da238c555585
-	github.com/cosmos/cosmos-sdk v0.46.0-beta2.0.20230306220716-5e55f56d39d5
+	github.com/verzth/cosmos-sdk/store v0.0.0-20230302163046-da238c555585
+	github.com/verzth/cosmos-sdk v0.46.0-beta2.0.20230306220716-5e55f56d39d5
 	github.com/cosmos/gogoproto v1.4.6
 	github.com/regen-network/gocuke v0.6.2
 	google.golang.org/grpc v1.53.0
@@ -12,14 +12,14 @@ require (
 )
 
 require (
-	cosmossdk.io/api v0.3.1 // indirect
-	cosmossdk.io/collections v0.0.0-20230214153846-b6c6e4e99177 // indirect
-	cosmossdk.io/core v0.6.0 // indirect
-	cosmossdk.io/depinject v1.0.0-alpha.3 // indirect
-	cosmossdk.io/errors v1.0.0-beta.7 // indirect
-	cosmossdk.io/log v0.0.0-20230306220716-5e55f56d39d5 // indirect
-	cosmossdk.io/math v1.0.0-beta.6.0.20230216172121-959ce49135e4 // indirect
-	cosmossdk.io/x/tx v0.2.2 // indirect
+	github.com/verzth/cosmos-sdk/api v0.3.1 // indirect
+	github.com/verzth/cosmos-sdk/collections v0.0.0-20230214153846-b6c6e4e99177 // indirect
+	github.com/verzth/cosmos-sdk/core v0.6.0 // indirect
+	github.com/verzth/cosmos-sdk/depinject v1.0.0-alpha.3 // indirect
+	github.com/verzth/cosmos-sdk/errors v1.0.0-beta.7 // indirect
+	github.com/verzth/cosmos-sdk/log v0.0.0-20230306220716-5e55f56d39d5 // indirect
+	github.com/verzth/cosmos-sdk/math v1.0.0-beta.6.0.20230216172121-959ce49135e4 // indirect
+	github.com/verzth/cosmos-sdk/x/tx v0.2.2 // indirect
 	github.com/DataDog/zstd v1.5.2 // indirect
 	github.com/alecthomas/participle/v2 v2.0.0-alpha7 // indirect
 	github.com/armon/go-metrics v0.4.1 // indirect

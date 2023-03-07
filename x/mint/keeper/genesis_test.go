@@ -3,21 +3,21 @@ package keeper_test
 import (
 	"testing"
 
-	"cosmossdk.io/math"
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/suite"
+	"github.com/verzth/cosmos-sdk/math"
 
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	"github.com/cosmos/cosmos-sdk/x/mint"
-	"github.com/cosmos/cosmos-sdk/x/mint/keeper"
-	minttestutil "github.com/cosmos/cosmos-sdk/x/mint/testutil"
-	"github.com/cosmos/cosmos-sdk/x/mint/types"
+	"github.com/verzth/cosmos-sdk/codec"
+	"github.com/verzth/cosmos-sdk/testutil"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	moduletestutil "github.com/verzth/cosmos-sdk/types/module/testutil"
+	authtypes "github.com/verzth/cosmos-sdk/x/auth/types"
+	"github.com/verzth/cosmos-sdk/x/mint"
+	"github.com/verzth/cosmos-sdk/x/mint/keeper"
+	minttestutil "github.com/verzth/cosmos-sdk/x/mint/testutil"
+	"github.com/verzth/cosmos-sdk/x/mint/types"
 )
 
 var minterAcc = authtypes.NewEmptyModuleAccount(types.ModuleName, authtypes.Minter)

@@ -3,7 +3,7 @@ package types
 import (
 	"fmt"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
 )
 
 // NewGenesisState creates a new GenesisState object

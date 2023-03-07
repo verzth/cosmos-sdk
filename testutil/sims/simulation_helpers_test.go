@@ -4,20 +4,20 @@ import (
 	"fmt"
 	"testing"
 
-	"cosmossdk.io/log"
-	"cosmossdk.io/store/metrics"
-	"cosmossdk.io/store/rootmulti"
 	dbm "github.com/cosmos/cosmos-db"
 	"github.com/stretchr/testify/require"
+	"github.com/verzth/cosmos-sdk/log"
+	"github.com/verzth/cosmos-sdk/store/metrics"
+	"github.com/verzth/cosmos-sdk/store/rootmulti"
 	"gotest.tools/v3/assert"
 
-	"github.com/cosmos/cosmos-sdk/codec"
+	"github.com/verzth/cosmos-sdk/codec"
 
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	"github.com/cosmos/cosmos-sdk/types/kv"
-	"github.com/cosmos/cosmos-sdk/types/simulation"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
+	"github.com/verzth/cosmos-sdk/types/kv"
+	"github.com/verzth/cosmos-sdk/types/simulation"
+	authtypes "github.com/verzth/cosmos-sdk/x/auth/types"
 )
 
 func TestGetSimulationLog(t *testing.T) {

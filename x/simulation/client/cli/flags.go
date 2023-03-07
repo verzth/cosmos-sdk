@@ -3,7 +3,7 @@ package cli
 import (
 	"flag"
 
-	"github.com/cosmos/cosmos-sdk/types/simulation"
+	"github.com/verzth/cosmos-sdk/types/simulation"
 )
 
 // List of available flags for the simulator

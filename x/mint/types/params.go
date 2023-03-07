@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"strings"
 
-	"cosmossdk.io/math"
+	"github.com/verzth/cosmos-sdk/math"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
 )
 
 // NewParams returns Params instance with the given values.

@@ -3,10 +3,10 @@ package keeper
 import (
 	gogotypes "github.com/cosmos/gogoproto/types"
 
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/distribution/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/x/distribution/types"
 )
 
 // get the delegator withdraw address, defaulting to the delegator address

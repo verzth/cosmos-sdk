@@ -3,11 +3,11 @@ package nft
 import (
 	"fmt"
 
-	"cosmossdk.io/x/nft/client/cli"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
-	"github.com/cosmos/cosmos-sdk/testutil/network"
+	"github.com/verzth/cosmos-sdk/client/flags"
+	"github.com/verzth/cosmos-sdk/testutil"
+	clitestutil "github.com/verzth/cosmos-sdk/testutil/cli"
+	"github.com/verzth/cosmos-sdk/testutil/network"
+	"github.com/verzth/cosmos-sdk/x/nft/client/cli"
 )
 
 func ExecSend(val *network.Validator, args []string) (testutil.BufferWriter, error) {

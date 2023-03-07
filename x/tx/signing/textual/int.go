@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"strings"
 
-	"cosmossdk.io/math"
+	"github.com/verzth/cosmos-sdk/math"
 	"google.golang.org/protobuf/reflect/protoreflect"
 )
 

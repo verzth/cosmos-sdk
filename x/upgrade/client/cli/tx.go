@@ -7,15 +7,15 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"cosmossdk.io/x/upgrade/plan"
-	"cosmossdk.io/x/upgrade/types"
+	"github.com/verzth/cosmos-sdk/x/upgrade/plan"
+	"github.com/verzth/cosmos-sdk/x/upgrade/types"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/client/tx"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/address"
-	"github.com/cosmos/cosmos-sdk/x/gov/client/cli"
+	"github.com/verzth/cosmos-sdk/client"
+	"github.com/verzth/cosmos-sdk/client/flags"
+	"github.com/verzth/cosmos-sdk/client/tx"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/types/address"
+	"github.com/verzth/cosmos-sdk/x/gov/client/cli"
 )
 
 const (

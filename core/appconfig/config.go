@@ -12,11 +12,11 @@ import (
 	"google.golang.org/protobuf/types/known/anypb"
 	"sigs.k8s.io/yaml"
 
-	appv1alpha1 "cosmossdk.io/api/cosmos/app/v1alpha1"
+	appv1alpha1 "github.com/verzth/cosmos-sdk/api/cosmos/app/v1alpha1"
 
-	"cosmossdk.io/depinject"
+	"github.com/verzth/cosmos-sdk/depinject"
 
-	"cosmossdk.io/core/internal"
+	"github.com/verzth/cosmos-sdk/core/internal"
 )
 
 // LoadJSON loads an app config in JSON format.

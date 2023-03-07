@@ -9,23 +9,23 @@ import (
 	gwruntime "github.com/grpc-ecosystem/grpc-gateway/runtime"
 	"github.com/spf13/cobra"
 
-	modulev1 "cosmossdk.io/api/cosmos/evidence/module/v1"
-	"cosmossdk.io/core/appmodule"
-	"cosmossdk.io/depinject"
+	modulev1 "github.com/verzth/cosmos-sdk/api/cosmos/evidence/module/v1"
+	"github.com/verzth/cosmos-sdk/core/appmodule"
+	"github.com/verzth/cosmos-sdk/depinject"
 
-	store "cosmossdk.io/store/types"
-	eviclient "cosmossdk.io/x/evidence/client"
-	"cosmossdk.io/x/evidence/client/cli"
-	"cosmossdk.io/x/evidence/keeper"
-	"cosmossdk.io/x/evidence/simulation"
-	"cosmossdk.io/x/evidence/types"
+	store "github.com/verzth/cosmos-sdk/store/types"
+	eviclient "github.com/verzth/cosmos-sdk/x/evidence/client"
+	"github.com/verzth/cosmos-sdk/x/evidence/client/cli"
+	"github.com/verzth/cosmos-sdk/x/evidence/keeper"
+	"github.com/verzth/cosmos-sdk/x/evidence/simulation"
+	"github.com/verzth/cosmos-sdk/x/evidence/types"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
+	"github.com/verzth/cosmos-sdk/client"
+	"github.com/verzth/cosmos-sdk/codec"
+	codectypes "github.com/verzth/cosmos-sdk/codec/types"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/types/module"
+	simtypes "github.com/verzth/cosmos-sdk/types/simulation"
 )
 
 var (

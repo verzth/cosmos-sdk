@@ -3,8 +3,8 @@ package main
 import (
 	"os"
 
-	"cosmossdk.io/tools/confix"
 	"github.com/spf13/cobra"
+	"github.com/verzth/cosmos-sdk/tools/confix"
 )
 
 func main() {

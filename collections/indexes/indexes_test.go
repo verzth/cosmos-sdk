@@ -3,8 +3,8 @@ package indexes
 import (
 	"context"
 
-	"cosmossdk.io/core/store"
 	db "github.com/cosmos/cosmos-db"
+	"github.com/verzth/cosmos-sdk/core/store"
 )
 
 // TODO remove this when we add testStore to core/store.

@@ -4,16 +4,16 @@ import (
 	"fmt"
 	"strings"
 
-	"cosmossdk.io/log"
+	"github.com/verzth/cosmos-sdk/log"
 
-	"cosmossdk.io/store/prefix"
-	storetypes "cosmossdk.io/store/types"
+	"github.com/verzth/cosmos-sdk/store/prefix"
+	storetypes "github.com/verzth/cosmos-sdk/store/types"
 
-	"cosmossdk.io/errors"
+	"github.com/verzth/cosmos-sdk/errors"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/capability/types"
+	"github.com/verzth/cosmos-sdk/codec"
+	sdk "github.com/verzth/cosmos-sdk/types"
+	"github.com/verzth/cosmos-sdk/x/capability/types"
 )
 
 type (
@@ -385,7 +385,7 @@ func (sk ScopedKeeper) GetCapability(ctx sdk.Context, name string) (*types.Capab
 		// go map do not automatically get reverted on tx failure,
 		// so we delete here to remove unnecessary values in map
 		// TODO: Delete index correctly from capMap by storing some reverse lookup
-		// in-memory map. Issue: https://github.com/cosmos/cosmos-sdk/issues/7805
+		// in-memory map. Issue: https://github.com/verzth/cosmos-sdk/issues/7805
 
 		return nil, false
 	}
